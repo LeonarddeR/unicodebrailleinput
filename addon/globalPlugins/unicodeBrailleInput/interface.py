@@ -10,12 +10,22 @@ import addonHandler
 import gui
 import wx
 
-# We initialize translations.
+# Initialize translations.
 addonHandler.initTranslation()
+
+# Check python version.
+PY2 = sys.version_info[0] == 2
+
+conv=None
+# name of function is unichr for python2 and chr for python3.
+if PY2:
+    conv = unichr
+else:
+    conv = chr
 
 def dots2uni(cells):
     """ Convert a braille to Unicode
-	@param cells the braille cellules (I.E. 13457-12367-1457-17)
+	@param cells the braille cells (I.E. 13457-12367-1457-17)
 	@return the result in Unicode (NVDA in our example)
 	"""
     cells = cells.strip().split('-')
@@ -30,7 +40,7 @@ def dots2uni(cells):
         if '6' in cell: val |= 0x20
         if '7' in cell: val |= 0x40
         if '8' in cell: val |= 0x80
-        out.append(chr(val))
+        out.append(conv(val))
     return "".join(out)
 
 class B2UDialog(gui.SettingsDialog):
