@@ -63,3 +63,6 @@ class B2UDialog(gui.SettingsDialog):
 
 	def onOk(self, event):
 		super(B2UDialog, self).onOk(event)
+		value = self._brailleTextEdit.GetValue()
+		import ui
+		ui.message(dots2uni(value))
