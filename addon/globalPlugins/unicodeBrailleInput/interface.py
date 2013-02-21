@@ -31,7 +31,7 @@ def dots2uni(cells):
     cells = cells.strip().split('-')
     out = []
     for cell in cells:
-        val = 0x2800
+        val = 0
         if '1' in cell: val |= 1
         if '2' in cell: val |= 2
         if '3' in cell: val |= 4
@@ -40,7 +40,11 @@ def dots2uni(cells):
         if '6' in cell: val |= 0x20
         if '7' in cell: val |= 0x40
         if '8' in cell: val |= 0x80
-        out.append(conv(val))
+        if val:
+            val |= 0x2800
+            out.append(conv(val))
+        else:
+            out.append(" ")
     return "".join(out)
 
 class B2UDialog(gui.SettingsDialog):
