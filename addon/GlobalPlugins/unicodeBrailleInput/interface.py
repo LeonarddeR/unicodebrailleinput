@@ -13,12 +13,14 @@ import wx
 addonHandler.initTranslation()
 
 class B2UDialog(gui.SettingsDialog):
+	# Translators: The title of the dialog.
 	title = _("Convert Braille to Unicode")
 	def __init__(self, parent):
 		super(B2UDialog, self).__init__(parent)
 
 	def makeSettings(self, sizer):
 		brailleTextSizer = wx.BoxSizer(wx.HORIZONTAL)
+		# Translators: the label of the edit field.
 		brailleTextLabel = wx.StaticText(self, label=_("Enter text in braille:"))
 		brailleTextSizer.Add(brailleTextLabel)
 		self._brailleTextEdit = wx.TextCtrl(self, -1)
