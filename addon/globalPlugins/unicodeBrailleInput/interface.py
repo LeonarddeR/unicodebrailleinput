@@ -75,8 +75,12 @@ class B2UDialog(gui.SettingsDialog):
 	def onOk(self, event):
 		super(B2UDialog, self).onOk(event)
 		value = self._brailleTextEdit.GetValue()
-		import ui
+		from ui import message
+		from api import copyToClip
 		try:
-			ui.message(dots2uni(value))
+			value = dots2uni(value)
+			copyToClip(value)
+			# Translators: This is the message when unicode text has been copied to the clipboard.
+			message(_("{text} copied to clipboard ready for you to paste.").format(text=value))
 		except ValueError as e:
-			ui.message(e.message)
+			message(e.message)
