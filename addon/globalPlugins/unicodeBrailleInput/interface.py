@@ -19,33 +19,33 @@ PY2 = sys.version_info[0] == 2
 conv=None
 # name of function is unichr for python2 and chr for python3.
 if PY2:
-    conv = unichr
+	conv = unichr
 else:
-    conv = chr
+	conv = chr
 
 def dots2uni(cells):
-    """ Convert a braille to Unicode
+	""" Convert a braille to Unicode
 	@param cells the braille cells (I.E. 13457-12367-1457-17)
 	@return the result in Unicode (NVDA in our example)
 	"""
-    cells = cells.strip().split('-')
-    out = []
-    for cell in cells:
-        val = 0
-        if '1' in cell: val |= 1
-        if '2' in cell: val |= 2
-        if '3' in cell: val |= 4
-        if '4' in cell: val |= 8
-        if '5' in cell: val |= 0x10
-        if '6' in cell: val |= 0x20
-        if '7' in cell: val |= 0x40
-        if '8' in cell: val |= 0x80
-        if val:
-            val |= 0x2800
-            out.append(conv(val))
-        else:
-            out.append(" ")
-    return "".join(out)
+	cells = cells.strip().split('-')
+	out = []
+	for cell in cells:
+		val = 0
+		if '1' in cell: val |= 1
+		if '2' in cell: val |= 2
+		if '3' in cell: val |= 4
+		if '4' in cell: val |= 8
+		if '5' in cell: val |= 0x10
+		if '6' in cell: val |= 0x20
+		if '7' in cell: val |= 0x40
+		if '8' in cell: val |= 0x80
+		if val:
+			val |= 0x2800
+			out.append(conv(val))
+		else:
+			out.append(" ")
+	return "".join(out)
 
 class B2UDialog(gui.SettingsDialog):
 	# Translators: The title of the dialog.
