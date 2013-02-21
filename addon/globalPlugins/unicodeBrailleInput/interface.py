@@ -9,6 +9,7 @@ import sys
 import addonHandler
 import gui
 import wx
+from re import compile
 
 # Initialize translations.
 addonHandler.initTranslation()
@@ -23,12 +24,18 @@ if PY2:
 else:
 	conv = chr
 
+invalidInputRegexp = compile('[^0-8-]+')
 def dots2uni(cells):
 	""" Convert a braille to Unicode
 	@param cells the braille cells (I.E. 13457-12367-1457-17)
 	@return the result in Unicode (NVDA in our example)
 	"""
-	cells = cells.strip().split('-')
+	cells = cells.strip()
+	invalidStrings = invalidInputRegexp.findall(cells)
+	if invalidStrings:
+		# Translators: the user entered an unexpected string and this is the error message to show the mistakes.
+		raise ValueError(_("Unexpected input: '%s', only dots 0 to 8 and - are allowed.") % "', '".join(invalidStrings))
+	cells = cells.split('-')
 	out = []
 	for cell in cells:
 		val = 0
@@ -69,4 +76,7 @@ class B2UDialog(gui.SettingsDialog):
 		super(B2UDialog, self).onOk(event)
 		value = self._brailleTextEdit.GetValue()
 		import ui
-		ui.message(dots2uni(value))
+		try:
+			ui.message(dots2uni(value))
+		except ValueError as e:
+			ui.message(e.message)
