@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 'Unicode-Braille-Input' '1.0.0'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
-"POT-Creation-Date: 2013-02-21 02:52+0100\n"
-"PO-Revision-Date: 2013-02-21 02:53+0100\n"
+"POT-Creation-Date: 2013-02-21 17:31+0100\n"
+"PO-Revision-Date: 2013-02-21 17:38+0100\n"
 "Last-Translator: patrick ZAJDA <patrick@zajda.fr>\n"
 "Language-Team: Fr <patrick@zajda.fr>\n"
 "Language: fr\n"
@@ -27,20 +27,32 @@ msgstr ""
 "Affiche une zone de texte où saisir les codes brailles pour les convertir en "
 "Unicode."
 
+#. Translators: the user entered an unexpected string and this is the error message to show the mistakes.
+#: addon\globalPlugins\unicodeBrailleInput\interface.py:40
+#, python-format
+msgid "Unexpected input: '%s', only dots 0 to 8 and - are allowed."
+msgstr ""
+"Entrée inattendue : '%s', seul les points 1 à 8 et les tirets sont admis."
+
 #. Translators: The title of the dialog.
-#: addon\globalPlugins\unicodeBrailleInput\interface.py:38
+#: addon\globalPlugins\unicodeBrailleInput\interface.py:62
 msgid "Convert Braille to Unicode"
 msgstr "Convertir du Braille vers Unicode"
 
 #. Translators: the label of the edit field.
-#: addon\globalPlugins\unicodeBrailleInput\interface.py:45
+#: addon\globalPlugins\unicodeBrailleInput\interface.py:69
 msgid "Enter text in braille:"
 msgstr "Entrez le texte en braille :"
+
+#. Translators: This is the message when unicode text has been copied to the clipboard.
+#: addon\globalPlugins\unicodeBrailleInput\interface.py:84
+msgid "Unicode text copied to clipboard ready for you to paste."
+msgstr "Texte unicode copié dans le presse-papier prêt à être collé."
 
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 #: buildVars.py:13
-msgid "unicode Braille Input"
+msgid "Unicode Braille Input"
 msgstr "Saisie Braille Unicode"
 
 #. Add-on description
