@@ -7,10 +7,10 @@ _ = lambda x : x
 # Add-on information variables
 addon_info = {
 	# add-on Name
-	"addon-name" : "Unicode-Braille-Input",
+	"addon-name" : "unicodeBrailleInput",
 	# Add-on description
 	# TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
-	"addon-summary" : _("unicode Braille Input"),
+	"addon-summary" : _("Unicode Braille Input"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on installation and add-on information
 	"addon-description" : _("""Show a text field to type braille codes then convert it into Unicode.
