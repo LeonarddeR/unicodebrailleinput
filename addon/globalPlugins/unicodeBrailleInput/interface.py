@@ -35,6 +35,9 @@ def dots2uni(cells):
 	"""
 	cells = cells.strip()
 	invalidStrings = invalidInputRegexp.findall(cells)
+	if cells.isspace() or cells == "":
+		# Translators: the user entered an empty  string or only whitespaces and this is the error message to show the mistakes.
+		raise ValueError(_("Unexpected input: '%s', only whitespace or empty string is not allowed.") % "', '".join(invalidStrings))
 	if invalidStrings:
 		# Translators: the user entered an unexpected string and this is the error message to show the mistakes.
 		raise ValueError(_("Unexpected input: '%s', only dots 0 to 8 and - are allowed.") % "', '".join(invalidStrings))
