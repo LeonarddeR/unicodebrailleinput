@@ -1,0 +1,19 @@
+[[!meta title="UnicodeBrailleInput"]]
+* Authors: Mesar Hameed <mhameed@src.gnome.org>, Patrick Zajda <patrick@zajda.fr>.
+* Download: [version 1.0][1]
+
+This add-on allows you to convert text from braille (E.G. 1345-1236-145-1) to Unicode braille 
+characters.
+
+The purpose of this specialized addon is to make it easier to help to improve liblouis tables 
+and to add automatic tests for your language.
+
+## Usage ##
+
+* Open a unicode aware text editor (for example Notepad plus plus)
+* Press NVDA+Ctrl+U
+* Type your braille text in numeric form.
+* Press OK.
+* The required unicode characters will be copied to your clipboard ready for you to  paste.
+
+[1]: http://addons.nvda-project.org/files/get.php?file=ubi
