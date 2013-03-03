@@ -13,14 +13,14 @@ addon_info = {
 	"addon-summary" : _("Unicode Braille Input"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on installation and add-on information
-	"addon-description" : _("""Show a text field to type braille codes then convert it into Unicode.
+	"addon-description" : _("""Shows a text field to type numeric braille (e.g. 1345-1236-145-1) then convert it into unicode braille characters.
 Shortcut: NVDA+Ctrl+u"""),
 	# version
 	"addon-version" : "1.0.0",
 	# Author(s)
-	"addon-author" : "Mesar Hameed <mesar.hameed@gmail.com>, Patrick ZAJDA <patrick@zajda.fr>",
+	"addon-author" : "Mesar Hameed <mhameed@src.gnome.org>, Patrick ZAJDA <patrick@zajda.fr>",
 	# URL for the add-on documentation support
-	"addon-url" : None
+	"addon-url" : "http://addons.nvda-project.org/"
 }
 
 

@@ -18,7 +18,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		import gui
 		gui.mainFrame._popupSettingsDialog(interface.B2UDialog)
 	# Translators: Message presented when user performs input help for this shortcut.
-	script_brailleInput2Unicode.__doc__ = _("Show a dialog to write letters in braille separated by a dash, then this script will convert them to unicode.")
+	script_brailleInput2Unicode.__doc__ = _("Show a dialog to write letters in numeric braille (e.g. 1345-1236-145-1) separated by dashes, then this script will convert them to unicode braille characters.")
 
 	__gestures={
 		"kb:NVDA+control+U": "brailleInput2Unicode",
