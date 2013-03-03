@@ -16,7 +16,7 @@ addon_info = {
 	"addon-description" : _("""Shows a text field to type numeric braille (e.g. 1345-1236-145-1) then convert it into unicode braille characters.
 Shortcut: NVDA+Ctrl+u"""),
 	# version
-	"addon-version" : "1.0.0",
+	"addon-version" : "1.0",
 	# Author(s)
 	"addon-author" : "Mesar Hameed <mhameed@src.gnome.org>, Patrick ZAJDA <patrick@zajda.fr>",
 	# URL for the add-on documentation support
