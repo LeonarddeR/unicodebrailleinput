@@ -1,6 +1,6 @@
 [[!meta title="UnicodeBrailleInput"]]
 * Authors: Mesar Hameed <mhameed@src.gnome.org>, Patrick Zajda <patrick@zajda.fr>.
-* Download: [version 1.0][1]
+* Download: [version 1.01][1]
 
 This add-on allows you to convert text from braille (E.G. 1345-1236-145-1) to Unicode braille 
 characters.
