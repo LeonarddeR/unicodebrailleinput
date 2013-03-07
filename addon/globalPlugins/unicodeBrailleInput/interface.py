@@ -12,7 +12,6 @@ import wx
 from re import compile
 from ui import message
 from api import copyToClip
-from time import sleep
 
 # Initialize translations.
 addonHandler.initTranslation()
@@ -79,14 +78,12 @@ class B2UDialog(gui.SettingsDialog):
 		self._brailleTextEdit.SetFocus()
 
 	def onOk(self, event):
+		super(B2UDialog, self).onOk(event)
 		value = self._brailleTextEdit.GetValue()
 		try:
 			value = dots2uni(value)
 			copyToClip(value)
 			# Translators: This is the message when unicode text has been copied to the clipboard.
-			message(_("Unicode text copied to clipboard ready for you to paste."))
+			wx.CallLater(100, message, _("Unicode text copied to clipboard ready for you to paste."))
 		except ValueError as e:
-			message(e.message)
-		# We wait for  2 seconds to be able to hear the message.
-		sleep(2)
-		super(B2UDialog, self).onOk(event)
+			wx.CallLater(100, message, e.message)
