@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 'Unicode-Braille-Input' '1.0.0'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
-"POT-Creation-Date: 2013-02-21 17:31+0100\n"
-"PO-Revision-Date: 2013-02-21 17:38+0100\n"
+"POT-Creation-Date: 2013-03-07 13:06+0100\n"
+"PO-Revision-Date: 2013-03-07 13:09+0100\n"
 "Last-Translator: patrick ZAJDA <patrick@zajda.fr>\n"
 "Language-Team: Fr <patrick@zajda.fr>\n"
 "Language: fr\n"
@@ -21,31 +21,41 @@ msgstr ""
 #. Translators: Message presented when user performs input help for this shortcut.
 #: addon\globalPlugins\unicodeBrailleInput\__init__.py:21
 msgid ""
-"Show a dialog to write letters in braille separated by a dash, then this "
-"script will convert them to unicode."
+"Show a dialog to write letters in numeric braille (e.g. 1345-1236-145-1) "
+"separated by dashes, then this script will convert them to unicode braille "
+"characters."
 msgstr ""
-"Affiche une zone de texte où saisir les codes brailles pour les convertir en "
-"Unicode."
+"Affiche une boîte de dialogue où saisir les codes brailles numériques (ex : "
+"1345-1236-145-1) séparré par des tirets pour les convertir en caractères "
+"brailles Unicode."
+
+#. Translators: the user entered an empty string or only whitespace and this is the error message to show the mistakes.
+#: addon\globalPlugins\unicodeBrailleInput\interface.py:39
+#, python-format
+msgid "Unexpected input: '%s', whitespace or empty string is not allowed."
+msgstr ""
+"Entrée inattendue : '%s', les espaces ou les chaînes vides ne sont pas "
+"autorisés."
 
 #. Translators: the user entered an unexpected string and this is the error message to show the mistakes.
-#: addon\globalPlugins\unicodeBrailleInput\interface.py:40
+#: addon\globalPlugins\unicodeBrailleInput\interface.py:42
 #, python-format
 msgid "Unexpected input: '%s', only dots 0 to 8 and - are allowed."
 msgstr ""
 "Entrée inattendue : '%s', seul les points 1 à 8 et les tirets sont admis."
 
 #. Translators: The title of the dialog.
-#: addon\globalPlugins\unicodeBrailleInput\interface.py:62
+#: addon\globalPlugins\unicodeBrailleInput\interface.py:64
 msgid "Convert Braille to Unicode"
 msgstr "Convertir du Braille vers Unicode"
 
 #. Translators: the label of the edit field.
-#: addon\globalPlugins\unicodeBrailleInput\interface.py:69
-msgid "Enter text in braille:"
-msgstr "Entrez le texte en braille :"
+#: addon\globalPlugins\unicodeBrailleInput\interface.py:71
+msgid "Enter text in numeric braille:"
+msgstr "Entrez le texte en braille numérique :"
 
 #. Translators: This is the message when unicode text has been copied to the clipboard.
-#: addon\globalPlugins\unicodeBrailleInput\interface.py:84
+#: addon\globalPlugins\unicodeBrailleInput\interface.py:87
 msgid "Unicode text copied to clipboard ready for you to paste."
 msgstr "Texte unicode copié dans le presse-papier prêt à être collé."
 
@@ -59,9 +69,11 @@ msgstr "Saisie Braille Unicode"
 #. Translators: Long description to be shown for this add-on on installation and add-on information
 #: buildVars.py:16
 msgid ""
-"Show a text field to type braille codes then convert it into Unicode.\n"
+"Shows a text field to type numeric braille (e.g. 1345-1236-145-1) then "
+"convert it into unicode braille characters.\n"
 "Shortcut: NVDA+Ctrl+u"
 msgstr ""
-"Affiche une zone de texte où saisir les codes brailles pour les convertir en "
-"Unicode.\n"
+"Affiche une boîte de dialogue où saisir les codes brailles numériques (ex : "
+"1345-1236-145-1) séparré par des tirets pour les convertir en caractères "
+"brailles Unicode..\n"
 "Raccourci : NVDA+Ctrl+u"
