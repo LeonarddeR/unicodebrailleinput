@@ -1,5 +1,5 @@
 [[!meta title="UnicodeBrailleInput"]]
-* Authors: Mesar Hameed <mhameed@src.gnome.org>, Patrick Zajda <patrick@zajda.fr>.
+* Authors: Mesar Hameed, Patrick Zajda.
 * Download: [version 1.01][1]
 
 This add-on allows you to convert text from braille (E.G. 1345-1236-145-1) to Unicode braille 
@@ -15,5 +15,16 @@ and to add automatic tests for your language.
 * Type your braille text in numeric form.
 * Press OK.
 * The required unicode characters will be copied to your clipboard ready for you to  paste.
+
+## Changes for 1.1-dev ##
+
+* Improve delay to allow announcements to be heard correctly.
+* New languages: Aragonese, Arabic, Brazilian Portuguese, Dutch, Finnish, German, Galician, Hungarian, Italian, Japanese, Nepali, Russian, Slovak, Slovenian, Spanish.
+
+## Changes for 1.0 ##
+
+* Initial release
+* New Languages: French
+
 
 [1]: http://addons.nvda-project.org/files/get.php?file=ubi
