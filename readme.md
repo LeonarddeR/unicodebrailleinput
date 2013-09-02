@@ -11,7 +11,7 @@ and to add automatic tests for your language.
 ## Usage ##
 
 * Open a unicode aware text editor (for example Notepad plus plus)
-* Press NVDA+Ctrl+U
+* Press NVDA+Ctrl+U or choose on Unicode Braille Input under NVDA tools menu
 * Type your braille text in numeric form.
 * Press OK.
 * The required unicode characters will be copied to your clipboard ready for you to  paste.
@@ -21,6 +21,7 @@ and to add automatic tests for your language.
 * Improve delay to allow announcements to be heard correctly.
 * New languages: Aragonese, Arabic, Brazilian Portuguese, Dutch, Finnish, German, Galician, Hungarian, Italian, Japanese, Nepali, Russian, Slovak, Slovenian, Spanish.
 * Use the new addon template so provide documentation under NVDA help menu.
+* Add a menu item named Unicode Braille Input under NVDA help menu which calls the script.
 
 ## Changes for 1.0 ##
 

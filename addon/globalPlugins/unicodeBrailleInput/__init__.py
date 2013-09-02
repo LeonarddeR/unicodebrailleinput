@@ -8,17 +8,30 @@
 
 import globalPluginHandler
 import addonHandler
+import gui
+import interface
+import wx
 
 # We initialize translations.
 addonHandler.initTranslation()
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
+	def __init__(self):
+		super(globalPluginHandler.GlobalPlugin, self).__init__()
+		self.tools = gui.mainFrame.sysTrayIcon.toolsMenu
+		self.menuItem = self.tools.Append(wx.ID_ANY, _("Unicode Braille Input"), _("Show a dialog to write letters in numeric braille (e.g. 1345-1236-145-1) separated by dashes, then convert them to unicode braille characters."))
+		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.script_brailleInput2Unicode, self.menuItem)
+
 	def script_brailleInput2Unicode(self, gesture):
-		import interface
-		import gui
 		gui.mainFrame._popupSettingsDialog(interface.B2UDialog)
 	# Translators: Message presented when user performs input help for this shortcut.
 	script_brailleInput2Unicode.__doc__ = _("Show a dialog to write letters in numeric braille (e.g. 1345-1236-145-1) separated by dashes, then this script will convert them to unicode braille characters.")
+
+	def terminate(self):
+		try:
+			self.tools.RemoveItem(self.menuItem)
+		except wx.PyDeadObjectError:
+			pass
 
 	__gestures={
 		"kb:NVDA+control+U": "brailleInput2Unicode",
