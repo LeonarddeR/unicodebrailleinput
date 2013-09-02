@@ -4,3 +4,7 @@
 *.nvda-addon
 *.ini
 .sconsign.dblite
+addon/doc/*.css
+addon/doc/
+*_docHandler.py
+*.html

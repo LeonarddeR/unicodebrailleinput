@@ -20,6 +20,7 @@ and to add automatic tests for your language.
 
 * Improve delay to allow announcements to be heard correctly.
 * New languages: Aragonese, Arabic, Brazilian Portuguese, Dutch, Finnish, German, Galician, Hungarian, Italian, Japanese, Nepali, Russian, Slovak, Slovenian, Spanish.
+* Use the new addon template so provide documentation under NVDA help menu.
 
 ## Changes for 1.0 ##
 
