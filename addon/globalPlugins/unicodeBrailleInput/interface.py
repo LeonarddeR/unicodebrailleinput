@@ -75,7 +75,7 @@ class B2UDialog(gui.SettingsDialog):
 		brailleTextSizer.Add(self._brailleTextEdit)
 		self._regularSpaceChk = wx.CheckBox(self,
 		# Translators: wether to use a regular space or the Braille one
-			label = _("Convert unicode braille space to ascii space."))
+			label = _("Convert Unicode Braille space to ASCII space"))
 		self._regularSpaceChk.SetValue(False)
 		brailleTextSizer.Add(self._regularSpaceChk)
 		sizer.Add(brailleTextSizer)
