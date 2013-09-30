@@ -22,6 +22,7 @@ and to add automatic tests for your language.
 * New languages: Aragonese, Arabic, Brazilian Portuguese, Dutch, Finnish, German, Galician, Hungarian, Italian, Japanese, Nepali, Russian, Slovak, Slovenian, Spanish.
 * Use the new addon template so provide documentation under NVDA help menu.
 * Add a menu item named Unicode Braille Input under NVDA help menu which calls the script.
+* Replace the regular space character by 0x2800 to be ISO standard compliant.
 
 ## Changes for 1.0 ##
 

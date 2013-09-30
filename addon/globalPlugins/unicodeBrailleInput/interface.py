@@ -56,7 +56,7 @@ def dots2uni(cells):
 			val |= 0x2800
 			out.append(conv(val))
 		else:
-			out.append(" ")
+			out.append(conv(0x2800))
 	return "".join(out)
 
 class B2UDialog(gui.SettingsDialog):
