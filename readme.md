@@ -23,6 +23,7 @@ and to add automatic tests for your language.
 * Use the new addon template so provide documentation under NVDA help menu.
 * Add a menu item named Unicode Braille Input under NVDA help menu which calls the script.
 * Add a checkbox to replace or not the space braille (character 0x2800) by the regular space character.
+* Shortcuts can now be reassigned using the NVDA gesture input dialog, under the Tools category.
 
 ## Changes for 1.0 ##
 
