@@ -15,7 +15,15 @@ import wx
 # We initialize translations.
 addonHandler.initTranslation()
 
+try:
+	from globalCommands import SCRCAT_TOOLS
+except:
+	SCRCAT_TOOLS = None
+
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
+
+	scriptCategory = SCRCAT_TOOLS
+
 	def __init__(self):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
 		self.tools = gui.mainFrame.sysTrayIcon.toolsMenu
@@ -23,6 +31,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.script_brailleInput2Unicode, self.menuItem)
 
 	def script_brailleInput2Unicode(self, gesture):
+		from gui.settingsDialogs import SettingsDialog
+		if SettingsDialog._hasInstance:
+			# Translators: Message shown when attempting to open another NVDA settings dialog when one is already open (example: when trying to open keyboard settings when general settings dialog is open).
+			gui.messageBox(_("An NVDA settings dialog is already open. Please close it first."),_("Error"),style=wx.OK | wx.ICON_ERROR)
+			#return
 		gui.mainFrame._popupSettingsDialog(interface.B2UDialog)
 	# Translators: Message presented when user performs input help for this shortcut.
 	script_brailleInput2Unicode.__doc__ = _("Show a dialog to write letters in numeric braille (e.g. 1345-1236-145-1) separated by dashes, then this script will convert them to unicode braille characters.")
