@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: unicodeBrailleInput 1.0.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-03-03 12:18+0100\n"
-"PO-Revision-Date: 2013-03-03 19:40+0200\n"
+"PO-Revision-Date: 2013-07-07 17:33+0200\n"
 "Last-Translator: Jani Kinnunen\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fi\n"
@@ -67,3 +67,8 @@ msgstr ""
 "(esim. 1345-1236-145-1), Joka sitten muunnetaan unicode-"
 "pistekirjoitusmerkeiksi.\n"
 "Pikanäppäin: NVDA+Ctrl+U"
+
+#. Translators: Tooltip for an addon menu item.
+#, python-format
+msgid "Opens documentation for %s"
+msgstr "Avaa %s-lisäosan ohjeen"

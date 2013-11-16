@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: unicodeBrailleInput 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-03-03 21:32+0100\n"
-"PO-Revision-Date: 2013-03-18 10:43+0100\n"
+"PO-Revision-Date: 2013-07-08 09:02+0100\n"
 "Last-Translator: Simone Dal Maso <simone.dalmaso@juvox.it>\n"
 "Language-Team: Simone Dal Maso <simone.dalmaso@juvox.it>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.3\n"
+"X-Generator: Poedit 1.5.5\n"
 
 #. Translators: Message presented when user performs input help for this shortcut.
 msgid ""
@@ -68,3 +68,8 @@ msgstr ""
 "esempio 1345-1236-145-1) per poi convertire il tutto in caratteri braille "
 "Unicode.\n"
 "Scorciatoia: NVDA + Ctrl + u"
+
+#. Translators: Tooltip for an addon menu item.
+#, python-format
+msgid "Opens documentation for %s"
+msgstr "Apre la documentazione per %s"

@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: unicodeBrailleInput 1.0.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-03-03 12:18+0100\n"
-"PO-Revision-Date: 2013-03-03 12:38+0100\n"
+"PO-Revision-Date: 2013-07-07 21:32+0100\n"
 "Last-Translator: Jožef Gregorc <jozko.gregorc[@]guest.arnes.si\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #. Translators: Message presented when user performs input help for this shortcut.
 msgid ""
@@ -49,7 +49,7 @@ msgstr "Besedilo vnesi v številski brajici:"
 #. Translators: This is the message when unicode text has been copied to the clipboard.
 msgid "Unicode text copied to clipboard ready for you to paste."
 msgstr ""
-"Unicode besedilo preslikano v odložišče, pripravljano za vas, da ga "
+"Besedilo v unicode preslikano v odložišče, pripravljeno za vas, da ga "
 "prilepite."
 
 #. Add-on description
@@ -67,3 +67,8 @@ msgstr ""
 "Pokaže besedilno polje za vnos številske brajice(na primer 1345-1236-145-1), "
 "potem to pretvori v unicode brajeve znake.\n"
 "Bližnjica: NVDA+Ctrl+u"
+
+#. Translators: Tooltip for an addon menu item.
+#, python-format
+msgid "Opens documentation for %s"
+msgstr "Odpre dokumentacijo za %s"

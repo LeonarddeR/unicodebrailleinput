@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: unicodeBrailleInput 1.0.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-03-03 12:18+0100\n"
-"PO-Revision-Date: 2013-03-03 19:45+0100\n"
+"PO-Revision-Date: 2013-07-10 14:27+0100\n"
 "Last-Translator: Ondrej Rosík <ondrej.rosik@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sk\n"
@@ -17,19 +17,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Translators: Message presented when user performs input help for this shortcut.
-msgid ""
-"Show a dialog to write letters in numeric braille (e.g. 1345-1236-145-1) "
-"separated by dashes, then this script will convert them to unicode braille "
-"characters."
-msgstr ""
-"Zobrazí dialóg na zapísanie znakov v numerickom tvare (napríklad "
-"1345-1236-145-1) oddelené pomlčkami. Skript ich prevedie na unicode znaky."
+msgid "Show a dialog to write letters in numeric braille (e.g. 1345-1236-145-1) separated by dashes, then this script will convert them to unicode braille characters."
+msgstr "Zobrazí dialóg na zapísanie znakov v numerickom tvare (napríklad 1345-1236-145-1) oddelené pomlčkami. Skript ich prevedie na unicode znaky."
 
 #. Translators: the user entered an empty string or only whitespace and this is the error message to show the mistakes.
 #, python-format
 msgid "Unexpected input: '%s', whitespace or empty string is not allowed."
-msgstr ""
-"Nesprávny vstup: \"%s\", medzeri alebo prázdne reťazce nie sú povolené."
+msgstr "Nesprávny vstup: \"%s\", medzeri alebo prázdne reťazce nie sú povolené."
 
 #. Translators: the user entered an unexpected string and this is the error message to show the mistakes.
 #, python-format
@@ -56,10 +50,14 @@ msgstr "Unicode Braille Input"
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on installation and add-on information
 msgid ""
-"Shows a text field to type numeric braille (e.g. 1345-1236-145-1) then "
-"convert it into unicode braille characters.\n"
+"Shows a text field to type numeric braille (e.g. 1345-1236-145-1) then convert it into unicode braille characters.\n"
 "Shortcut: NVDA+Ctrl+u"
 msgstr ""
-"Zobrazí editačné pole na  zadanie textu v numerickom  tvare(napríklad "
-"1345-1236-145-1). Zadaný text prevedie na unicode znaky.\n"
+"Zobrazí editačné pole na  zadanie textu v numerickom  tvare(napríklad 1345-1236-145-1). Zadaný text prevedie na unicode znaky.\n"
 "Skratka: NVDA+Ctrl+u"
+
+#. Translators: Tooltip for an addon menu item.
+#, python-format
+msgid "Opens documentation for %s"
+msgstr "Otvorí návod pre %s"
+

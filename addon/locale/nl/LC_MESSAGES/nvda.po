@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: unicodeBrailleInput 1.0.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-03-03 12:18+0100\n"
-"PO-Revision-Date: 2013-03-03 13:05+0100\n"
-"Last-Translator: Bram Duvigneau <bram@bramd.nl>\n"
+"PO-Revision-Date: 2013-07-07 20:10+0100\n"
+"Last-Translator: Bart Simons <bart@bartsimons.be>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -18,14 +18,8 @@ msgstr ""
 "X-Generator: Poedit 1.5.5\n"
 
 #. Translators: Message presented when user performs input help for this shortcut.
-msgid ""
-"Show a dialog to write letters in numeric braille (e.g. 1345-1236-145-1) "
-"separated by dashes, then this script will convert them to unicode braille "
-"characters."
-msgstr ""
-"Toont een venster om tekst in numeriek braille in te voeren (bijvoorbeeld "
-"1345-1236-145-1) gescheiden door streepjes, vervolgens wordt dit omgezet in "
-"unicode braille tekens."
+msgid "Show a dialog to write letters in numeric braille (e.g. 1345-1236-145-1) separated by dashes, then this script will convert them to unicode braille characters."
+msgstr "Toont een venster om tekst in numeriek braille in te voeren (bijvoorbeeld 1345-1236-145-1) gescheiden door streepjes, vervolgens wordt dit omgezet in unicode braille tekens."
 
 #. Translators: the user entered an empty string or only whitespace and this is the error message to show the mistakes.
 #, python-format
@@ -35,8 +29,7 @@ msgstr "Ongeldige invoer: \"%s\", spaties en lege invoer is niet toegestaan."
 #. Translators: the user entered an unexpected string and this is the error message to show the mistakes.
 #, python-format
 msgid "Unexpected input: '%s', only dots 0 to 8 and - are allowed."
-msgstr ""
-"Ongeldige invoer: \"%s\", alleen punten 1 tot en met 8 zijn toegestaan."
+msgstr "Ongeldige invoer: \"%s\", alleen punten 1 tot en met 8 zijn toegestaan."
 
 #. Translators: The title of the dialog.
 msgid "Convert Braille to Unicode"
@@ -58,10 +51,14 @@ msgstr "Unicode braille invoer"
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on installation and add-on information
 msgid ""
-"Shows a text field to type numeric braille (e.g. 1345-1236-145-1) then "
-"convert it into unicode braille characters.\n"
+"Shows a text field to type numeric braille (e.g. 1345-1236-145-1) then convert it into unicode braille characters.\n"
 "Shortcut: NVDA+Ctrl+u"
 msgstr ""
-"toont een tekstvak om numeriek braille in te voeren (bijvoorbeeld "
-"1345-1236-145-1) en converteert he in unicode braille.\n"
+"toont een tekstvak om numeriek braille in te voeren (bijvoorbeeld 1345-1236-145-1) en converteert he in unicode braille.\n"
 "Sneltoets: NVDA+Ctrl+u"
+
+#. Translators: Tooltip for an addon menu item.
+#, python-format
+msgid "Opens documentation for %s"
+msgstr "Opent documentatie voor %s"
+

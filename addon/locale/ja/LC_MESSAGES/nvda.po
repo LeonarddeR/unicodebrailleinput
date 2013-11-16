@@ -8,20 +8,24 @@ msgstr ""
 "Project-Id-Version: unicodeBrailleInput 1.01\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-03-21 05:45+0000\n"
-"PO-Revision-Date: 2013-03-24 21:34+0900\n"
+"PO-Revision-Date: 2013-10-11 18:08+0900\n"
 "Last-Translator: Takuya Nishimoto <nishimotz@gmail.com>\n"
 "Language-Team: Japanese <nvdajp@nvda.jp>\n"
-"Language:ja\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #. Translators: Message presented when user performs input help for this shortcut.
 msgid ""
 "Show a dialog to write letters in numeric braille (e.g. 1345-1236-145-1) "
 "separated by dashes, then this script will convert them to unicode braille "
 "characters."
-msgstr "ダイアログが表示されるので、点字パターンを数字で入力してください(例 1345-1236-145-1)。ハイフン（マイナス）で区切ってください。入力はUnicode文字に変換されます。"
+msgstr ""
+"ダイアログが表示されるので、点字パターンを数字で入力してください(例 "
+"1345-1236-145-1)。ハイフン（マイナス）で区切ってください。入力はUnicode文字に"
+"変換されます。"
 
 #. Translators: the user entered an empty string or only whitespace and this is the error message to show the mistakes.
 #, python-format
@@ -57,5 +61,11 @@ msgid ""
 "convert it into unicode braille characters.\n"
 "Shortcut: NVDA+Ctrl+u"
 msgstr ""
-"点字パターンを 1345-1236-145-1 のように数字で入力するとUnicode文字に変換します。\n"
+"点字パターンを 1345-1236-145-1 のように数字で入力するとUnicode文字に変換しま"
+"す。\n"
 "ショートカット: NVDA+Ctrl+U"
+
+#. Translators: Tooltip for an addon menu item.
+#, python-format
+msgid "Opens documentation for %s"
+msgstr "%s の説明を開く"

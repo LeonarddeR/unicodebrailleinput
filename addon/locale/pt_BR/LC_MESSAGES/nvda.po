@@ -8,10 +8,9 @@ msgstr ""
 "Project-Id-Version: unicodeBrailleInput 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-03-03 21:32+0100\n"
-"PO-Revision-Date: 2013-03-04 21:59-0300\n"
+"PO-Revision-Date: 2013-07-07 12:15-0300\n"
 "Last-Translator: Cleverson Casarin Uliana <clever92000@yahoo.com.br>\n"
-"Language-Team: Equipe de tradução do NVDA para Português do Brasil "
-"<clever92000@yahoo.com.br>\n"
+"Language-Team: Equipe de tradução do NVDA para Português do Brasil <clever92000@yahoo.com.br>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,20 +20,13 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 
 #. Translators: Message presented when user performs input help for this shortcut.
-msgid ""
-"Show a dialog to write letters in numeric braille (e.g. 1345-1236-145-1) "
-"separated by dashes, then this script will convert them to unicode braille "
-"characters."
-msgstr ""
-"Exibe uma janela para escrever em braile numérico (ex.: 1345-1236-145-1) "
-"separados por hífens, depois o script os converte para caracteres braile "
-"unicode."
+msgid "Show a dialog to write letters in numeric braille (e.g. 1345-1236-145-1) separated by dashes, then this script will convert them to unicode braille characters."
+msgstr "Exibe uma janela para escrever em braile numérico (ex.: 1345-1236-145-1) separados por hífens, depois o script os converte para caracteres braile unicode."
 
 #. Translators: the user entered an empty string or only whitespace and this is the error message to show the mistakes.
 #, python-format
 msgid "Unexpected input: '%s', whitespace or empty string is not allowed."
-msgstr ""
-"Entrada inesperada: não é permitido '%s', espaço em branco ou cadeia vazia."
+msgstr "Entrada inesperada: não é permitido '%s', espaço em branco ou cadeia vazia."
 
 #. Translators: the user entered an unexpected string and this is the error message to show the mistakes.
 #, python-format
@@ -51,8 +43,7 @@ msgstr "Insira o texto em braile numérico:"
 
 #. Translators: This is the message when unicode text has been copied to the clipboard.
 msgid "Unicode text copied to clipboard ready for you to paste."
-msgstr ""
-"Texto unicode copiado para a área de transferência pronto para ser colado."
+msgstr "Texto unicode copiado para a área de transferência pronto para ser colado."
 
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
@@ -62,10 +53,14 @@ msgstr "Entrada para braile unicode"
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on installation and add-on information
 msgid ""
-"Shows a text field to type numeric braille (e.g. 1345-1236-145-1) then "
-"convert it into unicode braille characters.\n"
+"Shows a text field to type numeric braille (e.g. 1345-1236-145-1) then convert it into unicode braille characters.\n"
 "Shortcut: NVDA+Ctrl+u"
 msgstr ""
-"Exibe um campo de texto para digitar braile numérico (ex.: 1345-1236-145-1), "
-"aí converte-o para caracteres braile unicode.\n"
+"Exibe um campo de texto para digitar braile numérico (ex.: 1345-1236-145-1), aí converte-o para caracteres braile unicode.\n"
 "Atalho: NVDA+Ctrl+u"
+
+#. Translators: Tooltip for an addon menu item.
+#, python-format
+msgid "Opens documentation for %s"
+msgstr "Abre documentação para %s"
+
