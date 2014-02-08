@@ -6,15 +6,13 @@ _ = lambda x : x
 
 # Add-on information variables
 addon_info = {
-	# add-on Name
+	# Internal add-on name
 	"addon-name" : "unicodeBrailleInput",
-	# Add-on description
-	# TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
+	# TRANSLATORS: User visible add-on name to be shown on installation and add-on information.
 	"addon-summary" : _("Unicode Braille Input"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on installation and add-on information
-	"addon-description" : _("""Shows a text field to type numeric braille (e.g. 1345-1236-145-1) then convert it into unicode braille characters.
-Shortcut: NVDA+Ctrl+u"""),
+	"addon-description" : _("Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and converts it into unicode braille characters."),
 	# version
 	"addon-version" : "1.1-dev",
 	# Author(s)
