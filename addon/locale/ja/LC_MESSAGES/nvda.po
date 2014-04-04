@@ -5,13 +5,13 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: unicodeBrailleInput 1.0.0\n"
+"Project-Id-Version: unicodeBrailleInput 1.01\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2013-03-03 12:18+0100\n"
-"PO-Revision-Date: 2013-07-07 21:32+0100\n"
-"Last-Translator: Jožef Gregorc <jozko.gregorc[@]guest.arnes.si\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: sl\n"
+"POT-Creation-Date: 2013-03-21 05:45+0000\n"
+"PO-Revision-Date: 2013-10-11 18:08+0900\n"
+"Last-Translator: Takuya Nishimoto <nishimotz@gmail.com>\n"
+"Language-Team: Japanese <nvdajp@nvda.jp>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,39 +23,36 @@ msgid ""
 "separated by dashes, then this script will convert them to unicode braille "
 "characters."
 msgstr ""
-"Pokaži pogovorno okno, kjer se bo lahko pisalo v številski brajici (na "
-"primer 1345-1236-145-1) ločeno s črticami; potem bo ta skripta pretvorila v "
-"unicode brajeve znake."
+"ダイアログが表示されるので、点字パターンを数字で入力してください(例 "
+"1345-1236-145-1)。ハイフン（マイナス）で区切ってください。入力はUnicode文字に"
+"変換されます。"
 
 #. Translators: the user entered an empty string or only whitespace and this is the error message to show the mistakes.
 #, python-format
 msgid "Unexpected input: '%s', whitespace or empty string is not allowed."
-msgstr "Nepričakovan vnos: '%s', presledek ali prazen niz nista dovoljena."
+msgstr "入力エラー: '%s' 空白や入力なしは認められません"
 
 #. Translators: the user entered an unexpected string and this is the error message to show the mistakes.
 #, python-format
 msgid "Unexpected input: '%s', only dots 0 to 8 and - are allowed."
-msgstr "Nepričakovan vnos: '%s', samo pike od 0 do 8 in - so dovoljene."
+msgstr "入力エラー: '%s' 数字0から8とハイフンだけが使用できます"
 
-# bodi pozoren (brajica je lahko tudi drugače)
 #. Translators: The title of the dialog.
 msgid "Convert Braille to Unicode"
-msgstr "Pretvori Brajico v Unicode"
+msgstr "点字パターンからUnicode文字への変換"
 
 #. Translators: the label of the edit field.
 msgid "Enter text in numeric braille:"
-msgstr "Besedilo vnesi v številski brajici:"
+msgstr "点字パターンを数字で入力:"
 
 #. Translators: This is the message when unicode text has been copied to the clipboard.
 msgid "Unicode text copied to clipboard ready for you to paste."
-msgstr ""
-"Besedilo v unicode preslikano v odložišče, pripravljeno za vas, da ga "
-"prilepite."
+msgstr "Unicode文字をクリップボードにコピーしました。貼り付けできます。"
 
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 msgid "Unicode Braille Input"
-msgstr "Vnos Unicode Brajice:"
+msgstr "Unicode Braille Input"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on installation and add-on information
@@ -64,11 +61,11 @@ msgid ""
 "convert it into unicode braille characters.\n"
 "Shortcut: NVDA+Ctrl+u"
 msgstr ""
-"Pokaže besedilno polje za vnos številske brajice(na primer 1345-1236-145-1), "
-"potem to pretvori v unicode brajeve znake.\n"
-"Bližnjica: NVDA+Ctrl+u"
+"点字パターンを 1345-1236-145-1 のように数字で入力するとUnicode文字に変換しま"
+"す。\n"
+"ショートカット: NVDA+Ctrl+U"
 
 #. Translators: Tooltip for an addon menu item.
 #, python-format
 msgid "Opens documentation for %s"
-msgstr "Odpre dokumentacijo za %s"
+msgstr "%s の説明を開く"

@@ -27,19 +27,18 @@ else:
 	conv = chr
 
 invalidInputRegexp = compile('[^0-8-]+')
-def dots2uni(cells):
+def dots2uni(cells, regularSpace = False):
 	""" Convert a braille to Unicode
 	@param cells the braille cells (I.E. 13457-12367-1457-17)
+	@param regularSpace boolean if True, space will be replaced by a regular one instead of the braille space
 	@return the result in Unicode (NVDA in our example)
 	"""
 	cells = cells.strip()
 	invalidStrings = invalidInputRegexp.findall(cells)
-	if cells.isspace() or cells == "":
-		# Translators: the user entered an empty string or only whitespace and this is the error message to show the mistakes.
-		raise ValueError(_("Unexpected input: '%s', whitespace or empty string is not allowed.") % "', '".join(invalidStrings))
-	if invalidStrings:
-		# Translators: the user entered an unexpected string and this is the error message to show the mistakes.
-		raise ValueError(_("Unexpected input: '%s', only dots 0 to 8 and - are allowed.") % "', '".join(invalidStrings))
+    # Translators: Error message displayed when the user enters invalid input.
+    msg = _("Unexpected input: '%s', only dots 0 to 8 and - are allowed.") % "', '".join(invalidStrings)
+	if cells.isspace() or cells == "" or invalidStrings:
+		raise ValueError(msg)
 	cells = cells.split('-')
 	out = []
 	for cell in cells:
@@ -56,7 +55,7 @@ def dots2uni(cells):
 			val |= 0x2800
 			out.append(conv(val))
 		else:
-			out.append(" ")
+			out.append(u" " if regularSpace else conv(0x2800))
 	return "".join(out)
 
 class B2UDialog(gui.SettingsDialog):
@@ -72,6 +71,11 @@ class B2UDialog(gui.SettingsDialog):
 		brailleTextSizer.Add(brailleTextLabel)
 		self._brailleTextEdit = wx.TextCtrl(self, -1)
 		brailleTextSizer.Add(self._brailleTextEdit)
+		self._regularSpaceChk = wx.CheckBox(self,
+            # Translators: Label for a checkbox, wether to use a regular space or the Braille unicode space.
+			label = _("Convert Unicode Braille space to ASCII space"))
+		self._regularSpaceChk.SetValue(False)
+		brailleTextSizer.Add(self._regularSpaceChk)
 		sizer.Add(brailleTextSizer)
 
 	def postInit(self):
@@ -80,8 +84,9 @@ class B2UDialog(gui.SettingsDialog):
 	def onOk(self, event):
 		super(B2UDialog, self).onOk(event)
 		value = self._brailleTextEdit.GetValue()
+		regularSpace = self._regularSpaceChk.GetValue()
 		try:
-			value = dots2uni(value)
+			value = dots2uni(value, regularSpace)
 			copyToClip(value)
 			# Translators: This is the message when unicode text has been copied to the clipboard.
 			wx.CallLater(100, message, _("Unicode text copied to clipboard ready for you to paste."))
