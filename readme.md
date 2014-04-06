@@ -1,7 +1,8 @@
 [[!meta title="UnicodeBrailleInput"]]
 
 * Authors: Mesar Hameed, Patrick Zajda.
-* Download: [version 1.01][1]
+* download [stable version][1]
+* download [development version][2]
 
 This add-on allows you to convert text from braille (E.G. 1345-1236-145-1) to Unicode braille 
 characters.
@@ -32,3 +33,5 @@ and to add automatic tests for your language.
 
 
 [1]: http://addons.nvda-project.org/files/get.php?file=ubi
+
+[2]: http://addons.nvda-project.org/files/get.php?file=ubi-dev
