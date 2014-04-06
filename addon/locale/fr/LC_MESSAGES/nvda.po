@@ -19,7 +19,6 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. Translators: Message presented when user performs input help for this shortcut.
-#: addon\globalPlugins\unicodeBrailleInput\__init__.py:21
 msgid ""
 "Show a dialog to write letters in numeric braille (e.g. 1345-1236-145-1) "
 "separated by dashes, then this script will convert them to unicode braille "
@@ -30,7 +29,6 @@ msgstr ""
 "brailles Unicode."
 
 #. Translators: the user entered an empty string or only whitespace and this is the error message to show the mistakes.
-#: addon\globalPlugins\unicodeBrailleInput\interface.py:39
 #, python-format
 msgid "Unexpected input: '%s', whitespace or empty string is not allowed."
 msgstr ""
@@ -38,36 +36,30 @@ msgstr ""
 "autorisés."
 
 #. Translators: the user entered an unexpected string and this is the error message to show the mistakes.
-#: addon\globalPlugins\unicodeBrailleInput\interface.py:42
 #, python-format
 msgid "Unexpected input: '%s', only dots 0 to 8 and - are allowed."
 msgstr ""
 "Entrée inattendue : '%s', seul les points 1 à 8 et les tirets sont admis."
 
 #. Translators: The title of the dialog.
-#: addon\globalPlugins\unicodeBrailleInput\interface.py:64
 msgid "Convert Braille to Unicode"
 msgstr "Convertir du Braille vers Unicode"
 
 #. Translators: the label of the edit field.
-#: addon\globalPlugins\unicodeBrailleInput\interface.py:71
 msgid "Enter text in numeric braille:"
 msgstr "Entrez le texte en braille numérique :"
 
 #. Translators: This is the message when unicode text has been copied to the clipboard.
-#: addon\globalPlugins\unicodeBrailleInput\interface.py:87
 msgid "Unicode text copied to clipboard ready for you to paste."
 msgstr "Texte unicode copié dans le presse-papier prêt à être collé."
 
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
-#: buildVars.py:13
 msgid "Unicode Braille Input"
 msgstr "Saisie Braille Unicode"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on installation and add-on information
-#: buildVars.py:16
 msgid ""
 "Shows a text field to type numeric braille (e.g. 1345-1236-145-1) then "
 "convert it into unicode braille characters.\n"
