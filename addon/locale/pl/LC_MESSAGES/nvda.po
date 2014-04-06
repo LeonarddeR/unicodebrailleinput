@@ -5,54 +5,51 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: unicodeBrailleInput 1.0.0\n"
+"Project-Id-Version: unicodeBrailleInput 1.1-dev\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2013-03-03 12:18+0100\n"
-"PO-Revision-Date: 2014-02-12 08:55+0200\n"
-"Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: fi\n"
+"POT-Creation-Date: 2014-02-01 19:49+0100\n"
+"PO-Revision-Date: 2014-02-08 23:01+0100\n"
+"Last-Translator: Grzegorz Zlotowicz <grzezlo@wp.pl>\n"
+"Language-Team: Pollish <Killer@tyflonet.com>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.3\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #. Translators: name of menu item.
 msgid "Un&icode Braille Input..."
-msgstr "Uni&code-pistekirjoituksen syöttö..."
+msgstr "Wprowadzanie un&ikodu brajla "
 
 #. Translators: menu item tool tip text.
 #. Translators: Message presented when user performs input help for this shortcut.
 msgid "Displays a dialog to enter braille in numeric form."
-msgstr ""
-"Näyttää valintaikkunan, johon voidaan syöttää pistekirjoitusta numeerisessa "
-"muodossa."
+msgstr "Wyświetla okno wprowadzania brajla w formie numerycznej."
 
 #. Translators: Error message displayed when the user enters invalid input.
 #, python-format
 msgid "Unexpected input: '%s', only dots 0 to 8 and - are allowed."
-msgstr ""
-"Odottamaton syöte: '%s'. Vain pisteet väliltä 0 ja 8 sekä - ovat sallittuja."
+msgstr "Nieoczekiwane dane: '%s', dozwolone są tylko punkty 0 to 8 i -"
 
 #. Translators: The title of the dialog.
 msgid "Convert Braille to Unicode"
-msgstr "Muunna pistekirjoitus unicodeksi"
+msgstr "Konwertuj brajl do unikodu"
 
 #. Translators: the label of the edit field.
 msgid "Enter text in numeric braille:"
-msgstr "Syötä tekstiä numeerisena pistekirjoituksena:"
+msgstr "Wprowadź tekst w brajlu numerycznym:"
 
 #. Translators: Label for a checkbox, wether to use a regular space or the Braille unicode space.
 msgid "Convert Unicode Braille space to ASCII space"
-msgstr "Muunna unicode-pistekirjoitusvälilyönti ASCII-välilyönniksi"
+msgstr "Konwertuj brajlowską spację w unikodzie do spacji w ASCII"
 
 #. Translators: This is the message when unicode text has been copied to the clipboard.
 msgid "Unicode text copied to clipboard ready for you to paste."
-msgstr "Unicode-teksti kopioitu leikepöydälle."
+msgstr "Tekst w unikodzie został skopiowany do schowka."
 
 #. TRANSLATORS: User visible add-on name to be shown on installation and add-on information.
 msgid "Unicode Braille Input"
-msgstr "Unicode-pistekirjoituksen syöttö"
+msgstr "Wprowadzanie unikodu brajla "
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on installation and add-on information
@@ -60,5 +57,5 @@ msgid ""
 "Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and "
 "converts it into unicode braille characters."
 msgstr ""
-"Näyttää tekstikentän, johon voidaan syöttää numeerista pistekirjoitusta "
-"(esim. 1345-1236-145-1) ja muuntaa sen unicode-pistekirjoitusmerkeiksi."
+"Wyświetla pole tekstowe wprowadzania brajla w formie numerycznej (np. "
+"1345-1236-145-1) i konwertuje go do postaci brajlowskich znaków unikodu."
