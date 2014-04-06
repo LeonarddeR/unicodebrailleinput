@@ -28,10 +28,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
 		self.tools = gui.mainFrame.sysTrayIcon.toolsMenu
 		self.menuItem = self.tools.Append(wx.ID_ANY,
-            # Translators: name of menu item.
-            _("Un&icode Braille Input..."),
-            # Translators: menu item tool tip text.
-            _("Displays a dialog to enter braille in numeric form."))
+			# Translators: name of menu item.
+			_("Un&icode Braille Input..."),
+			# Translators: menu item tool tip text.
+			_("Displays a dialog to enter braille in numeric form."))
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.script_brailleInput2Unicode, self.menuItem)
 
 	def script_brailleInput2Unicode(self, gesture):

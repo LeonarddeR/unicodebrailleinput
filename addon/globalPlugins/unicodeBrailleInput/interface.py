@@ -35,8 +35,8 @@ def dots2uni(cells, regularSpace = False):
 	"""
 	cells = cells.strip()
 	invalidStrings = invalidInputRegexp.findall(cells)
-    # Translators: Error message displayed when the user enters invalid input.
-    msg = _("Unexpected input: '%s', only dots 0 to 8 and - are allowed.") % "', '".join(invalidStrings)
+	# Translators: Error message displayed when the user enters invalid input.
+	msg = _("Unexpected input: '%s', only dots 0 to 8 and - are allowed.") % "', '".join(invalidStrings)
 	if cells.isspace() or cells == "" or invalidStrings:
 		raise ValueError(msg)
 	cells = cells.split('-')
@@ -72,7 +72,7 @@ class B2UDialog(gui.SettingsDialog):
 		self._brailleTextEdit = wx.TextCtrl(self, -1)
 		brailleTextSizer.Add(self._brailleTextEdit)
 		self._regularSpaceChk = wx.CheckBox(self,
-            # Translators: Label for a checkbox, wether to use a regular space or the Braille unicode space.
+			# Translators: Label for a checkbox, wether to use a regular space or the Braille unicode space.
 			label = _("Convert Unicode Braille space to ASCII space"))
 		self._regularSpaceChk.SetValue(False)
 		brailleTextSizer.Add(self._regularSpaceChk)
