@@ -1,4 +1,4 @@
-[[!meta title="UnicodeBrailleInput"]]
+# UnicodeBrailleInput #
 
 * Authors: Mesar Hameed, Patrick Zajda.
 * download [stable version][1]
