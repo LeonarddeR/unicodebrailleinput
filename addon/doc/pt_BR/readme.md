@@ -1,8 +1,8 @@
 # Entrada unicode para braile #
 
 * Autores: Mesar Hameed, Patrick Zajda.
-* download [stable version][1]
-* download [development version][2]
+* baixe a [versão estável][1]
+* baixe a [versão em desenvolvimento][2]
 
 Este complemento possibilita converter textos braile (ex.: 1345-1236-145-1)
 para caracteres braile unicode.
