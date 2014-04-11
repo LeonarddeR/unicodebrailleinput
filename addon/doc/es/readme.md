@@ -1,8 +1,8 @@
 # UnicodeBrailleInput #
 
 * Autores: Mesar Hameed, Patrick Zajda.
-* download [stable version][1]
-* download [development version][2]
+* descargar [versión estable][1]
+* descargar [versión en desarrollo][2]
 
 Este complemento te permite convertir texto de braille
 (P.e.. 1345-1236-145-1) a caracteres braille Unicode.

@@ -1,8 +1,8 @@
 # Unikód Braille bevitel #
 
 * Készítők: Mesar Hameed, Patrick Zajda.
-* download [stable version][1]
-* download [development version][2]
+* Letöltés: [Stabil verzió][1]
+* Letöltés: [Fejlesztői verzió][2]
 
 A kiegészítővel braille szöveget konvertálhat át (pl. 1345-1236-145-1)
 unikódú braille karakterekre.
@@ -13,27 +13,27 @@ kész nyelv tesztelésében nyújt nagy segítséget.
 ## Használat ##
 
 * Nyisson meg egy unicode szövegszerkesztőt (pl. Notepad++)
-* Press NVDA+Ctrl+U or choose Unicode Braille Input found under NVDA tools
-  menu
+* Használja az NVDA+Ctrl+U billentyűparancsot, vagy válassza az Unikód
+  Braille bevitel lehetőséget az NVDA Eszközök menüjéből.
 * gépelje be a braille szöveget numerikus formában.
 * Nyomja meg az ok gombot.
 * A kívánt unicode karaktersorozat a vágólapra kerül, amit bárhova
   beilleszthet.
 
-## Changes for 1.1-dev ##
+## Az 1.1-dev verzió változásai ##
 
-* Improve delay to allow announcements to be heard correctly.
-* Many new translations.
-* Added documentation under NVDA help menu.
-* Added a checkbox to optionally replace the space braille (character
-  0x2800) by the regular space character.
-* Shortcuts can now be reassigned using the NVDA gesture input dialog, under
-  the Tools category.
+* Fejlesztett késleltetés a bejelentések megfelelő hallhatósága érdekében.
+* Sok új fordítás.
+* A dokumentáció már elérhető az NVDA Súgó menüjéből.
+* Hozzáadtak egy jelölőnégyzetet, aminek a bejelölésével felülírhatók a
+  Braille szóköz (0x2800) karakterek a normál szóköz karakterrel.
+* A billentyűparancsok már módosíthatók az NVDA Beviteli parancsok
+  párbeszédablakában, az Eszközök kategóriában.
 
-## Changes for 1.0 ##
+## Az 1.0 verzió változásai ##
 
-* Initial release
-* New Languages: French
+* Első kiadás
+* Új nyelvek: francia
 
 [[!tag dev stable]]
 
