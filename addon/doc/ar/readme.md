@@ -1,8 +1,8 @@
 # UnicodeBrailleInput #
 
 * مطورو الإضافة: Mesar Hameed, Patrick Zajda.
-* download [stable version][1]
-* download [development version][2]
+* تحميل: [الإصدار النهائي][1]
+* تحميل: [الإصدار التجريبي][2]
 
 تتيح لك هذه الإضافة تحويل النص من برايل (على سبيل المثال,
 1345-1236-145-1)إلى أحرف بشفرة برايل الموحدة.
@@ -14,27 +14,27 @@
 
 * قم بفتح محرر نصوص يسمح برؤية الشفرة الموحدة (unicode) كأن تفتح برنامج
   Notepad++, 
-* Press NVDA+Ctrl+U or choose Unicode Braille Input found under NVDA tools
-  menu
+* لتفعيل الإضافة اضغط على NVDA+Ctrl+U أو من قائمة أدوات المدرجة ضن قائمة
+  NVDA الرئيسية اختر العنصر إدخال تشفير برايل الموحد.
 * اكتب النص الذي تريد أن تختبره في صورة رقمية.
 * اضغط زر موافق.
 * سيتم نسخ الأحرف التي كتبتها في صورة رقمية بطريقة شفرة البرايل الموحدة مما
   يمكنك لصقها في أي مكان.
 
-## Changes for 1.1-dev ##
+## مستجدات الإصدار 1.1-dev ##
 
-* Improve delay to allow announcements to be heard correctly.
-* Many new translations.
-* Added documentation under NVDA help menu.
-* Added a checkbox to optionally replace the space braille (character
-  0x2800) by the regular space character.
-* Shortcuts can now be reassigned using the NVDA gesture input dialog, under
-  the Tools category.
+* تحسين التأجيل للسماح بالاستماع للرسائل بطريقة صحيحة.
+* ترجمة الإضافة للعديد من اللغات.
+* إضافة ملف تعليمات الإضافة ضن قائمة المساعدة ب NVDA.
+* إضافة مربع تحديد لاستبدال المسافة البرايل اختياريا (الحرف 0x2800) بحرف
+  المسافة القياسي.
+* يمكن للمستخدم تعديل مفاتيح الاختصار الخاصة بالإضافة عبر محاورة تخصيص
+  اختصارات البرنامج, من فئة أدوات.
 
-## Changes for 1.0 ##
+## مستجدات الإصدار 1.0 ##
 
-* Initial release
-* New Languages: French
+* إصدار أولي
+* ترجمة الإضافة إلى اللغة الفرنسية
 
 [[!tag dev stable]]
 

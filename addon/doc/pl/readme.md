@@ -1,8 +1,8 @@
 # Wprowadzanie unikodu brajla / UnicodeBrailleInput #
 
 * autorzy: Mesar Hameed, Patrick Zajda.
-* download [stable version][1]
-* download [development version][2]
+* Pobierz [wersja stabilna][1]
+* Pobierz [wersja rozwojowa][2]
 
 Ten dodatek pozwala na konwersję znaków brajlowskich np. 1345-1236-145-1, na
 znaki brajla w systemie unicode
@@ -14,26 +14,26 @@ narodowych
 ## użycie ##
 
 * otwórz rozumiejący znaki unicode edytor, np notepad plus plus,
-* Press NVDA+Ctrl+U or choose Unicode Braille Input found under NVDA tools
-  menu
+* Naciśnij NVDA+Ctrl+U lub wybierz wprowadzanie unikodu brajla w menu
+  Narzędzia NVDA
 * wpisz tekst brajlowski w formie numerycznej
 * wciśnij ok
 * odpowiednie znaki unicode zostaną skopiowane do schowka
 
-## Changes for 1.1-dev ##
+## Zmiany dla wersji 1.1-dev ##
 
-* Improve delay to allow announcements to be heard correctly.
-* Many new translations.
-* Added documentation under NVDA help menu.
-* Added a checkbox to optionally replace the space braille (character
-  0x2800) by the regular space character.
-* Shortcuts can now be reassigned using the NVDA gesture input dialog, under
-  the Tools category.
+* Poprawione opóźnienie, aby powiadomienia były wypowiadane prawidłowo.
+* Wiele nowych tłumaczeń.
+* Dodano dokumentację w menu pomocy NVDA.
+* Dodane pole wyboru umożliwiające opcjonalne zastępowanie brajlowskiej
+  spacji (znak 0x2800) zwykłym znakiem spacji.
+* Klawisze skrótów mogą być zmieniane przy użyciu okna "Zdarzenia wejścia" w
+  kategorii Narzędzia.
 
-## Changes for 1.0 ##
+## Zmiany dla wersji 1.0 ##
 
-* Initial release
-* New Languages: French
+* Pierwsze wydanie
+* Nowe języki: francuski
 
 [[!tag dev stable]]
 
