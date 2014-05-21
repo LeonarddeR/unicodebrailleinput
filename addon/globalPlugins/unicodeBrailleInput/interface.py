@@ -33,6 +33,16 @@ def dots2uni(cells, regularSpace = False):
 	@param regularSpace boolean if True, space will be replaced by a regular one instead of the braille space
 	@return the result in Unicode (NVDA in our example)
 	"""
+	cells=cells.translate({
+		ord('f'):u'1',
+		ord('d'):u'2',
+		ord('s'):u'3',
+		ord('j'):u'4',
+		ord('k'):u'5',
+		ord('l'):u'6',
+		ord('a'):u'7',
+		ord(';'):u'8'
+	})
 	cells = cells.strip()
 	invalidStrings = invalidInputRegexp.findall(cells)
 	# Translators: Error message displayed when the user enters invalid input.
