@@ -1,8 +1,8 @@
 # UnicodeBrailleInput #
 
 * Autori: Mesar Hameed a Patrick Zajda.
-* download [stable version][1]
-* download [development version][2]
+* stiahnuť [stabilnú verziu][1]
+* stiahnuť [vývojovú verziu][2]
 
 Tento doplnok umožňuje konvertovať text z brailu (napríklad 1345-1236-145-1)
 na brailovské Unicode znaky.
@@ -14,26 +14,26 @@ automatické jazykové testovanie.
 
 * Otvorte editor, ktorý vie spracovať unicode znaky (napríklad Notepad plus
   plus)
-* Press NVDA+Ctrl+U or choose Unicode Braille Input found under NVDA tools
-  menu
+* Stlačte nvda+ctrl+u alebo aktivujte položku Unicode braille imput v menu
+  nástroje
 * Zadajte text v numerickom tvare.
 * Aktivujte tlačidlo OK.
 * Unicode znaky sa vložia do schránky a môžete ich prilepiť do editora.
 
-## Changes for 1.1-dev ##
+## Zmeny vo verzii 1.1-dev ##
 
-* Improve delay to allow announcements to be heard correctly.
-* Many new translations.
-* Added documentation under NVDA help menu.
-* Added a checkbox to optionally replace the space braille (character
-  0x2800) by the regular space character.
-* Shortcuts can now be reassigned using the NVDA gesture input dialog, under
-  the Tools category.
+* Predĺžený čas tak, aby bolo počuť celé hlásenia.
+* Nové preklady.
+* V menu pomocník pridaná dokumentácia k doplnku.
+* pridané začiarkávacie pole, po ktorého začiarknutí je možné nahradiť znak
+  medzera (znak 0x2800) normálnou medzerou.
+* Skratky je možné zmeniť pomocou nastavení skratiek v NVDA, pozrite strom
+  nástroje.
 
-## Changes for 1.0 ##
+## Zmeny vo verzii 1.0 ##
 
-* Initial release
-* New Languages: French
+* prvé vydanie
+* Preklad do Francúzštiny
 
 [[!tag dev stable]]
 
