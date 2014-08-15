@@ -1,7 +1,7 @@
 # युनिकोड ब्रेल लगानी (UnicodeBrailleInput) #
 
 * लेखकहरू: मेसर हमिद, प्याट्रिक ज्याद्ददा ।
-* download [stable version][1]
+* डाउनलोड [स्थिर संस्करण][1]
 * download [development version][2]
 
 यो थप-साधनले ब्रेल पाठ (जस्तै 1345-1236-145-1) बाट युनिकोड ब्रेल वर्णहरूमा
@@ -32,7 +32,7 @@
 
 ## Changes for 1.0 ##
 
-* Initial release
+* सुरुको संस्करण
 * New Languages: French
 
 [[!tag dev stable]]

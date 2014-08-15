@@ -1,8 +1,8 @@
 # UnicodeBrailleInput (Въвеждане на брайл на Unicode) #
 
 * Автори: Mesar Hameed, Patrick Zajda.
-* download [stable version][1]
-* download [development version][2]
+* Изтегляне [стабилна версия][1]
+* Изтегляне [работна версия][2]
 
 Тази добавка ви позволява да преобразувате текст от брайл (например
 1345-1236-145-1) в брайлови символи на Unicode.
@@ -14,27 +14,29 @@
 
 * Отворете текстов редактор с поддръжка на Unicode (например Notepad plus
   plus)
-* Press NVDA+Ctrl+U or choose Unicode Braille Input found under NVDA tools
-  menu
+* Натиснете NVDA+Ctrl+U или изберете Въвеждане на брайл на Unicode, намиращо
+  се в менюто на NVDA, в подменюто Инструменти
 * Въведете брайловия текст под формата на числа.
 * Натиснете OK.
 * Необходимите Unicode символи ще бъдат копирани в клипборда, готови за
   поставяне в документа.
 
-## Changes for 1.1-dev ##
+## Промени във версия 1.1-dev ##
 
-* Improve delay to allow announcements to be heard correctly.
-* Many new translations.
-* Added documentation under NVDA help menu.
-* Added a checkbox to optionally replace the space braille (character
-  0x2800) by the regular space character.
-* Shortcuts can now be reassigned using the NVDA gesture input dialog, under
-  the Tools category.
+* Подобрено е забавянето, за да може съобщенията да бъдат изслушвани
+  безпроблемно.
+* Добавени са много нови преводи.
+* Добавена е документация в менюто на NVDA, в подменю Помощ.
+* Добавено е поле за отмятане за опционално заместване на брайловия интервал
+  (знака 0x2800) с нормалния знак за интервал.
+* Клавишните комбинации сега могат да се преназначават с помощта на
+  диалоговия прозорец за жестове на въвеждане в менюто на NVDA, в подменюто
+  Инструменти.
 
-## Changes for 1.0 ##
+## Промени във версия 1.0 ##
 
-* Initial release
-* New Languages: French
+* Първоначално издание
+* Нови езици: френски
 
 [[!tag dev stable]]
 
