@@ -21,7 +21,7 @@ propria lingua.
 * I caratteri Unicode richiesti verranno copiati negli appunti pronti per
   essere incollati.
 
-## Changes for 1.1-dev ##
+## Changes for 1.1 ##
 
 * Improve delay to allow announcements to be heard correctly.
 * Many new translations.

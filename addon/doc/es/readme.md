@@ -21,7 +21,7 @@ idioma.
 * Pulsar Aceptar.
 * Los caracteres Unicode se copiarán en el portapapeles listos para pegarse.
 
-## Cambios para 1.1-dev ##
+## Changes for 1.1 ##
 
 * Mejora el retraso para permetir que los anuncios se escuchen
   correctamente.

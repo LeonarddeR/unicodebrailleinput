@@ -20,7 +20,7 @@
 * टाँस्नका लागी  आवस्यक पर्ने युनिकोडका पाठहरू क्लिपपाठिमा उतारेर तयार
   राखिएको छ ।
 
-## Changes for 1.1-dev ##
+## Changes for 1.1 ##
 
 * Improve delay to allow announcements to be heard correctly.
 * Many new translations.

@@ -19,7 +19,7 @@ için otomatik test oluşturmanıza yardımcı olmaktır.
 * Tamam'a basınç
 * unicode karakterler panoya kopyalanacaktır.
 
-## Changes for 1.1-dev ##
+## Changes for 1.1 ##
 
 * Improve delay to allow announcements to be heard correctly.
 * Many new translations.

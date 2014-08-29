@@ -20,7 +20,7 @@ Liblouis-Braille-Übersetzungstabellen zu verbessern.
 * Die benötigten Unicode-Zeichen werden in die Zwischenablage kopiert,
   sodass Sie diese gleich einfügen können.
 
-## Changes for 1.1-dev ##
+## Changes for 1.1 ##
 
 * Improve delay to allow announcements to be heard correctly.
 * Many new translations.

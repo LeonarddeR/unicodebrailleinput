@@ -20,7 +20,7 @@ helpottaminen sekä automaattisten testien lisääminen niille.
 * Tarvittavat unicode-merkit kopioidaan leikepöydälle, josta voit liittää ne
   haluamaasi paikkaan.
 
-## Muutokset versiossa 1.1-dev ##
+## Changes for 1.1 ##
 
 * Viivettä lisätty, jotta ilmoitukset kuuluvat oikein.
 * Useita uusia käännöksiä lisätty.
