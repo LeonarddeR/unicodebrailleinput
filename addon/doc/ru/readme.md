@@ -20,7 +20,7 @@ liblouis и добавить автоматические тесты для ва
 * Требуемые Unicode символы будут скопированы в буфер обмена готовые для
   вставки.
 
-## Изменения для 1.1-dev ##
+## Changes for 1.1 ##
 
 * Improve delay to allow announcements to be heard correctly.
 * Многие новые переводы.

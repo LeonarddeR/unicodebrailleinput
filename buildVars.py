@@ -1,3 +1,5 @@
+# -*- coding: UTF-8 -*-
+
 # Build customizations
 # Change this file instead of sconstruct or manifest files, whenever possible.
 
@@ -6,19 +8,24 @@ _ = lambda x : x
 
 # Add-on information variables
 addon_info = {
-	# Internal add-on name
-	"addon-name" : "unicodeBrailleInput",
-	# TRANSLATORS: User visible add-on name to be shown on installation and add-on information.
-	"addon-summary" : _("Unicode Braille Input"),
+	# for previously unpublished addons, please follow the community guidelines at:
+	# https://bitbucket.org/nvdaaddonteam/todo/raw/master/guideLines.txt
+	# add-on Name, internal for nvda
+	"addon_name" : "unicodeBrailleInput",
+	# Add-on summary, usually the user visible name of the addon.
+	# Translators: Summary for this add-on to be shown on installation and add-on information.
+	"addon_summary" : _("Unicode Braille Input"),
 	# Add-on description
-	# Translators: Long description to be shown for this add-on on installation and add-on information
-	"addon-description" : _("Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and converts it into unicode braille characters."),
+	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+	"addon_description" : _("Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and converts it into unicode braille characters."),
 	# version
-	"addon-version" : "1.1-dev",
+	"addon_version" : "2.0",
 	# Author(s)
-	"addon-author" : "Mesar Hameed <mhameed@src.gnome.org>, Patrick ZAJDA <patrick@zajda.fr>",
+	"addon_author" : u"Mesar Hameed <mhameed@src.gnome.org>, Patrick ZAJDA <patrick@zajda.fr>",
 	# URL for the add-on documentation support
-	"addon-url" : "http://addons.nvda-project.org/"
+	"addon_url" : "http://addons.nvda-project.org/",
+	# Documentation file name
+	"addon_docFileName" : "readme.html",
 }
 
 

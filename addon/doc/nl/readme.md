@@ -20,7 +20,7 @@ te verbeteren en automatische tests voor talen toe te voegen.
 * De benodigde unicode karakters zullen naar het klembord worden gekopieerd,
   klaar om geplakt te worden.
 
-## Changes for 1.1-dev ##
+## Changes for 1.1 ##
 
 * Improve delay to allow announcements to be heard correctly.
 * Many new translations.

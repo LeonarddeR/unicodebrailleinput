@@ -18,6 +18,10 @@ and to add automatic tests for your language.
 * Press OK.
 * The required unicode characters will be copied to your clipboard ready for you to  paste.
 
+## Changes for 2.0 ##
+
+* Add-on help is available from the Add-ons Manager.
+
 ## Changes for 1.1-dev ##
 
 * Improve delay to allow announcements to be heard correctly.

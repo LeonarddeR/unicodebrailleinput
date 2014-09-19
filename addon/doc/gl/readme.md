@@ -20,7 +20,7 @@ lingua.
 * Premer Aceptar.
 * Os caracteres Unicode copiaranse no portapapeis listos para se pegar.
 
-## Cambios para 1.1-dev ##
+## Changes for 1.1 ##
 
 * Mellorado o retraso para permitir que os anuncios sexan escoitados
   corectamente.

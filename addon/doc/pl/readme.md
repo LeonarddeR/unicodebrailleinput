@@ -20,7 +20,7 @@ narodowych
 * wciśnij ok
 * odpowiednie znaki unicode zostaną skopiowane do schowka
 
-## Zmiany dla wersji 1.1-dev ##
+## Changes for 1.1 ##
 
 * Poprawione opóźnienie, aby powiadomienia były wypowiadane prawidłowo.
 * Wiele nowych tłumaczeń.

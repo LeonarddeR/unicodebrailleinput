@@ -20,7 +20,7 @@ liblouis tabel in dodati samodejne teste za vaš jezik.
 * Potrebni Unicode znaki sse bodo preslikali v odložišče in vam bodo na
   voljo, da jih boste lahko prilepili.
 
-## Changes for 1.1-dev ##
+## Changes for 1.1 ##
 
 * Improve delay to allow announcements to be heard correctly.
 * Many new translations.

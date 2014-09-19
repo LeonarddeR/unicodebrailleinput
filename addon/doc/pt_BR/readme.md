@@ -21,7 +21,7 @@ as tabelas da liblouis e adicionar testes automáticos a seu idioma.
 * Serão copiados para a área de transferência os devidos caracteres unicode
   prontos para serem colados.
 
-## Mudanças na 1.1-dev ##
+## Changes for 1.1 ##
 
 * Aumentada a espera para possibilitar ouvir-se corretamente os anúncios.
 * Muitas traduções novas.

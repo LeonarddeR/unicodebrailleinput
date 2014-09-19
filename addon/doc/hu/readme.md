@@ -20,7 +20,7 @@ kész nyelv tesztelésében nyújt nagy segítséget.
 * A kívánt unicode karaktersorozat a vágólapra kerül, amit bárhova
   beilleszthet.
 
-## Az 1.1-dev verzió változásai ##
+## Changes for 1.1 ##
 
 * Fejlesztett késleltetés a bejelentések megfelelő hallhatósága érdekében.
 * Sok új fordítás.

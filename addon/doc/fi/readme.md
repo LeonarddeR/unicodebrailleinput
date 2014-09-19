@@ -1,8 +1,8 @@
 # Unicode-pistekirjoituksen syöttö #
 
 * Tekijät: Mesar Hameed ja Patrick Zajda.
-* download [stable version][1]
-* download [development version][2]
+* Lataa [vakaa versio][1]
+* Lataa [kehitysversio][2]
 
 Tällä lisäosalla voit muuntaa tekstiä pistekirjoituksesta
 (esim. 1345-1236-145-1) unicode-pistekirjoitusmerkeiksi.
@@ -20,10 +20,10 @@ helpottaminen sekä automaattisten testien lisääminen niille.
 * Tarvittavat unicode-merkit kopioidaan leikepöydälle, josta voit liittää ne
   haluamaasi paikkaan.
 
-## Muutokset versiossa 1.1-dev ##
+## Changes for 1.1 ##
 
 * Viivettä lisätty, jotta ilmoitukset kuuluvat oikein.
-* Monta uutta käännöstä lisätty.
+* Useita uusia käännöksiä lisätty.
 * Lisätty Ohje-vaihtoehto NVDA:n Ohje-valikkoon.
 * Lisätty valintaruutu, jolla voi valinnaisesti korvata
   pistekirjoitusvälilyönnin (merkki 0x2800) tavallisella välilyöntimerkillä.
