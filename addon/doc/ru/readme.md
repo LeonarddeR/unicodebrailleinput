@@ -20,6 +20,10 @@ liblouis и добавить автоматические тесты для ва
 * Требуемые Unicode символы будут скопированы в буфер обмена готовые для
   вставки.
 
+## Changes for 2.0 ##
+
+* Add-on help is available from the Add-ons Manager.
+
 ## Changes for 1.1 ##
 
 * Improve delay to allow announcements to be heard correctly.

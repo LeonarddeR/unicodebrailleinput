@@ -20,6 +20,10 @@ automatické jazykové testovanie.
 * Aktivujte tlačidlo OK.
 * Unicode znaky sa vložia do schránky a môžete ich prilepiť do editora.
 
+## Changes for 2.0 ##
+
+* Add-on help is available from the Add-ons Manager.
+
 ## Changes for 1.1 ##
 
 * Predĺžený čas tak, aby bolo počuť celé hlásenia.

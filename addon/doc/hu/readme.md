@@ -20,6 +20,10 @@ kész nyelv tesztelésében nyújt nagy segítséget.
 * A kívánt unicode karaktersorozat a vágólapra kerül, amit bárhova
   beilleszthet.
 
+## Changes for 2.0 ##
+
+* Add-on help is available from the Add-ons Manager.
+
 ## Changes for 1.1 ##
 
 * Fejlesztett késleltetés a bejelentések megfelelő hallhatósága érdekében.

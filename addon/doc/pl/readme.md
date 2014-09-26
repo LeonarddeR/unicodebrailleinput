@@ -20,7 +20,11 @@ narodowych
 * wciśnij ok
 * odpowiednie znaki unicode zostaną skopiowane do schowka
 
-## Changes for 1.1 ##
+## Changes for 2.0 ##
+
+* Add-on help is available from the Add-ons Manager.
+
+## Zmiany dla wersji 1.1 ##
 
 * Poprawione opóźnienie, aby powiadomienia były wypowiadane prawidłowo.
 * Wiele nowych tłumaczeń.

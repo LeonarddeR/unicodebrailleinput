@@ -2,7 +2,7 @@
 
 * लेखकहरू: मेसर हमिद, प्याट्रिक ज्याद्ददा ।
 * डाउनलोड [स्थिर संस्करण][1]
-* download [development version][2]
+* डाउनलोड [विकास संस्करण][2]
 
 यो थप-साधनले ब्रेल पाठ (जस्तै 1345-1236-145-1) बाट युनिकोड ब्रेल वर्णहरूमा
 रुपान्तरण गर्ने छ ।
@@ -20,7 +20,11 @@
 * टाँस्नका लागी  आवस्यक पर्ने युनिकोडका पाठहरू क्लिपपाठिमा उतारेर तयार
   राखिएको छ ।
 
-## Changes for 1.1 ##
+## Changes for 2.0 ##
+
+* Add-on help is available from the Add-ons Manager.
+
+## १.१ संस्करणमा गरिएका परिवर्तन हरू ##
 
 * Improve delay to allow announcements to be heard correctly.
 * Many new translations.
@@ -30,10 +34,10 @@
 * Shortcuts can now be reassigned using the NVDA gesture input dialog, under
   the Tools category.
 
-## Changes for 1.0 ##
+## १.० संस्करणमा गरिएका परिवर्तन हरू ##
 
 * सुरुको संस्करण
-* New Languages: French
+* नयाँ भाषाहरू: फ्रांन्सेली
 
 [[!tag dev stable]]
 

@@ -29,7 +29,8 @@ msgstr "Toont een dialoogvenster om braille in te voeren in numerieke vorm."
 #. Translators: Error message displayed when the user enters invalid input.
 #, python-format
 msgid "Unexpected input: '%s', only dots 0 to 8 and - are allowed."
-msgstr "Ongeldige invoer: \"%s\", alleen punten 0 tot en met 8 en - zijn toegestaan."
+msgstr ""
+"Ongeldige invoer: \"%s\", alleen punten 0 tot en met 8 en - zijn toegestaan."
 
 #. Translators: The title of the dialog.
 msgid "Convert Braille to Unicode"
@@ -47,14 +48,19 @@ msgstr "Converteer Unicode Braille spatie naar ASCII spatie"
 msgid "Unicode text copied to clipboard ready for you to paste."
 msgstr "Unicode tekst naar klembord gekopieerd. Klaar om te plakken."
 
-#. TRANSLATORS: User visible add-on name to be shown on installation and add-on information.
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Unicode Braille Input"
 msgstr "Unicode braille invoer"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on installation and add-on information
-msgid "Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and converts it into unicode braille characters."
-msgstr "Toont een tekstvak om numeriek braille in te voeren (bijvoorbeeld 1345-1236-145-1) en converteert het in unicode braille."
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and "
+"converts it into unicode braille characters."
+msgstr ""
+"Toont een tekstvak om numeriek braille in te voeren (bijvoorbeeld "
+"1345-1236-145-1) en converteert het in unicode braille."
 
 #, fuzzy
 #~ msgid ""

@@ -47,12 +47,13 @@ msgstr "ब्रेल युनिकोड स्पेसलाई आस्
 msgid "Unicode text copied to clipboard ready for you to paste."
 msgstr "टाँस्नका लागि तयार क्लीपपाठिमा उतारिएको युनिकोड पाठ ।"
 
-#. TRANSLATORS: User visible add-on name to be shown on installation and add-on information.
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Unicode Braille Input"
 msgstr "युनिकोड ब्रेल लगानी"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on installation and add-on information
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid ""
 "Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and "
 "converts it into unicode braille characters."

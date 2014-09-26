@@ -49,12 +49,13 @@ msgstr "Átkonvertálja a numerikus braille karaktereket ASCII karakterekké"
 msgid "Unicode text copied to clipboard ready for you to paste."
 msgstr "A unikódú szöveg a vágólapra lett másolva, készen áll a beillesztésre."
 
-#. TRANSLATORS: User visible add-on name to be shown on installation and add-on information.
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Unicode Braille Input"
 msgstr "Unikód braille bevitel"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on installation and add-on information
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid ""
 "Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and "
 "converts it into unicode braille characters."

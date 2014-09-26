@@ -1,8 +1,8 @@
 # UnicodeBrailleEingabe #
 
 * Autoren: Mesar Hameed, Patrick Zajda.
-* download [stable version][1]
-* download [development version][2]
+* lade [stable version][1] herunter
+* lade [development version][2] herunter
 
 Mit dieser Erweiterung können Zeichen, deren angezeigte Braillepunkte
 numerisch angegeben werden (z.B. 1345-1236-145-1) in Unicode konvertieren.
@@ -13,27 +13,31 @@ Liblouis-Braille-Übersetzungstabellen zu verbessern.
 ## Verwendung ##
 
 * Öffnen Sie einen Unicode-fähigen Text-Editor (z. B. Notepad plus plus)
-* Press NVDA+Ctrl+U or choose Unicode Braille Input found under NVDA tools
-  menu
+* Drücken Sie NVDA+Steuerung+U oder wählen Sie Unicode Braille-Eingabe aus
+  dem Menü Extras im NVDA-Menü.
 * Geben Sie Ihren Braille-Text in nummerischer Form ein.
 * Drücken Sie Eingabe.
 * Die benötigten Unicode-Zeichen werden in die Zwischenablage kopiert,
   sodass Sie diese gleich einfügen können.
 
-## Changes for 1.1 ##
+## Changes for 2.0 ##
+
+* Add-on help is available from the Add-ons Manager.
+
+## Änderungen bis 1.1 ##
 
 * Improve delay to allow announcements to be heard correctly.
-* Many new translations.
-* Added documentation under NVDA help menu.
-* Added a checkbox to optionally replace the space braille (character
-  0x2800) by the regular space character.
-* Shortcuts can now be reassigned using the NVDA gesture input dialog, under
-  the Tools category.
+* Viele weitere Übersetzungen.
+* Dokumentation im NVDA-Hilfe-Menü hinzugefügt.
+* Kontrollkästchen zur optionalen Ersetzung des Braille-Leerzeichens
+  (Zeichen 0x2800) durch das reguläre Leerzeichen hinzugefügt.
+* Tastenkürzel können nun im NVDA-Dialog Eingaben in der Kathegorie Extras
+  geändert werden.
 
-## Changes for 1.0 ##
+## Änderungen bis 1.0 ##
 
-* Initial release
-* New Languages: French
+* Ehrstveröffentlichung
+* neue Sprachen: französisch
 
 [[!tag dev stable]]
 
