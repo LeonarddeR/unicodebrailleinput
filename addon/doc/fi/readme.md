@@ -20,11 +20,11 @@ helpottaminen sekä automaattisten testien lisääminen niille.
 * Tarvittavat unicode-merkit kopioidaan leikepöydälle, josta voit liittää ne
   haluamaasi paikkaan.
 
-## Changes for 2.0 ##
+## Muutokset versiossa 2.0 ##
 
-* Add-on help is available from the Add-ons Manager.
+* Ohje on käytettävissä Lisäosien hallinnasta.
 
-## Changes for 1.1 ##
+## Muutokset versiossa 1.1 ##
 
 * Viivettä lisätty, jotta ilmoitukset kuuluvat oikein.
 * Useita uusia käännöksiä lisätty.
