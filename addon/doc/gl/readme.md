@@ -20,9 +20,9 @@ lingua.
 * Premer Aceptar.
 * Os caracteres Unicode copiaranse no portapapeis listos para se pegar.
 
-## Changes for 2.0 ##
+## Cambios para 2.0 ##
 
-* Add-on help is available from the Add-ons Manager.
+* A axuda do complemento está dispoñible no Administrador de Complementos.
 
 ## Cambios para  1.1 ##
 
