@@ -21,9 +21,9 @@ as tabelas da liblouis e adicionar testes automáticos a seu idioma.
 * Serão copiados para a área de transferência os devidos caracteres unicode
   prontos para serem colados.
 
-## Changes for 2.0 ##
+## Mudanças na 2.0 ##
 
-* Add-on help is available from the Add-ons Manager.
+* A ajuda do complemento está disponível no gestor de complementos.
 
 ## Mudanças na 1.1 ##
 
