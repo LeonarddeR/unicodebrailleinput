@@ -1,8 +1,8 @@
 # UnicodeBrailleInput #
 
 * Авторы: Mesar Hameed, Patrick Zajda.
-* download [stable version][1]
-* download [development version][2]
+* загрузить [стабильную версию][1]
+* загрузить [разрабатываемую версию][2]
 
 Это дополнение позволяет конвертировать текст из Брайля (например
 1345-1236-145-1) в Unicode символы Брайля.
@@ -20,11 +20,11 @@ liblouis и добавить автоматические тесты для ва
 * Требуемые Unicode символы будут скопированы в буфер обмена готовые для
   вставки.
 
-## Changes for 2.0 ##
+## Изменения для 2.0 ##
 
-* Add-on help is available from the Add-ons Manager.
+* Справка дополнения доступна в диспетчере дополнений.
 
-## Changes for 1.1 ##
+## Изменения для 1.1 ##
 
 * Improve delay to allow announcements to be heard correctly.
 * Многие новые переводы.
