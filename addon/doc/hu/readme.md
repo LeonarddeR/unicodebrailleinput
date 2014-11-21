@@ -20,11 +20,11 @@ kész nyelv tesztelésében nyújt nagy segítséget.
 * A kívánt unicode karaktersorozat a vágólapra kerül, amit bárhova
   beilleszthet.
 
-## Changes for 2.0 ##
+## Az 1.0 verzió változásai ##
 
-* Add-on help is available from the Add-ons Manager.
+* A kiegészítő súgója elérhető a bővítmények párbeszédablakáról is.
 
-## Changes for 1.1 ##
+## Az 1.1 verzió változásai ##
 
 * Fejlesztett késleltetés a bejelentések megfelelő hallhatósága érdekében.
 * Sok új fordítás.
