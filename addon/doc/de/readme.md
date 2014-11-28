@@ -1,43 +1,45 @@
-# UnicodeBrailleEingabe #
+# Unicode-Braille-Eingabe #
 
 * Autoren: Mesar Hameed, Patrick Zajda.
-* lade [stable version][1] herunter
-* lade [development version][2] herunter
+* [Stabile Version][1] herunterladen
+* [Testversion][2] herunterladen
 
 Mit dieser Erweiterung können Zeichen, deren angezeigte Braillepunkte
-numerisch angegeben werden (z.B. 1345-1236-145-1) in Unicode konvertieren.
+numerisch angegeben werden (z. B. 1345-1236-145-1) in Unicode konvertiert
+werden.
 
 Der Zweck dieser Erweiterung ist es, die
 Liblouis-Braille-Übersetzungstabellen zu verbessern.
 
 ## Verwendung ##
 
-* Öffnen Sie einen Unicode-fähigen Text-Editor (z. B. Notepad plus plus)
-* Drücken Sie NVDA+Steuerung+U oder wählen Sie Unicode Braille-Eingabe aus
-  dem Menü Extras im NVDA-Menü.
-* Geben Sie Ihren Braille-Text in nummerischer Form ein.
-* Drücken Sie Eingabe.
-* Die benötigten Unicode-Zeichen werden in die Zwischenablage kopiert,
-  sodass Sie diese gleich einfügen können.
+* Öffnen Sie einen Text-Editor, der Unicode unterstützt (z. B. Notepad++)
+* Drücken Sie NVDA+Strg+U oder wählen Sie Unicode-Braille-Eingabe aus dem
+  Menü Extras im NVDA-Menü aus.
+* Geben Sie Ihren Braille-Text in numerischer Form ein.
+* Klicken Sie auf OK.
+* Die benötigten Unicode-Zeichen werden in die Zwischenablage kopiert, so
+  dass Sie diese gleich einfügen können.
 
-## Changes for 2.0 ##
+## Änderungen in 2.0 ##
 
-* Add-on help is available from the Add-ons Manager.
+* Hilfe zur Erweiterung ist in der Erweiterungsverwaltung verfügbar.
 
-## Änderungen bis 1.1 ##
+## Änderungen in 1.1 ##
 
-* Improve delay to allow announcements to be heard correctly.
+* Verbesserte Wartezeiten beim korrekten Ansagen, damit sie besser gehört
+  werden können.
 * Viele weitere Übersetzungen.
 * Dokumentation im NVDA-Hilfe-Menü hinzugefügt.
 * Kontrollkästchen zur optionalen Ersetzung des Braille-Leerzeichens
   (Zeichen 0x2800) durch das reguläre Leerzeichen hinzugefügt.
-* Tastenkürzel können nun im NVDA-Dialog Eingaben in der Kathegorie Extras
-  geändert werden.
+* Tastenkürzel können im Menü Eingabegesten unter Extras von NVDA neu
+  zugeordnet werden.
 
-## Änderungen bis 1.0 ##
+## Änderungen in 1.0 ##
 
 * Ehrstveröffentlichung
-* neue Sprachen: französisch
+* Neue Sprachen: Französisch.
 
 [[!tag dev stable]]
 
