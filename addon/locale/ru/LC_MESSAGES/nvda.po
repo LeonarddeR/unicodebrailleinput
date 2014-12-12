@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'unicodeBrailleInput' '1.0'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-03-04 16:05+0000\n"
-"PO-Revision-Date: 2014-02-09 17:45+0400\n"
+"PO-Revision-Date: 2014-12-06 20:05+0300\n"
 "Last-Translator: Ruslan Kolodyazhni <eye0@rambler.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ru\n"
@@ -41,9 +41,8 @@ msgid "Enter text in numeric braille:"
 msgstr "Введите текст в цифровом формате брайля:"
 
 #. Translators: Label for a checkbox, wether to use a regular space or the Braille unicode space.
-#, fuzzy
 msgid "Convert Unicode Braille space to ASCII space"
-msgstr "Преобразования брайля в юникод."
+msgstr "Преобразовывать пробел юникода брайля в пробел ASCII "
 
 #. Translators: This is the message when unicode text has been copied to the clipboard.
 msgid "Unicode text copied to clipboard ready for you to paste."
@@ -56,14 +55,12 @@ msgstr "Ввод брайлевского юникода"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-#, fuzzy
 msgid ""
 "Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and "
 "converts it into unicode braille characters."
 msgstr ""
 "Показывает текстовое поле для ввода брайля в цифровом формате (например, "
-"1345-1236-145-1) затем преобразует его в символы брайлевского юникода.\n"
-"Горячая клавиша: NVDA+Ctrl+u"
+"1345-1236-145-1) затем преобразует его в символы брайлевского юникода."
 
 #, fuzzy
 #~ msgid ""
