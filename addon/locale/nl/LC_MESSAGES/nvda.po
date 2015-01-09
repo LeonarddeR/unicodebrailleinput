@@ -8,18 +8,18 @@ msgstr ""
 "Project-Id-Version: unicodeBrailleInput 1.0.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-03-03 12:18+0100\n"
-"PO-Revision-Date: 2014-05-14 20:18+0100\n"
-"Last-Translator: Bart Simons <bart@bartsimons.be>\n"
-"Language-Team: nl\n"
+"PO-Revision-Date: 2015-01-09 10:13+0100\n"
+"Last-Translator: Leonard de Ruijter <mail@leonardder.nl>\n"
+"Language-Team: NVDA Nederlandstalig vertaalteam <nvda-nl@googlegroups.com>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.7.1\n"
 
 #. Translators: name of menu item.
 msgid "Un&icode Braille Input..."
-msgstr "Un&icode Braille Invoer..."
+msgstr "Un&icode Braille-invoer..."
 
 #. Translators: menu item tool tip text.
 #. Translators: Message presented when user performs input help for this shortcut.
@@ -51,7 +51,7 @@ msgstr "Unicode tekst naar klembord gekopieerd. Klaar om te plakken."
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Unicode Braille Input"
-msgstr "Unicode braille invoer"
+msgstr "Unicode braille-invoer"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
@@ -60,7 +60,7 @@ msgid ""
 "converts it into unicode braille characters."
 msgstr ""
 "Toont een tekstvak om numeriek braille in te voeren (bijvoorbeeld "
-"1345-1236-145-1) en converteert het in unicode braille."
+"1345-1236-145-1) en converteert het in unicode braillekarakters."
 
 #, fuzzy
 #~ msgid ""
