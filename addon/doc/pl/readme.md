@@ -20,9 +20,9 @@ narodowych
 * wciśnij ok
 * odpowiednie znaki unicode zostaną skopiowane do schowka
 
-## Changes for 2.0 ##
+## Zmiany dla wersji 2.0 ##
 
-* Add-on help is available from the Add-ons Manager.
+* Pomoc dodatku dostępna w managerze dodatków.
 
 ## Zmiany dla wersji 1.1 ##
 
