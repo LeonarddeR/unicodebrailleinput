@@ -47,12 +47,13 @@ msgstr "转换 Unicode 字符到 Ascii 字符。"
 msgid "Unicode text copied to clipboard ready for you to paste."
 msgstr "unicode 文本已经复制到剪贴板，您可以随时进行粘贴操作。"
 
-#. TRANSLATORS: User visible add-on name to be shown on installation and add-on information.
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Unicode Braille Input"
 msgstr "Unicode 盲文输入翻译者：雪岭冰龙"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on installation and add-on information
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 #, fuzzy
 msgid ""
 "Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and "

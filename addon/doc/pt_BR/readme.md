@@ -21,7 +21,11 @@ as tabelas da liblouis e adicionar testes automáticos a seu idioma.
 * Serão copiados para a área de transferência os devidos caracteres unicode
   prontos para serem colados.
 
-## Changes for 1.1 ##
+## Mudanças na 2.0 ##
+
+* A ajuda do complemento está disponível no gestor de complementos.
+
+## Mudanças na 1.1 ##
 
 * Aumentada a espera para possibilitar ouvir-se corretamente os anúncios.
 * Muitas traduções novas.

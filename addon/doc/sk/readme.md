@@ -20,7 +20,11 @@ automatické jazykové testovanie.
 * Aktivujte tlačidlo OK.
 * Unicode znaky sa vložia do schránky a môžete ich prilepiť do editora.
 
-## Changes for 1.1 ##
+## Zmeny vo verzii 2.0 ##
+
+* Návod k doplnku nájdete v správcovi doplnkov.
+
+## Zmeny vo verzii 1.1 ##
 
 * Predĺžený čas tak, aby bolo počuť celé hlásenia.
 * Nové preklady.

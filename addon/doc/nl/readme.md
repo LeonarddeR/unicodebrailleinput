@@ -1,39 +1,45 @@
-# UnicodeBrailleInput #
+# UnicodeBraille-invoer #
 
 * Auteurs: Mesar Hameed, Patrick Zajda.
-* download [stable version][1]
-* download [development version][2]
+* download [stabiele versie][1]
+* download [ontwikkelversie][2]
 
 Deze add-on stelt u in staat om tekst van braille (bv 1345-1236-145-1) te
-converteren naar unicode braille tekens.
+converteren naar unicode braillekarakters.
 
-Het doel van deze add-on is om het makkelijker te maken om Liblouis tabellen
-te verbeteren en automatische tests voor talen toe te voegen.
+Het doel van deze gespecialiseerde add-on is om het makkelijker te maken om
+Liblouis tabellen te verbeteren en automatische tests voor talen toe te
+voegen.
 
 ## Gebruik ##
 
-* Open een tekstverwerker die unicode ondersteunt.
-* Press NVDA+Ctrl+U or choose Unicode Braille Input found under NVDA tools
+* Open een tekstverwerker die unicode ondersteunt (bijvoorbeeld Notepad plus
+  plus).
+* Druk op NVDA+Ctrl+U of kies Unicode Braille-invoer vanuit het NVDA Extra
   menu
 * Type uw brailletekst in numerieke vorm.
 * Druk op OK.
-* De benodigde unicode karakters zullen naar het klembord worden gekopieerd,
+* De benodigde unicode-karakters zullen naar het klembord worden gekopieerd,
   klaar om geplakt te worden.
 
-## Changes for 1.1 ##
+## Veranderingen in 2.0 ##
 
-* Improve delay to allow announcements to be heard correctly.
-* Many new translations.
-* Added documentation under NVDA help menu.
-* Added a checkbox to optionally replace the space braille (character
-  0x2800) by the regular space character.
-* Shortcuts can now be reassigned using the NVDA gesture input dialog, under
-  the Tools category.
+* Help voor de add-on is beschikbaar vanuit het venster Add-ons beheren.
 
-## Changes for 1.0 ##
+## Veranderingen in 1.1 ##
 
-* Initial release
-* New Languages: French
+* Vertraging verbeterd zodat mededelingen correct gehoord kunnen worden.
+* Diverse nieuwe vertalingen.
+* Documentatie toegevoegd in het NVDA help menu.
+* Selectievakje toegevoegd om het brailleteken voor spatie (teken 0x2800) te
+  vervangen door het reguliere teken voor spatie.
+* Sneltoetsen kunnen nu opnieuw toegewezen worden in het NVDA venster
+  Invoerhandelingen koppelen, onder de categorie Extra.
+
+## Veranderingen in 1.0 ##
+
+* Eerste versie
+* Nieuwe vertalingen: Frans
 
 [[!tag dev stable]]
 

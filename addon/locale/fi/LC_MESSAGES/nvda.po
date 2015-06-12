@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: unicodeBrailleInput\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-03-03 12:18+0100\n"
-"PO-Revision-Date: 2014-08-09 13:53+0200\n"
+"PO-Revision-Date: 2014-09-29 12:19+0200\n"
 "Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language-Team: Finnish <jani.kinnunen@wippies.fi>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.7\n"
+"X-Generator: Poedit 1.6.9\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -34,7 +34,7 @@ msgstr ""
 #, python-format
 msgid "Unexpected input: '%s', only dots 0 to 8 and - are allowed."
 msgstr ""
-"Odottamaton syöte: '%s'. Vain pisteet väliltä 0 ja 8 sekä - ovat sallittuja."
+"Odottamaton syöte: '%s'. Vain pisteet väliltä 0 - 8 sekä - ovat sallittuja."
 
 #. Translators: The title of the dialog.
 msgid "Convert Braille to Unicode"
@@ -52,12 +52,13 @@ msgstr "Muunna unicode-pistekirjoitusvälilyönti ASCII-välilyönniksi"
 msgid "Unicode text copied to clipboard ready for you to paste."
 msgstr "Unicode-teksti kopioitu leikepöydälle."
 
-#. TRANSLATORS: User visible add-on name to be shown on installation and add-on information.
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Unicode Braille Input"
 msgstr "Unicode-pistekirjoituksen syöttö"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on installation and add-on information
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid ""
 "Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and "
 "converts it into unicode braille characters."

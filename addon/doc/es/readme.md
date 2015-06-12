@@ -21,7 +21,12 @@ idioma.
 * Pulsar Aceptar.
 * Los caracteres Unicode se copiarán en el portapapeles listos para pegarse.
 
-## Changes for 1.1 ##
+## Cambios para 2.0 ##
+
+* La ayuda del complemento está disponible en el Administrador de
+  Complementos.
+
+## Cambios para 1.1 ##
 
 * Mejora el retraso para permetir que los anuncios se escuchen
   correctamente.
