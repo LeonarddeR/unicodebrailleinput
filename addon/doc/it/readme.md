@@ -14,27 +14,33 @@ propria lingua.
 ## Utilizzo ##
 
 * Aprire un editor che supporti Unicode (ad esempio Notepad++)
-* Press NVDA+Ctrl+U or choose Unicode Braille Input found under NVDA tools
-  menu
+* Premere NVDA+Ctrl+U o selezionare Unicode Braille Input situato sotto la
+  voce strumenti di NVDA
 * Digitare il testo braille in valori numerici.
 * Premere OK.
 * I caratteri Unicode richiesti verranno copiati negli appunti pronti per
   essere incollati.
 
-## Changes for 1.1 ##
+## Modifiche per la 2.0 ##
 
-* Improve delay to allow announcements to be heard correctly.
-* Many new translations.
-* Added documentation under NVDA help menu.
-* Added a checkbox to optionally replace the space braille (character
-  0x2800) by the regular space character.
-* Shortcuts can now be reassigned using the NVDA gesture input dialog, under
-  the Tools category.
+* L'aiuto del componente aggiuntivo è disponibile nel gestore componenti
+  aggiuntivi
 
-## Changes for 1.0 ##
+## Modifiche per la 1.1 ##
 
-* Initial release
-* New Languages: French
+* Migliorato il ritardo in modo da ascoltare gli annunci correttamente
+* Molte traduzioni aggiunte
+* Aggiunta la documentazione sul menu aiuto di NVDA
+* Aggiunta una casella di controllo per sostituire lo spazio in braille
+  (carattere 0x2800) con il carattere spazio standard
+* I tasti di scelta rapida possono ora essere riassegnati utilizzando la
+  finestra gesti e tasti di immissione di NVDA, sotto la categoria
+  Strumenti.
+
+## Novità per 1.0 ##
+
+* Prima versione
+* Nuova lingua: francese
 
 [[!tag dev stable]]
 
