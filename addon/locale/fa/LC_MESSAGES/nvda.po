@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: unicodeBrailleInput 1.1-dev\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-07-07 15:30+0200\n"
-"PO-Revision-Date: 2016-07-17 22:59+0330\n"
+"PO-Revision-Date: 2016-07-30 16:21+0330\n"
 "Last-Translator: Mohammadreza Rashad <mohammadreza5712@gmail.com>\n"
 "Language-Team: NVDA Translation Team <nvda-translations@freelists.org>\n"
 "Language: fa\n"
@@ -18,23 +18,13 @@ msgstr ""
 "X-Generator: Poedit 1.6.10\n"
 
 #. Translators: name of menu item.
-<<<<<<< Updated upstream
 msgid "Un&icode Braille Input..."
 msgstr "ورودیِ بریلِ &یونیکُد"
-=======
-#, fuzzy
-msgid "Un&icode Braille Input..."
-msgstr "ورودی یونیکد بریل"
->>>>>>> Stashed changes
 
 #. Translators: menu item tool tip text.
 #. Translators: Message presented when user performs input help for this shortcut.
 msgid "Displays a dialog to enter braille in numeric form."
-<<<<<<< Updated upstream
 msgstr "پنجره‌ای را برای وارد کردنِ بریل به شکلِ رشته‌ای عددی نمایش میدهد."
-=======
-msgstr ""
->>>>>>> Stashed changes
 
 #. Translators: Error message displayed when the user enters invalid input.
 #, python-format
@@ -53,11 +43,6 @@ msgstr "متن را به بریلِ عددی وارد کنید:"
 msgid "Convert Unicode Braille space to ASCII space"
 msgstr "تبدیلِ نویسه‌ی فاصله‌ی بریلِ یونیکُد به فاصله‌ی اَسکی"
 
-#. Translators: Label for a checkbox, wether to use a regular space or the Braille unicode space.
-#, fuzzy
-msgid "Convert Unicode Braille space to ASCII space"
-msgstr "تبدیل بریل به یونیکد"
-
 #. Translators: This is the message when unicode text has been copied to the clipboard.
 msgid "Unicode text copied to clipboard ready for you to paste."
 msgstr "متنِ یونیکُد در کلیپ‌برد کپی شد و آماده‌ی الحاق است."
@@ -69,44 +54,9 @@ msgstr "ورودیِ بریلِ یونیکُد"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-<<<<<<< Updated upstream
-=======
-#, fuzzy
->>>>>>> Stashed changes
 msgid ""
 "Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and "
 "converts it into unicode braille characters."
 msgstr ""
-<<<<<<< Updated upstream
 "یک کادرِ متنی برای تایپِ بریل عددی، مثلا: 1345-1236-145-1، نمایش میدهد و سپس "
 "آن‌را به نویسه‌های بریل یونیکُد تبدیل میکند."
-=======
-"جعبه متن را برای نوشتن بریل عددی نشان میدهد (مثل 1345-1236-145-1) سپس آن را "
-"به کاراکترهای استاندارد بریل تبدیل میکند.\n"
-"کلید میانبر: NVDA+Ctrl+u"
-
-#, fuzzy
-#~ msgid ""
-#~ "Show a dialog to write letters in numeric braille (e.g. 1345-1236-145-1) "
-#~ "separated by dashes, then convert them to unicode braille characters."
-#~ msgstr ""
-#~ "صفحه ای را برای نوشتن حروف به بریل عددی نشان بده (مثال 1345-1236-145-1) "
-#~ "بوسیله خط تیره جدا شده است, سپس این اسکریپت آنها را به کاراکترهای "
-#~ "استاندارد بریل تبدیل خواهد کرد."
-
-#~ msgid ""
-#~ "Show a dialog to write letters in numeric braille (e.g. 1345-1236-145-1) "
-#~ "separated by dashes, then this script will convert them to unicode "
-#~ "braille characters."
-#~ msgstr ""
-#~ "صفحه ای را برای نوشتن حروف به بریل عددی نشان بده (مثال 1345-1236-145-1) "
-#~ "بوسیله خط تیره جدا شده است, سپس این اسکریپت آنها را به کاراکترهای "
-#~ "استاندارد بریل تبدیل خواهد کرد."
-
-#~ msgid "Unexpected input: '%s', whitespace or empty string is not allowed."
-#~ msgstr ""
-#~ "ورودی غیرمنتظره: '%s', کاراکتر چاپ نشده یا رشته خالی اجازه داده نشده است."
-
-#~ msgid "Opens documentation for %s"
-#~ msgstr "اسناد را  برای %s باز میکند"
->>>>>>> Stashed changes
