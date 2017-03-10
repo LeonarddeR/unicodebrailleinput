@@ -4,7 +4,7 @@
 * Descărcați [versiunea stabilă][1]
 * Descărcați [versiunea în dezvoltare][2]
 
-Acest add-on vă permite să convertiți un text din braille
+Acest supliment vă permite să convertiți un text din braille
 (E.G. 1345-1236-145-1) în caracterele Unicode braille.
 
 Scopul acestui add-on specializat este de a îmbunătăți tabelelle liblouis și
