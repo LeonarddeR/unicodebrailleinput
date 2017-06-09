@@ -44,6 +44,6 @@ dit sprog.
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=ubi
+[1]: https://addons.nvda-project.org/files/get.php?file=ubi
 
-[2]: http://addons.nvda-project.org/files/get.php?file=ubi-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=ubi-dev
