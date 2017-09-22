@@ -31,8 +31,8 @@ helpottaminen sekä automaattisten testien lisääminen niille.
 * Lisätty Ohje-vaihtoehto NVDA:n Ohje-valikkoon.
 * Lisätty valintaruutu, jolla voi valinnaisesti korvata
   pistekirjoitusvälilyönnin (merkki 0x2800) tavallisella välilyöntimerkillä.
-* Pikanäppäimet on nyt mahdollista määritellä uudelleen NVDA:n
-  syöte-eleet-valintaikkunassa Työkalut-kategoriasta.
+* Pikanäppäimien uudelleenmäärittely on nyt mahdollista NVDA:n
+  Syötekomennot-valintaikkunan Työkalut-kategoriasta.
 
 ## Muutokset versiossa 1.0 ##
 
