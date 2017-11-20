@@ -11,14 +11,10 @@ import addonHandler
 import gui
 import interface
 import wx
+from globalCommands import SCRCAT_TOOLS
 
 # We initialize translations.
 addonHandler.initTranslation()
-
-try:
-	from globalCommands import SCRCAT_TOOLS
-except:
-	SCRCAT_TOOLS = None
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
