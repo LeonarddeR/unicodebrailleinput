@@ -4,11 +4,9 @@
 * download [stable version][1]
 * download [development version][2]
 
-This add-on allows you to convert text from braille (E.G. 1345-1236-145-1) to Unicode braille 
-characters.
+This add-on allows you to convert text from braille (E.G. 1345-1236-145-1) to Unicode braille characters.
 
-The purpose of this specialized addon is to make it easier to help to improve liblouis tables 
-and to add automatic tests for your language.
+The purpose of this specialized addon is to make it easier to help to improve liblouis tables and to add automatic tests for your language. With the addition of unicode braille table in NVDA 2017.3, this add-on is no longer required, as users can choose to input braille with the new table.
 
 ## Usage ##
 
@@ -22,7 +20,7 @@ and to add automatic tests for your language.
 
 * Add-on help is available from the Add-ons Manager.
 
-## Changes for 1.1-dev ##
+## Changes for 1.1 ##
 
 * Improve delay to allow announcements to be heard correctly.
 * Many new translations.
