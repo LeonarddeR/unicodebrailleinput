@@ -16,15 +16,7 @@ from api import copyToClip
 # Initialize translations.
 addonHandler.initTranslation()
 
-# Check python version.
-PY2 = sys.version_info[0] == 2
-
-conv=None
-# name of function is unichr for python2 and chr for python3.
-if PY2:
-	conv = unichr
-else:
-	conv = chr
+conv = unichr if sys.version_info[0] == 2 else chr
 
 invalidInputRegexp = compile('[^0-8-]+')
 def dots2uni(cells, regularSpace = False):
