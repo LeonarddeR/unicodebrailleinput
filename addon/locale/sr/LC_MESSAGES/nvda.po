@@ -8,18 +8,18 @@ msgstr ""
 "Project-Id-Version: unicodeBrailleInput 2.2\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2015-01-30 21:00+1000\n"
-"PO-Revision-Date: 2015-05-31 12:25+0100\n"
-"Last-Translator: Danijela Popovic <vlajna95@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2015-10-21 14:52+0200\n"
+"Last-Translator: Janko Valenćik <jankoval@gmail.com>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.3\n"
+"X-Generator: Poedit 1.8.6\n"
+"Language-Team: \n"
 
 #. Translators: name of menu item.
 msgid "Un&icode Braille Input..."
-msgstr "Unikod unos Brajevog pisma..."
+msgstr "Un&ikod unos Brajevog pisma..."
 
 #. Translators: menu item tool tip text.
 #. Translators: Message presented when user performs input help for this shortcut.
@@ -29,13 +29,11 @@ msgstr "Otvara dijalog za unos Brajevog pisma u numeričkom (brojčanom) obliku"
 #. Translators: Error message displayed when the user enters invalid input.
 #, python-format
 msgid "Unexpected input: '%s', only dots 0 to 8 and - are allowed."
-msgstr ""
-"Neočekivani unos: '%s'; možete unositi samo tačke (najveći broj je 8) i znak "
-"-"
+msgstr "Neočekivani unos: '%s'; možete unositi samo tačke od 0 do 8 i znak -"
 
 #. Translators: The title of the dialog.
 msgid "Convert Braille to Unicode"
-msgstr "Pretvori Brajicu u unikot"
+msgstr "Pretvori Brajicu u unikod"
 
 #. Translators: the label of the edit field.
 msgid "Enter text in numeric braille:"
@@ -52,7 +50,7 @@ msgstr "Tekst je kopiran u privremenu memoriju."
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Unicode Braille Input"
-msgstr "UNIKOD UNOS BRAJEVOG TEKSTA"
+msgstr "Unikod unos Brajevog teksta"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
@@ -61,4 +59,4 @@ msgid ""
 "converts it into unicode braille characters."
 msgstr ""
 "Prikazuje dijalog u kome možete uneti Brajev tekst u numeričkom obliku (npr. "
-"1345-1236-145-1), a zatim uneti tekst pretvara u unikod karaktere."
+"1345-1236-145-1), a zatim uneti tekst pretvara u unikod Brajeve karaktere."

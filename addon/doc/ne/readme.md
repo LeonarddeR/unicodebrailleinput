@@ -1,8 +1,8 @@
 # युनिकोड ब्रेल लगानी (UnicodeBrailleInput) #
 
 * लेखकहरू: मेसर हमिद, प्याट्रिक ज्याद्ददा ।
-* डाउनलोड [स्थिर संस्करण][1]
-* डाउनलोड [विकास संस्करण][2]
+* अनुबहन [स्थिर संस्करण][1]
+* अनुबहन [विकास संस्करण][2]
 
 यो उप-कर्मीले ब्रेल पाठ (जस्तै 1345-1236-145-1) बाट युनिकोड ब्रेल वर्णहरूमा
 रुपान्तरण गर्ने छ ।
@@ -41,6 +41,6 @@
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=ubi
+[1]: https://addons.nvda-project.org/files/get.php?file=ubi
 
-[2]: http://addons.nvda-project.org/files/get.php?file=ubi-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=ubi-dev
