@@ -7,8 +7,10 @@
 यो उप-कर्मीले ब्रेल पाठ (जस्तै 1345-1236-145-1) बाट युनिकोड ब्रेल वर्णहरूमा
 रुपान्तरण गर्ने छ ।
 
-यो विशेष उप-कर्मीको उद्देश्य liblouis तालिकालाई सजिलो बनाउनु र तपाइको भाषामा
-स्वचालित परिक्षण गर्नु हो ।
+The purpose of this specialized addon is to make it easier to help to
+improve liblouis tables and to add automatic tests for your language. With
+the addition of unicode braille table in NVDA 2017.3, this add-on is no
+longer required, as users can choose to input braille with the new table.
 
 ## प्रयोग ##
 

@@ -8,7 +8,9 @@ Acest supliment vă permite să convertiți un text din braille
 (E.G. 1345-1236-145-1) în caracterele Unicode braille.
 
 Scopul acestui add-on specializat este de a îmbunătăți tabelelle liblouis și
-pentru a adăuga teste automate pentru limba ta.
+pentru a adăuga teste automate pentru limba ta. Datorită adăugării tabelelor
+braille unicode în versiunea NVDA 2017.3, acest supliment nu mai este
+necesar, căci utilizatorii pot alege noul tabel din setările braille.
 
 ## Utilizare ##
 

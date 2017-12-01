@@ -7,8 +7,10 @@
 Тази добавка ви позволява да преобразувате текст от брайл (например
 1345-1236-145-1) в брайлови символи на Unicode.
 
-Целта на тази специализирана добавка е да улесни създаването и подобряването
-на брайлови таблици и да предостави автоматизирани тестове на вашия език.
+The purpose of this specialized addon is to make it easier to help to
+improve liblouis tables and to add automatic tests for your language. With
+the addition of unicode braille table in NVDA 2017.3, this add-on is no
+longer required, as users can choose to input braille with the new table.
 
 ## Начин на употреба ##
 

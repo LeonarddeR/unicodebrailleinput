@@ -7,8 +7,10 @@
 A kiegészítővel braille szöveget konvertálhat át (pl. 1345-1236-145-1)
 unikódú braille karakterekre.
 
-Ez a speciállis bővítmény egy új LibLouis tábla elkészítésében, vagy egy már
-kész nyelv tesztelésében nyújt nagy segítséget.
+The purpose of this specialized addon is to make it easier to help to
+improve liblouis tables and to add automatic tests for your language. With
+the addition of unicode braille table in NVDA 2017.3, this add-on is no
+longer required, as users can choose to input braille with the new table.
 
 ## Használat ##
 

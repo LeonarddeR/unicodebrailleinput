@@ -7,8 +7,10 @@
 Tällä lisäosalla voit muuntaa tekstiä pistekirjoituksesta
 (esim. 1345-1236-145-1) unicode-pistekirjoitusmerkeiksi.
 
-Tämän lisäosan tarkoituksena on Liblouis-taulukkojen parantelun
-helpottaminen sekä automaattisten testien lisääminen niille.
+Tämän erikoistuneen lisäosan tarkoituksena on Liblouis-taulukkojen
+parantelun helpottaminen sekä automaattisten testien lisääminen niille. Tätä
+ei enää tarvita NVDA 2017.3:ssa lisätyn Unicode-pistetaulukon vuoksi, sillä
+sitä on mahdollista käyttää Unicode-pistekirjoituksen syöttämiseen.
 
 ## Käyttö ##
 

@@ -7,9 +7,10 @@
 Questo componente aggiuntivo permette di convertire il testo da braille (ad
 esempio 1345-1236-145-1) in caratteri braille Unicode.
 
-Lo scopo di questo componente aggiuntivo specifico è di facilitare lo
-sviluppo delle tabelle di Liblouis ed aggiungere test automatici per la
-propria lingua.
+The purpose of this specialized addon is to make it easier to help to
+improve liblouis tables and to add automatic tests for your language. With
+the addition of unicode braille table in NVDA 2017.3, this add-on is no
+longer required, as users can choose to input braille with the new table.
 
 ## Utilizzo ##
 

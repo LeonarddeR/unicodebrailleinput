@@ -7,9 +7,10 @@
 Deze add-on stelt u in staat om tekst van braille (bv 1345-1236-145-1) te
 converteren naar unicode braillekarakters.
 
-Het doel van deze gespecialiseerde add-on is om het makkelijker te maken om
-Liblouis tabellen te verbeteren en automatische tests voor talen toe te
-voegen.
+The purpose of this specialized addon is to make it easier to help to
+improve liblouis tables and to add automatic tests for your language. With
+the addition of unicode braille table in NVDA 2017.3, this add-on is no
+longer required, as users can choose to input braille with the new table.
 
 ## Gebruik ##
 

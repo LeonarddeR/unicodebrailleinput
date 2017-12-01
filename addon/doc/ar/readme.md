@@ -7,8 +7,10 @@
 تتيح لك هذه الإضافة تحويل النص من برايل (على سبيل المثال,
 1345-1236-145-1)إلى أحرف بشفرة برايل الموحدة.
 
-الغرض من هذه الإضافة هو سهولة المساهمة في تطوير وتحسين جداول ليبلويس كما
-أنها تمكن من الاختبار الآلي للخط البارز بلغتك.
+The purpose of this specialized addon is to make it easier to help to
+improve liblouis tables and to add automatic tests for your language. With
+the addition of unicode braille table in NVDA 2017.3, this add-on is no
+longer required, as users can choose to input braille with the new table.
 
 ## الاستخدام ##
 

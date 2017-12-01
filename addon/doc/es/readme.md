@@ -9,7 +9,9 @@ Este complemento te permite convertir texto de braille
 
 El propósito de este complemento especializado es hacer más fácil el ayudar
 a mejorar las tablas de liblouis y añadir pruebas automáticas para tu
-idioma.
+idioma. Con la incorporación de tablas braille unicode en NVDA 2017.3, este
+complemento ya no se requiere, ya que los usuarios pueden elegir introducir
+braille con la tabla nueva.
 
 ## Utilización ##
 

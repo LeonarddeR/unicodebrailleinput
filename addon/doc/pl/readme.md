@@ -7,9 +7,10 @@
 Ten dodatek pozwala na konwersję znaków brajlowskich np. 1345-1236-145-1, na
 znaki brajla w systemie unicode
 
-celem tego dodatku jest ułatwienie pracy twórcom tablic brajla dla
-biblioteki liblouis oraz dodanie automatycznych testów dla języków
-narodowych
+The purpose of this specialized addon is to make it easier to help to
+improve liblouis tables and to add automatic tests for your language. With
+the addition of unicode braille table in NVDA 2017.3, this add-on is no
+longer required, as users can choose to input braille with the new table.
 
 ## użycie ##
 
