@@ -8,10 +8,11 @@ Mit dieser Erweiterung können Zeichen, deren angezeigte Braillepunkte
 numerisch angegeben werden (z. B. 1345-1236-145-1) in Unicode konvertiert
 werden.
 
-The purpose of this specialized addon is to make it easier to help to
-improve liblouis tables and to add automatic tests for your language. With
-the addition of unicode braille table in NVDA 2017.3, this add-on is no
-longer required, as users can choose to input braille with the new table.
+Der Zweck dieser Erweiterung ist es, die Verbesserung von
+liblouis-Braille-Tabellen zu erleichtern und automatische Tests für Ihre
+Sprache hinzuzufügen. Mit der Implementierung der
+Unicode-Punktschriftentabelle in NVDA 2017.3 entfällt diese Erweiterung, da
+der Anwender die Braille-Eingabe mit der neuen Tabelle wählen kann.
 
 ## Verwendung ##
 
