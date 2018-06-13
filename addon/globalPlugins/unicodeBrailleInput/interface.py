@@ -84,7 +84,6 @@ class B2UDialog(gui.SettingsDialog):
 		self._brailleTextEdit.SetFocus()
 
 	def onOk(self, event):
-		super(B2UDialog, self).onOk(event)
 		value = self._brailleTextEdit.GetValue()
 		regularSpace = self._regularSpaceChk.GetValue()
 		try:
@@ -94,3 +93,4 @@ class B2UDialog(gui.SettingsDialog):
 			wx.CallLater(100, message, _("Unicode text copied to clipboard ready for you to paste."))
 		except ValueError as e:
 			wx.CallLater(100, message, e.message)
+		super(B2UDialog, self).onOk(event)
