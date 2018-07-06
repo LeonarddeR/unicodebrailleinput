@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: unicodeBrailleInput 1.0.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-03-03 12:18+0100\n"
-"PO-Revision-Date: 2016-02-26 02:01-0800\n"
+"PO-Revision-Date: 2018-07-04 09:28+0200\n"
 "Last-Translator: Ócsvári Áron <oaron1@gmail.com>\n"
 "Language-Team: HU <LL@li.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 2.0.8\n"
 
 #. Translators: name of menu item.
 msgid "Un&icode Braille Input..."
@@ -47,7 +47,8 @@ msgstr "Átkonvertálja a numerikus braille karaktereket ASCII karakterekké"
 
 #. Translators: This is the message when unicode text has been copied to the clipboard.
 msgid "Unicode text copied to clipboard ready for you to paste."
-msgstr "A unikódú szöveg a vágólapra lett másolva, készen áll a beillesztésre."
+msgstr ""
+"Az unikódú szöveg a vágólapra lett másolva, készen áll a beillesztésre."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
