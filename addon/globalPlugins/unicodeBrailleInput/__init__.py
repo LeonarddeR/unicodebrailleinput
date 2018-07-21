@@ -37,8 +37,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def terminate(self):
 		try:
-			self.tools.RemoveItem(self.menuItem)
-		except wx.PyDeadObjectError:
+			if wx.version().startswith("4"):
+				self.tools.Remove(self.menuItem)
+			else:
+				self.tools.RemoveItem(self.menuItem)
+		except:
 			pass
 
 	__gestures={
