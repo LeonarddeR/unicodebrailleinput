@@ -12,6 +12,10 @@ import wx
 from re import compile
 from ui import message
 from api import copyToClip
+import config
+import os
+import louis
+import brailleTables
 
 # Initialize translations.
 addonHandler.initTranslation()
@@ -19,8 +23,21 @@ addonHandler.initTranslation()
 conv = unichr if sys.version_info[0] == 2 else chr
 
 invalidInputRegexp = compile('[^0-8-]+')
+def text2uni(text, regularSpace = False):
+	"""Convert text to Unicode braille
+	@param text: the text to convert
+	@param regularSpace boolean if True, space will be replaced by a regular one instead of the braille space
+	@return the result in Unicode
+	"""
+	text = unicode(text).replace('\0','')
+	text=louis.translate([os.path.join(brailleTables.TABLES_DIR, config.conf['braille']['inputTable']),'braille-patterns.cti'],text,mode=louis.dotsIO)[0]
+	out = "".join(conv(0x2800|ord(cell) & 255) for cell in text)
+	if regularSpace:
+		out = out.replace(u'\u2800',' ')
+	return out
+
 def dots2uni(cells, regularSpace = False):
-	""" Convert a braille to Unicode
+	""" Convert braille to Unicode
 	@param cells the braille cells (I.E. 13457-12367-1457-17)
 	@param regularSpace boolean if True, space will be replaced by a regular one instead of the braille space
 	@return the result in Unicode (NVDA in our example)
@@ -46,7 +63,7 @@ def dots2uni(cells, regularSpace = False):
 	for cell in cells:
 		val = 0
 		if '1' in cell: val |= 1
-		if '2' in cell: val |= 2
+		if '2' in cell	: val |= 2
 		if '3' in cell: val |= 4
 		if '4' in cell: val |= 8
 		if '5' in cell: val |= 0x10
@@ -67,27 +84,35 @@ class B2UDialog(gui.SettingsDialog):
 		super(B2UDialog, self).__init__(parent)
 
 	def makeSettings(self, sizer):
-		brailleTextSizer = wx.BoxSizer(wx.HORIZONTAL)
+		sizerHelper = gui.guiHelper.BoxSizerHelper(self, sizer=sizer)
+		inputTypeChoices=[
+			# Translators: the label of an input type
+			_("Braille &dots (e.g. 1345-1236-145-1)"),
+			# Translators: the label of an input type
+			_("Normal &text according to %s") % brailleTables.getTable(config.conf['braille']['inputTable']).displayName
+		]
+		# Translators: the label of the radio box to choose the input type.
+		self._inputTypeRadioBox=sizerHelper.addItem(wx.RadioBox(self,label=_("Input type"), choices=inputTypeChoices))
 		# Translators: the label of the edit field.
-		brailleTextLabel = wx.StaticText(self, label=_("Enter text in numeric braille:"))
-		brailleTextSizer.Add(brailleTextLabel)
-		self._brailleTextEdit = wx.TextCtrl(self, -1)
-		brailleTextSizer.Add(self._brailleTextEdit)
+		self._brailleTextEdit = sizerHelper.addLabeledControl(_("&Input:"),wx.TextCtrl)
 		self._regularSpaceChk = wx.CheckBox(self,
 			# Translators: Label for a checkbox, wether to use a regular space or the Braille unicode space.
-			label = _("Convert Unicode Braille space to ASCII space"))
+			label = _("Convert Unicode Braille &space to ASCII space"))
 		self._regularSpaceChk.SetValue(False)
-		brailleTextSizer.Add(self._regularSpaceChk)
-		sizer.Add(brailleTextSizer)
+		sizerHelper.addItem(self._regularSpaceChk)
 
 	def postInit(self):
-		self._brailleTextEdit.SetFocus()
+		self._inputTypeRadioBox.SetFocus()
 
 	def onOk(self, event):
 		value = self._brailleTextEdit.GetValue()
+		type = self._inputTypeRadioBox.GetSelection()
 		regularSpace = self._regularSpaceChk.GetValue()
 		try:
-			value = dots2uni(value, regularSpace)
+			if not type:
+				value = dots2uni(value, regularSpace)
+			else:
+				value = text2uni(value, regularSpace)
 			copyToClip(value)
 			# Translators: This is the message when unicode text has been copied to the clipboard.
 			wx.CallLater(100, message, _("Unicode text copied to clipboard ready for you to paste."))
