@@ -1,4 +1,4 @@
-# Wprowadzanie unikodu brajla / UnicodeBrailleInput #
+# UnicodeBrailleInput #
 
 * autorzy: Mesar Hameed, Patrick Zajda.
 * Pobierz [wersja stabilna][1]
