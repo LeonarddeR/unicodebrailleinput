@@ -1,24 +1,25 @@
-# Entrada unicode para braile #
+# Entrada unicode para braille #
 
 * Autores: Mesar Hameed, Patrick Zajda.
 * baixe a [versão estável][1]
 * baixe a [versão em desenvolvimento][2]
 
-Este complemento possibilita converter textos braile (ex.: 1345-1236-145-1)
-para caracteres braile unicode.
+Este complemento possibilita converter textos braille (ex.: 1345-1236-145-1)
+para caracteres braille unicode.
 
-The purpose of this specialized addon is to make it easier to help to
-improve liblouis tables and to add automatic tests for your language. With
-the addition of unicode braille table in NVDA 2017.3, this add-on is no
-longer required, as users can choose to input braille with the new table.
+O objetivo deste complemento especializado é facilitar a ajuda para melhorar
+as tabelas liblouis e adicionar testes automáticos para o seu idioma. Com a
+adição da tabela braille unicode no NVDA 2017.3, esse complemento não é mais
+necessário, pois os usuários podem optar por inserir braille com a nova
+tabela.
 
 ## Como usar ##
 
 * Abra um editor de textos que reconheça unicode (por exemplo Notepad++ ou
   AkelPad)
-* Pressione NVDA+Ctrl+U ou escolha Entrada Braile Unicode, encontrado no
+* Pressione NVDA+Ctrl+U ou escolha Entrada Braille Unicode, encontrado no
   menu ferramentas do NVDA
-* Digite o texto braile em forma numérica.
+* Digite o texto braille em forma numérica.
 * Pressione OK.
 * Serão copiados para a área de transferência os devidos caracteres unicode
   prontos para serem colados.
@@ -33,7 +34,7 @@ longer required, as users can choose to input braille with the new table.
 * Muitas traduções novas.
 * Adicionada documentação no menu Ajuda do NVDA.
 * Adicionada uma caixa de seleção para substituir opcionalmente o espaço
-  braile (caractere 0x2800) pelo caractere de espaço regular.
+  braille (caractere 0x2800) pelo caractere de espaço regular.
 * Os atalhos agora podem ser reatribuídos usando o diálogo de gestos para
   entrada do NVDA, na categoria ferramentas.
 

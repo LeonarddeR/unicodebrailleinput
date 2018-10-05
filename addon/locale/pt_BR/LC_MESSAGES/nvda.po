@@ -1,15 +1,15 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Brazilian Portuguese translation of unicodeBrailleInput.
+# Copyright (C) 2013-2018 NVDA Contributors.
+# This file is distributed under the same license as the NVDA package.
+# Cleverson Casarin Uliana <clever97@gmail.com>, 2013-2014, 2017.
+# Tiago Melo Casal <tcasal@intervox.nce.ufrj.br>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: unicodeBrailleInput 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-03-03 21:32+0100\n"
-"PO-Revision-Date: 2016-02-26 02:31-0800\n"
-"Last-Translator: Cleverson Casarin Uliana <clever92000@yahoo.com.br>\n"
+"PO-Revision-Date: 2018-09-28 21:04-0300\n"
+"Last-Translator: Tiago Melo Casal <tcasal@intervox.nce.ufrj.br>\n"
 "Language-Team: Equipe de tradução do NVDA para Português do Brasil "
 "<clever92000@yahoo.com.br>\n"
 "Language: pt_BR\n"
@@ -17,16 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.6.11\n"
 
 #. Translators: name of menu item.
 msgid "Un&icode Braille Input..."
-msgstr "Entrada em braile un&icode..."
+msgstr "Entrada em braille un&icode..."
 
 #. Translators: menu item tool tip text.
 #. Translators: Message presented when user performs input help for this shortcut.
 msgid "Displays a dialog to enter braille in numeric form."
-msgstr "Exibe um diálogo para inserir braile em forma numérica."
+msgstr "Exibe um diálogo para inserir braille em forma numérica."
 
 #. Translators: Error message displayed when the user enters invalid input.
 #, python-format
@@ -35,15 +35,15 @@ msgstr "Entrada inesperada: '%s', só são permitidos pontos de 0 a 8 e -."
 
 #. Translators: The title of the dialog.
 msgid "Convert Braille to Unicode"
-msgstr "Converter Braile para Unicode"
+msgstr "Converter Braille para Unicode"
 
 #. Translators: the label of the edit field.
 msgid "Enter text in numeric braille:"
-msgstr "Insira o texto em braile numérico:"
+msgstr "Insira o texto em braille numérico:"
 
 #. Translators: Label for a checkbox, wether to use a regular space or the Braille unicode space.
 msgid "Convert Unicode Braille space to ASCII space"
-msgstr "Converter espaço em braile unicode para espaço em braile ascii"
+msgstr "Converter espaço em Braille unicode para espaço em ASCII"
 
 #. Translators: This is the message when unicode text has been copied to the clipboard.
 msgid "Unicode text copied to clipboard ready for you to paste."
@@ -53,7 +53,7 @@ msgstr ""
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Unicode Braille Input"
-msgstr "Entrada para braile unicode"
+msgstr "Entrada para braille unicode"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
@@ -61,5 +61,5 @@ msgid ""
 "Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and "
 "converts it into unicode braille characters."
 msgstr ""
-"Exibe um campo de texto para digitar braile numérico (ex.: 1345-1236-145-1), "
-"e então o converte para caracteres braile unicode."
+"Exibe um campo de texto para digitar braille numérico (ex.: "
+"1345-1236-145-1), e então o converte para caracteres braille unicode."
