@@ -2,7 +2,7 @@
 
 * Autoren: Mesar Hameed, Patrick Zajda.
 * [Stabile Version][1] herunterladen
-* [Testversion][2] herunterladen
+* [Entwicklungsversion][2] herunterladen
 
 Mit dieser Erweiterung können Zeichen, deren angezeigte Braillepunkte
 numerisch angegeben werden (z. B. 1345-1236-145-1) in Unicode konvertiert
