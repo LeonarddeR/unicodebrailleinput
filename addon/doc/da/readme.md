@@ -7,10 +7,11 @@
 Med dette tilføjelsesprogram kan du konvertere tekst fra Braille
 (f.eks. 1345-1236-145-1) til Unicode Braille-tegn.
 
-The purpose of this specialized addon is to make it easier to help to
-improve liblouis tables and to add automatic tests for your language. With
-the addition of unicode braille table in NVDA 2017.3, this add-on is no
-longer required, as users can choose to input braille with the new table.
+Formålet med denne specialiserede tilføjelse er at gøre det nemmere at
+hjælpe med at forbedre liblouis-tabeller og tilføje automatiske tests til
+dit sprog. Med tilføjelsen af unicode Braille i NVDA 2017.3 er denne
+tilføjelse ikke længere nødvendig, da brugerne kan vælge at indtaste
+punkskrift med de nye tabeller.
 
 ## Brug ##
 
