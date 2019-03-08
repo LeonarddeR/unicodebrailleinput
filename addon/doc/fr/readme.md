@@ -4,14 +4,14 @@
 * Télécharger [version stable][1]
 * Télécharger[version de développement][2]
 
-Ce module complémentaire permet de convertir du texte depuis du braille (ex
-: 1345-1236-145-1) en caractères braille unicode.
+Cette extension permet de convertir du texte depuis du braille (ex :
+1345-1236-145-1) en caractères braille unicode.
 
-Le but de ce module complémentaire spécialisé est de rendre plus simple
-l'aide pour améliorer les tables liblouis et la création de tests
-automatiques pour le Français par exemple. Avec l'ajout de la table braille
-unicode dans NVDA 2017.3, ce module complémentaire n'est plus requis, car
-les utilisateurs peuvent choisir la saisie braille avec la nouvelle table.
+Le but de cette extension spécialisée est de rendre plus simple l'aide pour
+améliorer les tables liblouis et la création de tests automatiques pour le
+Français par exemple. Avec l'ajout de la table braille unicode dans NVDA
+2017.3, cette extension n'est plus requise, car les utilisateurs peuvent
+choisir la saisie braille avec la nouvelle table.
 
 ## Utilisation ##
 
@@ -26,8 +26,8 @@ les utilisateurs peuvent choisir la saisie braille avec la nouvelle table.
 
 ## Changements pour la version 2.0 ##
 
-* L'aide du module complémentaire est disponible à partir du Gestionnaire de
-  modules complémentaires.
+* L'aide de l'extension est disponible à partir du Gestionnaire
+  d'extensions.
 
 ## Changements pour la version 1.1 ##
 
