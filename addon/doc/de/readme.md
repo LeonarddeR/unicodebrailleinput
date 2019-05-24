@@ -1,8 +1,8 @@
 # Unicode-Braille-Eingabe #
 
 * Autoren: Mesar Hameed, Patrick Zajda.
-* [Stabile Version][1] herunterladen
-* [Entwicklungsversion][2] herunterladen
+* [Stabile Version herunterladen][1]
+* [Entwicklerversion herunterladen][2]
 
 Mit dieser Erweiterung können Zeichen, deren angezeigte Braillepunkte
 numerisch angegeben werden (z. B. 1345-1236-145-1) in Unicode konvertiert
