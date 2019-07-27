@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # unicodeBrailleInput Global Plugin for NVDA
-# Copyright (C) 2013 Mesar Hameed <mesar.hameed@gmail.com>, Patrick ZAJDA <patrick@zajda.fr>
+# Copyright (C) 2013-2019 Mesar Hameed, Patrick Zajda, Leonard de Ruijter
 # This file is covered by the GNU General Public License.
 # You can read the licence by clicking Help->Licence in the NVDA menu
 # or by visiting http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -9,7 +9,7 @@
 import globalPluginHandler
 import addonHandler
 import gui
-import interface
+from . import interface
 import wx
 from globalCommands import SCRCAT_TOOLS
 

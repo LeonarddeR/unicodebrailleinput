@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # unicodeBrailleInput Global Plugin for NVDA interface
-# Copyright (C) 2013 Mesar Hameed <mesar.hameed@gmail.com>, Patrick ZAJDA <patrick@zajda.fr>
+# Copyright (C) 2013-2019 Mesar Hameed, Patrick Zajda, Leonard de RUijter
 # This file is covered by the GNU General Public License.
 # You can read the licence by clicking Help->Licence in the NVDA menu
 # or by visiting http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -16,6 +16,7 @@ import config
 import os
 import louis
 import brailleTables
+from six import text_type, unichr
 
 # Initialize translations.
 addonHandler.initTranslation()
@@ -29,7 +30,7 @@ def text2uni(text, regularSpace = False):
 	@param regularSpace boolean if True, space will be replaced by a regular one instead of the braille space
 	@return the result in Unicode
 	"""
-	text = unicode(text).replace('\0','')
+	text = text_type(text).replace('\0','')
 	text=louis.translate([os.path.join(brailleTables.TABLES_DIR, config.conf['braille']['inputTable']),'braille-patterns.cti'],text,mode=louis.dotsIO)[0]
 	out = "".join(conv(0x2800|ord(cell) & 255) for cell in text)
 	if regularSpace:
