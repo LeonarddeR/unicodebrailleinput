@@ -5,8 +5,8 @@ install:
   - py -m pip install markdown scons
 
 build_script:
-  - scons
-  - scons pot
+  - c:\python37\scripts\scons
+  - c:\python37\scripts\scons pot
 
 artifacts:
   - path: '*.nvda-addon'
