@@ -1,30 +1,41 @@
 # UnicodeBrailleInput #
 
-* Auteurs : Mesar Hameed, Patrick Zajda.
+* Authors: Mesar Hameed, Patrick Zajda, Leonard de Ruijter.
 * Télécharger [version stable][1]
-* Télécharger[version de développement][2]
 
-Cette extension permet de convertir du texte depuis du braille (ex :
-1345-1236-145-1) en caractères braille unicode.
+This add-on allows you to convert text from braille (E.G. 1345-1236-145-1)
+to Unicode braille characters.  You can also convert text according to the
+currently selected input braille table.
 
-Le but de cette extension spécialisée est de rendre plus simple l'aide pour
-améliorer les tables liblouis et la création de tests automatiques pour le
-Français par exemple. Avec l'ajout de la table braille unicode dans NVDA
-2017.3, cette extension n'est plus requise, car les utilisateurs peuvent
-choisir la saisie braille avec la nouvelle table.
+The purpose of this specialized addon is to make it easier to help to
+improve liblouis tables and to add automatic tests for your language.  With
+the addition of unicode braille table in NVDA 2017.3, this add-on is no
+longer required for this, as users can choose to input braille with the new
+table.  However, this add-on can still aid in converting normal text to
+unicode braille according to a particular input table.
 
-## Utilisation ##
+## Utilisation
 
-* Ouvrez un éditeur de texte qui supporte l'unicode (comme Notepad plus
-  plus)
-* Appuyez sur NVDA+Ctrl+U ou choisir Entrée Braille Unicode trouvé dans le
-  sous-menu Outils de NVDA
-* Saisissez votre texte en braille en forme numérique
+* Open a unicode aware text editor (for example Notepad++).
+* Press NVDA+Ctrl+U or choose Unicode Braille Input found under NVDA tools
+  menu.
+* Select whether your input consists of braille dots (e.g. 1345-1236-145-1)
+  or normal text according to the current braille table (e.g. Dutch
+  (Netherlands).
+* Type your braille text in numeric form or your normal text, respectively.
 * Cliquez sur OK.
 * Les caractères unicodes requis seront copiés dans votre presse-papiers
   pour être collés.
 
-## Changements pour la version 2.0 ##
+## Changes for 3.0
+
+* New maintainer: Leonard de Ruijter.
+* Add-on is compatible with Python 3 and therefore with NVDA 2019.3 and
+  above.
+* Added the ability to create unicode braille from normal text according to
+  the currently selected input braille table.
+
+## Changements pour la version 2.0
 
 * L'aide de l'extension est disponible à partir du Gestionnaire
   d'extensions.
@@ -48,5 +59,3 @@ choisir la saisie braille avec la nouvelle table.
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ubi
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ubi-dev
