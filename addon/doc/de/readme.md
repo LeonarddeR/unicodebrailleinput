@@ -17,7 +17,7 @@ in Unicode-Punktschrift umzuwandeln.
 
 ## Verwendung
 
-* Open a unicode aware text editor (for example Notepad++).
+* Öffnen Sie einen Text-Editor, der Unicode unterstützt (z. B. Notepad++)
 * Drücken Sie NVDA+Strg+U oder wählen Sie Unicode-Braille-Eingabe aus dem
   Menü Extras im NVDA-Menü aus.
 * Wählen Sie aus, ob Ihre Eingabe aus Braille-Punkten
