@@ -86,6 +86,9 @@ class B2UDialog(gui.SettingsDialog):
 
 	def makeSettings(self, sizer):
 		sizerHelper = gui.guiHelper.BoxSizerHelper(self, sizer=sizer)
+		# Translators: the label of the edit field.
+		self._brailleTextEdit = sizerHelper.addLabeledControl(_("&Input:"),wx.TextCtrl)
+
 		inputTypeChoices=[
 			# Translators: the label of an input type
 			_("Braille &dots (e.g. 1345-1236-145-1)"),
@@ -94,8 +97,7 @@ class B2UDialog(gui.SettingsDialog):
 		]
 		# Translators: the label of the radio box to choose the input type.
 		self._inputTypeRadioBox=sizerHelper.addItem(wx.RadioBox(self,label=_("Input type"), choices=inputTypeChoices))
-		# Translators: the label of the edit field.
-		self._brailleTextEdit = sizerHelper.addLabeledControl(_("&Input:"),wx.TextCtrl)
+
 		self._regularSpaceChk = wx.CheckBox(self,
 			# Translators: Label for a checkbox, wether to use a regular space or the Braille unicode space.
 			label = _("Convert Unicode Braille &space to ASCII space"))
@@ -103,7 +105,7 @@ class B2UDialog(gui.SettingsDialog):
 		sizerHelper.addItem(self._regularSpaceChk)
 
 	def postInit(self):
-		self._inputTypeRadioBox.SetFocus()
+		self._brailleTextEdit.SetFocus()
 
 	def onOk(self, event):
 		value = self._brailleTextEdit.GetValue()
