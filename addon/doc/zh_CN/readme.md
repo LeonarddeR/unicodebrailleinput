@@ -1,23 +1,40 @@
 # Unicode盲文输入 #
 
-* 作者: Mesar Hameed, Patrick Zajda.
+* Authors: Mesar Hameed, Patrick Zajda, Leonard de Ruijter.
 * 下载 [稳定版][1]
-* 下载 [开发板][2]
 
-这个插件允许你将文本从盲文（E.G. 1345-1236-145-1）转换成Unicode盲文字符。
+This add-on allows you to convert text from braille (E.G. 1345-1236-145-1)
+to Unicode braille characters.  You can also convert text according to the
+currently selected input braille table.
 
-这个插件的目的是使它更容易帮助改进liblouis表，并为您的语言添加自动测试。随着NVDA
-2017.3中添加了unicode盲文表格，该附加功能不再需要，因为用户可以选择在新表格中输入盲文。
+The purpose of this specialized addon is to make it easier to help to
+improve liblouis tables and to add automatic tests for your language.  With
+the addition of unicode braille table in NVDA 2017.3, this add-on is no
+longer required for this, as users can choose to input braille with the new
+table.  However, this add-on can still aid in converting normal text to
+unicode braille according to a particular input table.
 
-## 使用方法 ##
+## 使用方法
 
-* 打开一个支持unicode的文本编辑器（例如Notepad plus plus）
-* NVDA + Ctrl + U或选择在NVDA工具菜单下找到的Unicode盲文输入
-* 以数字形式输入您的盲文文本。
+* Open a unicode aware text editor (for example Notepad++).
+* Press NVDA+Ctrl+U or choose Unicode Braille Input found under NVDA tools
+  menu.
+* Select whether your input consists of braille dots (e.g. 1345-1236-145-1)
+  or normal text according to the current braille table (e.g. Dutch
+  (Netherlands).
+* Type your braille text in numeric form or your normal text, respectively.
 * 按OK。
 * 所需的unicode字符将被复制到您的剪贴板以供您粘贴。
 
-## 2.0更新日志: ##
+## Changes for 3.0
+
+* New maintainer: Leonard de Ruijter.
+* Add-on is compatible with Python 3 and therefore with NVDA 2019.3 and
+  above.
+* Added the ability to create unicode braille from normal text according to
+  the currently selected input braille table.
+
+## 2.0更新日志:
 
 * 插件帮助可从附加组件管理器获得。
 
@@ -37,5 +54,3 @@
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ubi
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ubi-dev
