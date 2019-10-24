@@ -19,6 +19,11 @@ However, this add-on can still aid in converting normal text to unicode braille 
 * Press OK.
 * The required unicode characters will be copied to your clipboard ready for you to  paste.
 
+## Changes for 3.1
+
+* The tab order for the radio buttons and the input edit control has been swapped.
+* Updated translations.
+
 ## Changes for 3.0
 
 * New maintainer: Leonard de Ruijter.
