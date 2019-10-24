@@ -54,7 +54,7 @@ in Unicode-Punktschrift umzuwandeln.
 ## Änderungen in 1.0 ##
 
 * Ehrstveröffentlichung
-* Neue Sprachen: Französisch.
+* Neue Sprachen: Französisch
 
 [[!tag dev stable]]
 
