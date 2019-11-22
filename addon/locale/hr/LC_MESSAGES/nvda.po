@@ -1,59 +1,62 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Hrvatska lokalizacija za NVDA.
+# Copyright (C) 2006-2019 NVDA contributors <https://www.nvda-project.org>
+# This file is distributed under the same license as the virtualRevision package.
+# Zvonimir Stanečić <zvonimirek222@yandex.com>, 2014.
+# Milo Ivir <mail@milotype.de>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: unicodeBrailleInput 1.01\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-03-13 14:03+0100\n"
-"PO-Revision-Date: 2014-11-28 17:31+0100\n"
-"Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
+"PO-Revision-Date: 2019-11-19 17:31+0100\n"
+"Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: hr <LL@li.org>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 2.2.4\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 
 #. Translators: name of menu item.
 msgid "Un&icode Braille Input..."
-msgstr "Un&icode Unos Brajevih Znakova..."
+msgstr "Unos brajice u un&ikod formatu …"
 
 #. Translators: menu item tool tip text.
 #. Translators: Message presented when user performs input help for this shortcut.
 msgid "Displays a dialog to enter braille in numeric form."
-msgstr ""
-"Pokazuje dijaloški okvir koji omogućava unos brajevih znakova u brojčanom "
-"obliku."
+msgstr "Prikazuje dijaloški okvir za unos brajice u numeričkom obliku."
 
 #. Translators: Error message displayed when the user enters invalid input.
 #, python-format
 msgid "Unexpected input: '%s', only dots 0 to 8 and - are allowed."
 msgstr ""
-"Neočekivani unos: '%s', dozvoljene su točkice od 0 do 8 i znak - (crtica)."
+"Neočekivani unos: „%s”, dozvoljene su samo točkice od 0 do 8 i crtica."
 
 #. Translators: The title of the dialog.
 msgid "Convert Braille to Unicode"
-msgstr "Pretvori brajevo pismo u Unicode"
+msgstr "Pretvori brajicu u unikod"
 
 #. Translators: the label of the edit field.
 msgid "Enter text in numeric braille:"
-msgstr "Unesite tekst u obliku numeričke brajice:"
+msgstr "Upiši tekst numeričkom brajicom:"
 
 #. Translators: Label for a checkbox, wether to use a regular space or the Braille unicode space.
 msgid "Convert Unicode Braille space to ASCII space"
-msgstr "pretvori razmak unicode brajevog pisma u ascii razma"
+msgstr "Pretvori unikod brajevog razmaka u ASCII razmak"
 
 #. Translators: This is the message when unicode text has been copied to the clipboard.
 msgid "Unicode text copied to clipboard ready for you to paste."
-msgstr "Unicode tekst je kopiran u međuspremnik spreman za lijepljenje."
+msgstr ""
+"Tekst u unikod formatu je kopiran u međuspremnik i spreman je za "
+"lijepljenje."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Unicode Braille Input"
-msgstr "Unicode unos brajevih znakova"
+msgstr "Unos brajice u unikod formatu"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
@@ -61,5 +64,5 @@ msgid ""
 "Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and "
 "converts it into unicode braille characters."
 msgstr ""
-"Prikazuje tekstualno polje za upis brajice u numeričkom obliku (NPR. "
-"1345-1236-145-1) i pretvara ih u unicode brajeve znakove."
+"Prikazuje tekstualno polje za upis brajice u numeričkom obliku (npr. "
+"1345-1236-145-1) i pretvara ih u brajeve unikod znakove."
