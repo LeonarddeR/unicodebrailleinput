@@ -1,39 +1,40 @@
-# Entrada unicode para braille #
+# Entrada Braille Unicode (UnicodeBrailleInput) #
 
-* Authors: Mesar Hameed, Patrick Zajda, Leonard de Ruijter.
+* Autores: Mesar Hameed, Patrick Zajda, Leonard de Ruijter.
 * baixe a [versão estável][1]
 
-This add-on allows you to convert text from braille (E.G. 1345-1236-145-1)
-to Unicode braille characters.  You can also convert text according to the
-currently selected input braille table.
+Esse complemento permite converter texto de braille (por exemplo,
+1345-1236-145-1) em caracteres Braille Unicode. Você também pode converter
+texto de acordo com a tabela braille de entrada atualmente selecionada.
 
-The purpose of this specialized addon is to make it easier to help to
-improve liblouis tables and to add automatic tests for your language.  With
-the addition of unicode braille table in NVDA 2017.3, this add-on is no
-longer required for this, as users can choose to input braille with the new
-table.  However, this add-on can still aid in converting normal text to
-unicode braille according to a particular input table.
+O objetivo deste complemento especializado é facilitar a melhoria das
+tabelas liblouis e adicionar testes automáticos ao seu idioma. Com a adição
+da tabela braille unicode no NVDA 2017.3, esse complemento não é mais
+necessário, pois os usuários podem optar por inserir braille com a nova
+tabela. No entanto, esse complemento ainda pode ajudar na conversão de texto
+normal em braille unicode, de acordo com uma tabela de entrada específica.
 
 ## Como usar
 
-* Open a unicode aware text editor (for example Notepad++).
-* Press NVDA+Ctrl+U or choose Unicode Braille Input found under NVDA tools
-  menu.
-* Select whether your input consists of braille dots (e.g. 1345-1236-145-1)
-  or normal text according to the current braille table (e.g. Dutch
-  (Netherlands).
-* Type your braille text in numeric form or your normal text, respectively.
+* Abra um editor de texto compatível com unicode (por exemplo, Notepad++).
+* Pressione NVDA+Ctrl+U ou escolha Entrada Braille Unicode encontrada no
+  menu de Ferramentas do NVDA.
+* Selecione se sua entrada consiste em pontos braille (por exemplo,
+  1345-1236-145-1) ou texto normal de acordo com a tabela braille atual (por
+  exemplo, Holandês (Holanda)).
+* Digite seu texto braille em forma numérica ou em texto normal,
+  respectivamente.
 * Pressione OK.
 * Serão copiados para a área de transferência os devidos caracteres unicode
   prontos para serem colados.
 
-## Changes for 3.0
+## Mudanças na 3.0
 
-* New maintainer: Leonard de Ruijter.
-* Add-on is compatible with Python 3 and therefore with NVDA 2019.3 and
-  above.
-* Added the ability to create unicode braille from normal text according to
-  the currently selected input braille table.
+* Novo mantenedor: Leonard de Ruijter.
+* O complemento é compatível com Python 3 e, portanto, com o NVDA 2019.3 e
+  superiores.
+* Foi adicionada a capacidade de criar braille unicode a partir de texto
+  normal, de acordo com a tabela braille de entrada atualmente selecionada.
 
 ## Mudanças na 2.0
 
