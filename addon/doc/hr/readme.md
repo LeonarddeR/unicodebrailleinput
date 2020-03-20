@@ -16,9 +16,8 @@ znakove, na osnovi određene tablice za unos.
 
 ## Primjena
 
-* Otvori uređivač teksta koji prepoznaje unikod (na primjer Notepad plus
-  plus).
-* Pritisni NVDA+Ctrl+U ili odaberi „Unos brajice u unikod formatu” u NVDA
+* Otvori uređivač teksta koji prepoznaje unikod (na primjer Notepad++).
+* Pritisni NVDA+kontrol+U ili odaberi „Unos brajice u unikod formatu” u NVDA
   izborniku Alati.
 * Odaberi vrstu unosa: brajeve točke (npr. 1345-1236-145-1) ili normalni
   tekst prema trenutačnoj brajevoj tablici (npr. Hrvatski (Hrvatska).
