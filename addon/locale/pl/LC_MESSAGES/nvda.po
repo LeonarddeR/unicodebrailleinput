@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: unicodeBrailleInput 1.1-dev\n"
-"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2014-02-01 19:49+0100\n"
 "PO-Revision-Date: 2014-02-08 23:01+0100\n"
 "Last-Translator: Grzegorz Zlotowicz <grzezlo@wp.pl>\n"
