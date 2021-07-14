@@ -19,9 +19,9 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description" : _("Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and converts it into unicode braille characters."),
 	# version
-	"addon_version" : "3.1",
+	"addon_version" : "3.2",
 	# Author(s)
-	"addon_author" : u"Mesar Hameed <mhameed@src.gnome.org>, Patrick ZAJDA <patrick@zajda.fr>, Leonard de Ruijter <alderuijter@gmail.com>",
+	"addon_author" : "Mesar Hameed <mhameed@src.gnome.org>, Patrick ZAJDA <patrick@zajda.fr>, Leonard de Ruijter <alderuijter@gmail.com>",
 	# URL for the add-on documentation support
 	"addon_url" : "http://addons.nvda-project.org/",
 	# Documentation file name
@@ -29,7 +29,7 @@ addon_info = {
 	# Minimum NVDA version supported
 	"addon_minimumNVDAVersion" : "2017.3",
 	# Last NVDA version supported/tested
-	"addon_lastTestedNVDAVersion" : "2019.3",
+	"addon_lastTestedNVDAVersion" : "2021.1",
 }
 
 
