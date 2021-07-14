@@ -78,11 +78,10 @@ def dots2uni(cells, regularSpace = False):
 			out.append(u" " if regularSpace else conv(0x2800))
 	return "".join(out)
 
+
 class B2UDialog(gui.SettingsDialog):
 	# Translators: The title of the dialog.
 	title = _("Convert Braille to Unicode")
-	def __init__(self, parent):
-		super(B2UDialog, self).__init__(parent)
 
 	def makeSettings(self, sizer):
 		sizerHelper = gui.guiHelper.BoxSizerHelper(self, sizer=sizer)
@@ -120,5 +119,5 @@ class B2UDialog(gui.SettingsDialog):
 			# Translators: This is the message when unicode text has been copied to the clipboard.
 			wx.CallLater(100, message, _("Unicode text copied to clipboard ready for you to paste."))
 		except ValueError as e:
-			wx.CallLater(100, message, e.message)
-		super(B2UDialog, self).onOk(event)
+			wx.CallLater(100, message, e.args[0])
+		super().onOk(event)
