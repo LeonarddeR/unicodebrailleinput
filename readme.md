@@ -1,7 +1,7 @@
 # UnicodeBrailleInput #
 
 * Authors: Mesar Hameed, Patrick Zajda, Leonard de Ruijter.
-* download [stable version][1]
+* Download [stable version][1]
 
 This add-on allows you to convert text from braille (E.G. 1345-1236-145-1) to Unicode braille characters.
 You can also convert text according to the currently selected input braille table.
@@ -18,6 +18,12 @@ However, this add-on can still aid in converting normal text to unicode braille 
 * Type your braille text in numeric form or your normal text, respectively.
 * Press OK.
 * The required unicode characters will be copied to your clipboard ready for you to  paste.
+
+## Changes for 3.2
+
+* Add-on is compatible with NVDA 2021.1
+* Fixed an issue that caused a traceback when wrong input was provided in dot input mode. A friendly message box is now shown instead
+* Updated translations.
 
 ## Changes for 3.1
 
