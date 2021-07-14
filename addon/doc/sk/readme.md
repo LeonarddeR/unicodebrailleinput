@@ -1,38 +1,36 @@
 # UnicodeBrailleInput #
 
-* Authors: Mesar Hameed, Patrick Zajda, Leonard de Ruijter.
+* Autori: Mesar Hameed, Patrick Zajda, Leonard de Ruijter.
 * stiahnuť [stabilnú verziu][1]
 
-This add-on allows you to convert text from braille (E.G. 1345-1236-145-1)
-to Unicode braille characters.  You can also convert text according to the
-currently selected input braille table.
+Tento doplnok umožňuje konvertovať text z brailu (napríklad 1345-1236-145-1)
+na brailovské Unicode znaky. Takisto umožňuje konvertovať text podľa
+vybratej braillovskej tabuľky.
 
-The purpose of this specialized addon is to make it easier to help to
-improve liblouis tables and to add automatic tests for your language.  With
-the addition of unicode braille table in NVDA 2017.3, this add-on is no
-longer required for this, as users can choose to input braille with the new
-table.  However, this add-on can still aid in converting normal text to
-unicode braille according to a particular input table.
+Cieľom doplnku je pomôcť pri zlepšovaní liblouis tabuliek a poskytnúť
+automatické jazykové testovanie. V NVDA od verzie 2017.3 je možné priamo na
+vstup použiť braillovskú tabuľku unicode. Doplnok však môže byť užitočný na
+konvertovanie znakov unicode pre ostatné existujúce jazykové tabuľky.
 
 ## použitie
 
-* Open a unicode aware text editor (for example Notepad++).
-* Press NVDA+Ctrl+U or choose Unicode Braille Input found under NVDA tools
-  menu.
-* Select whether your input consists of braille dots (e.g. 1345-1236-145-1)
-  or normal text according to the current braille table (e.g. Dutch
-  (Netherlands).
-* Type your braille text in numeric form or your normal text, respectively.
+* Otvorte editor, ktorý vie spracovať unicode znaky (napríklad Notepad plus
+  plus).
+* Stlačte nvda+ctrl+u alebo aktivujte položku Unicode braille imput v menu
+  nástroje v NVDA.
+* Rozhodnite sa, či budete na vstup používať braillovské body
+  1345-1236-145-1) alebo normálny text podľa aktuálnej braillovskej tabuľky
+  (napríklad Slovenčina plnopis).
+* Zadajte reťazec v numerickom tvare alebo ako text.
 * Aktivujte tlačidlo OK.
 * Unicode znaky sa vložia do schránky a môžete ich prilepiť do editora.
 
-## Changes for 3.0
+## Zmeny vo verzii 3.0
 
-* New maintainer: Leonard de Ruijter.
-* Add-on is compatible with Python 3 and therefore with NVDA 2019.3 and
-  above.
-* Added the ability to create unicode braille from normal text according to
-  the currently selected input braille table.
+* Doplnok od teraz spravuje Leonard de Ruijter.
+* Doplnok je kompatibilný s Python 3 a teda s NVDA od verzie 2019.3.
+* Pridaná možnosť vytvoriť unicode vstup zo zadaného textu podľa vybratej
+  tabuľky.
 
 ## Zmeny vo verzii 2.0
 

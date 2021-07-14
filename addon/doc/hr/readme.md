@@ -1,57 +1,56 @@
-# UnicodeBrailleInput #
+# Unos brajice u unikod formatu (UnicodeBrailleInput) #
 
 * Authors: Mesar Hameed, Patrick Zajda, Leonard de Ruijter.
-* Preuzmi [stabilnu inačicu][1]
+* Preuzmi [stabilnu verziju][1]
 
-This add-on allows you to convert text from braille (E.G. 1345-1236-145-1)
-to Unicode braille characters.  You can also convert text according to the
-currently selected input braille table.
+Ovaj dodatak omogućuje konvertiranje teksta iz brajice
+(npr. 1345-1236-145-1) u brajeve unikod znakove. Tekst je moguće
+konvertirati i prema trenutačnoj brajevoj tablici za unos.
 
-The purpose of this specialized addon is to make it easier to help to
-improve liblouis tables and to add automatic tests for your language.  With
-the addition of unicode braille table in NVDA 2017.3, this add-on is no
-longer required for this, as users can choose to input braille with the new
-table.  However, this add-on can still aid in converting normal text to
-unicode braille according to a particular input table.
+Svrha ovog specijaliziranog dodatka je pomoć pri izradi testova za liblouis
+tablice, kao i za automatske testove za tvoj jezik. Dodavanjem brajeve
+unikod tablice u NVDA 2017.3, ovaj dodatak za to više nije potreban, jer
+korisnici mogu odabrati unos brajice pomoću nove tablice. Međutim, ovaj
+dodatak i dalje može pomoći konvertirati normalni tekst u brajeve unikod
+znakove, na osnovi određene tablice za unos.
 
-## korištenje
+## Primjena
 
-* Open a unicode aware text editor (for example Notepad++).
-* Press NVDA+Ctrl+U or choose Unicode Braille Input found under NVDA tools
-  menu.
-* Select whether your input consists of braille dots (e.g. 1345-1236-145-1)
-  or normal text according to the current braille table (e.g. Dutch
-  (Netherlands).
-* Type your braille text in numeric form or your normal text, respectively.
-* Pritisnite u redu.
-* Zahtjevani će znakovi biti kopirani u međuspremnik spremni da ih
-  zalijepite
+* Otvori uređivač teksta koji prepoznaje unikod (na primjer Notepad++).
+* Pritisni NVDA+kontrol+U ili odaberi „Unos brajice u unikod formatu” u NVDA
+  izborniku Alati.
+* Odaberi vrstu unosa: brajeve točke (npr. 1345-1236-145-1) ili normalni
+  tekst prema trenutačnoj brajevoj tablici (npr. Hrvatski (Hrvatska).
+* Tipkaj brajev tekst u numeričkom obliku, odnosno normalni tekst.
+* Pritisni u redu.
+* Potrebni unikod znakovi će se kopirati u međuspremnik, spremni za
+  lijepljenje.
 
-## Changes for 3.0
+## Promjene u verziji 3.0
 
-* New maintainer: Leonard de Ruijter.
-* Add-on is compatible with Python 3 and therefore with NVDA 2019.3 and
-  above.
-* Added the ability to create unicode braille from normal text according to
-  the currently selected input braille table.
+* Novi održavač: Leonard de Ruijter.
+* Dodatak je kompatibilan s Python 3, a samim tim i s NVDA 2019.3 i novijim
+  verzijama.
+* Dodana je mogućnost generiranja brajice u unikod formatu iz normalnog
+  teksta prema trenutačno odabranoj brajevoj tablici za unos.
 
-## Izmjene u inačici 2.0
+## Promjene u verziji 2.0
 
-* pomoć za dodatak dostupna je u upravitelju dodataka.
+* Pomoć za dodatak dostupna je u upravljaču za dodatke.
 
-## Promjene u inačici 1.1 ##
+## Promjene u verziji 1.1 ##
 
-* Unaprijeđeno kašnjenje tako da se obavjesti mogu točno čuti.
+* Poboljšano kašnjenje, kako bi se obavijesti mogle točno čuti.
 * Puno novih prijevoda.
-* Dodana dokumentacija u NVDA izborniku pomoć.
-* Dodan potvrdni okvir koji omogućuje neobaveznu zamjenu znaka brajičnog
-  razmaka (znak 0x2800) sa normalnim znakom razmaka.
-* Prečaci sada mogu biti promijenjeni koristeći NVDA dijaloški okvir ulaznih
-  gesti, pod kategorijom alati.
+* Dodana dokumentacija u NVDA izborniku Pomoć.
+* Dodan potvrdni okvir koji omogućuje opcionalnu zamjenu brajevog znaka za
+  razmak (znak 0x2800) s normalnim znakom za razmak.
+* Prečaci se sada mogu promijeniti koristeći NVDA dijaloški okvir ulaznih
+  gesti, pod kategorijom Alati.
 
-## promjene u inačici 1.0 ##
+## Promjene u verziji 1.0 ##
 
-* Prva inačica
+* Prva verzija
 * Novi jezici: francuski
 
 [[!tag dev stable]]
