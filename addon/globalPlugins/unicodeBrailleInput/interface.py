@@ -119,5 +119,6 @@ class B2UDialog(gui.SettingsDialog):
 			# Translators: This is the message when unicode text has been copied to the clipboard.
 			wx.CallLater(100, message, _("Unicode text copied to clipboard ready for you to paste."))
 		except ValueError as e:
-			wx.CallLater(100, message, e.args[0])
+			gui.messageBox(e.args[0], _("Error"), style=wx.OK | wx.ICON_ERROR, parent=self)
+			return
 		super().onOk(event)
