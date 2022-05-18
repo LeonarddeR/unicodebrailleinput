@@ -1,40 +1,29 @@
 # Unicode盲文输入 #
 
-* Authors: Mesar Hameed, Patrick Zajda, Leonard de Ruijter.
+* 作者： Mesar Hameed、 Patrick Zajda、 Leonard de Ruijter。
 * 下载 [稳定版][1]
 
-This add-on allows you to convert text from braille (E.G. 1345-1236-145-1)
-to Unicode braille characters.  You can also convert text according to the
-currently selected input braille table.
+此插件允许您将文本从盲文（例如 1345-1236-145-1）转换为 Unicode 盲文字符。您还可以根据当前选择的输入盲文表转换文本。
 
-The purpose of this specialized addon is to make it easier to help to
-improve liblouis tables and to add automatic tests for your language.  With
-the addition of unicode braille table in NVDA 2017.3, this add-on is no
-longer required for this, as users can choose to input braille with the new
-table.  However, this add-on can still aid in converting normal text to
-unicode braille according to a particular input table.
+这个专用插件的目的是更容易帮助改进 liblouis 表并为您的语言添加自动测试。随着 NVDA 2017.3 中添加了 unicode
+盲文表，此插件不再需要，因为用户可以选择使用新表输入盲文。但是，这个插件仍然可以帮助根据特定的输入表将普通文本转换为 unicode 盲文。
 
 ## 使用方法
 
-* Open a unicode aware text editor (for example Notepad++).
-* Press NVDA+Ctrl+U or choose Unicode Braille Input found under NVDA tools
-  menu.
-* Select whether your input consists of braille dots (e.g. 1345-1236-145-1)
-  or normal text according to the current braille table (e.g. Dutch
-  (Netherlands).
-* Type your braille text in numeric form or your normal text, respectively.
+* 打开一个支持 unicode 的文本编辑器（例如 Notepad++）。
+* 按 NVDA+Ctrl+U 或选择 NVDA 工具菜单下的 Unicode 盲文输入。
+* 根据当前的盲文表选择您的输入是由盲文点（例如 1345-1236-145-1）还是普通文本（例如荷兰语（荷兰））组成。
+* 分别以数字形式或普通文本键入您的盲文文本。
 * 按OK。
 * 所需的unicode字符将被复制到您的剪贴板以供您粘贴。
 
-## Changes for 3.0
+## 3.0更新日志
 
-* New maintainer: Leonard de Ruijter.
-* Add-on is compatible with Python 3 and therefore with NVDA 2019.3 and
-  above.
-* Added the ability to create unicode braille from normal text according to
-  the currently selected input braille table.
+* 新维护者：Leonard de Ruijter。
+* 插件与 Python 3 兼容，因此与 NVDA 2019.3 及更高版本兼容。
+* 添加了根据当前选择的输入盲文表从普通文本创建 unicode 盲文的功能。
 
-## 2.0更新日志:
+## 2.0 更新日志
 
 * 插件帮助可从附加组件管理器获得。
 
