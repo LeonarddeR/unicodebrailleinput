@@ -19,6 +19,10 @@ However, this add-on can still aid in converting normal text to unicode braille 
 * Press OK.
 * The required unicode characters will be copied to your clipboard ready for you to  paste.
 
+## Changes for 3.3
+
+* Add-on is compatible with NVDA 2022.1
+
 ## Changes for 3.2
 
 * Add-on is compatible with NVDA 2021.1
