@@ -47,7 +47,7 @@ Unicode-pistekirjoitukseksi tietyn syöttötaulukon mukaisesti.
 * Lisätty valintaruutu, jolla voi valinnaisesti korvata
   pistekirjoitusvälilyönnin (merkki 0x2800) tavallisella välilyöntimerkillä.
 * Pikanäppäimien uudelleenmäärittely on nyt mahdollista NVDA:n
-  Syötekomennot-valintaikkunan Työkalut-kategoriasta.
+  Näppäinkomennot-valintaikkunan Työkalut-kategoriasta.
 
 ## Muutokset versiossa 1.0 ##
 
