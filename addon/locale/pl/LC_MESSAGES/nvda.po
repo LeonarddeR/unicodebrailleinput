@@ -8,28 +8,31 @@ msgstr ""
 "Project-Id-Version: unicodeBrailleInput 1.1-dev\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2014-02-01 19:49+0100\n"
-"PO-Revision-Date: 2014-02-08 23:01+0100\n"
+"PO-Revision-Date: 2022-05-29 10:51+0200\n"
 "Last-Translator: Grzegorz Zlotowicz <grzezlo@wp.pl>\n"
 "Language-Team: Pollish <Killer@tyflonet.com>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #. Translators: name of menu item.
 msgid "Un&icode Braille Input..."
-msgstr "Wprowadzanie un&ikodu brajla "
+msgstr "Un&icode Braille Input..."
 
 #. Translators: menu item tool tip text.
 #. Translators: Message presented when user performs input help for this shortcut.
 msgid "Displays a dialog to enter braille in numeric form."
-msgstr "Wyświetla okno wprowadzania brajla w formie numerycznej."
+msgstr ""
+"Wyświetla okno dialogowe umożliwiające wprowadzenie alfabetu Braille'a w "
+"formie liczbowej."
 
 #. Translators: Error message displayed when the user enters invalid input.
 #, python-format
 msgid "Unexpected input: '%s', only dots 0 to 8 and - are allowed."
-msgstr "Nieoczekiwane dane: '%s', dozwolone są tylko punkty 0 to 8 i -"
+msgstr ""
+"Nieoczekiwane wejście: \"%s\", dozwolone są tylko kropki od 0 do 8 i -."
 
 #. Translators: The title of the dialog.
 msgid "Convert Braille to Unicode"
@@ -50,7 +53,7 @@ msgstr "Tekst w unikodzie został skopiowany do schowka."
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Unicode Braille Input"
-msgstr "Wprowadzanie unikodu brajla "
+msgstr "Wejście Braille'a Unicode"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
