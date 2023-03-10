@@ -1,4 +1,4 @@
-# UnicodeBrailleInput #
+# UnicodeBrailleInput
 
 * Authors: Mesar Hameed, Patrick Zajda, Leonard de Ruijter.
 * Download [stable version][1]
@@ -18,6 +18,10 @@ However, this add-on can still aid in converting normal text to unicode braille 
 * Type your braille text in numeric form or your normal text, respectively.
 * Press OK.
 * The required unicode characters will be copied to your clipboard ready for you to  paste.
+
+## Changes for 3.4
+
+* Add-on is compatible with NVDA 2023.1
 
 ## Changes for 3.3
 
@@ -56,6 +60,5 @@ However, this add-on can still aid in converting normal text to unicode braille 
 
 * Initial release
 * New Languages: French
-
 
 [1]: http://addons.nvda-project.org/files/get.php?file=ubi
