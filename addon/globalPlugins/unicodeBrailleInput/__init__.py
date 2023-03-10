@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # unicodeBrailleInput Global Plugin for NVDA
 # Copyright (C) 2013-2019 Mesar Hameed, Patrick Zajda, Leonard de Ruijter
 # This file is covered by the GNU General Public License.
@@ -12,38 +11,46 @@ import gui
 from . import interface
 import wx
 from globalCommands import SCRCAT_TOOLS
+from scriptHandler import script
+
 
 # We initialize translations.
 addonHandler.initTranslation()
+
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	scriptCategory = SCRCAT_TOOLS
 
 	def __init__(self):
-		super(globalPluginHandler.GlobalPlugin, self).__init__()
+		super().__init__()
 		self.tools = gui.mainFrame.sysTrayIcon.toolsMenu
-		self.menuItem = self.tools.Append(wx.ID_ANY,
+		self.menuItem = self.tools.Append(
+			wx.ID_ANY,
 			# Translators: name of menu item.
 			_("Un&icode Braille Input..."),
 			# Translators: menu item tool tip text.
-			_("Displays a dialog to enter braille in numeric form."))
-		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.script_brailleInput2Unicode, self.menuItem)
+			_("Displays a dialog to enter braille in numeric form.")
+		)
+		gui.mainFrame.sysTrayIcon.Bind(
+			wx.EVT_MENU,
+			self.script_brailleInput2Unicode,
+			self.menuItem
+		)
 
+	@script(
+		# Translators: Message presented when user performs input help for this shortcut.
+		description=_("Displays a dialog to enter braille in numeric form."),
+		gesture="kb:NVDA+control+U"
+	)
 	def script_brailleInput2Unicode(self, gesture):
-		gui.mainFrame._popupSettingsDialog(interface.B2UDialog)
-	# Translators: Message presented when user performs input help for this shortcut.
-	script_brailleInput2Unicode.__doc__ = _("Displays a dialog to enter braille in numeric form.")
+		gui.mainFrame._popupSettingsDialog(
+			interface.BrailleInputDialog
+		)
 
 	def terminate(self):
 		try:
-			if wx.version().startswith("4"):
-				self.tools.Remove(self.menuItem)
-			else:
-				self.tools.RemoveItem(self.menuItem)
-		except:
+			self.tools.Remove(self.menuItem)
+		except Exception:
 			pass
-
-	__gestures={
-		"kb:NVDA+control+U": "brailleInput2Unicode",
-	}
+		super().terminate()
