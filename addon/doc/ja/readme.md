@@ -1,36 +1,45 @@
 # UnicodeBrailleInput #
 
-* 作者: Mesar Hameed, Patrick Zajda.
-* Download: [version 1.01][1]
+* 作者: Mesar Hameed, Patrick Zajda, Leonard de Ruijter.
+* ダウンロード [安定版][1]
 
-点字パターンを 1345-1236-145-1 のように数字で入力するとUnicode文字に変換します。
+このアドオンにより、点字(例えば、1345-1236-145-1)からユニコード点字の文字にテキストを変換出来ます。また、テキストを現在選択されている入力点字表に従って、変換することも出来ます。
 
-このアドオンを使うと liblouis の定義ファイルや自動テストの更新が容易になります。
+この特化したアドオンの目的は、liblouis表の改善を助けるのをより簡単にすることと、あなたの言語での自動テストを追加することです。NVDA
+2017.3でのユニコード点字表の追加により、ユーザーはこの新しい表で点字を入力することを選択出来るようになったため、このアドオンはそのためには必要ではなくなりました。しかしながら、このアドオンはまだ標準のテキストを特定の入力表に従ってユニコード点字に変換するのに役に立ちます。
 
-## 使い方 ##
+## 使用方法
 
 * Unicodeに対応したテキストエディタ (Notepad++など) を開いてください。
-* Press NVDA+Ctrl+U or choose Unicode Braille Input found under NVDA tools
-  menu
-* 点字テキストを数字の形式で入力してください。
-* OKボタンを押してください。
+* NVDA+Ctrl+Uを押す、または、NVDAのツールメニューのUnicode Braille Inputを選択します。
+* 入力が点字ドット(例えば1345-1236-145-1)か、または現在の点字表(例えばオランダ語(オランダ))に従った標準のテキストかを選択します。
+* 点字テキストを数字の形式で、または標準テキストで、それぞれ、入力してください。
+* OKを押して下さい。
 * Unicode文字はクリップボードにコピーされます。貼り付けを実行して入力してください。
 
-## Changes for 1.1-dev ##
+## 3.0の変更点
 
-* Improve delay to allow announcements to be heard correctly.
-* Many new translations.
-* Added documentation under NVDA help menu.
-* Added a checkbox to optionally replace the space braille (character
-  0x2800) by the regular space character.
-* Shortcuts can now be reassigned using the NVDA gesture input dialog, under
-  the Tools category.
+* 新しいメンテナンス者: Leonard de Ruijter.
+* アドオンがPython 3に互換し、よって、NVDA 2019.3以降に互換するようになりました。
+* ユニコード点字を追加しました。
 
-## Changes for 1.0 ##
+## 2.0の変更点
 
-* Initial release
-* New Languages: French
+* アドオンヘルプがアドオンマネージャーから利用可能になりました。
 
-[[!tag stable]]
+## 1.1の変更点 ##
 
-[1]: http://addons.nvda-project.org/files/get.php?file=ubi
+* 通知が正確に聞こえるように、遅れを改善しました。
+* 多くの新しい翻訳。
+* NVDAヘルプメニューにドキュメントを追加しました。
+* 空白の点字(文字0x2800)を標準の空白文字に置き換える選択肢のチェックボックスを追加しました。
+* ショートカットを、ツールカテゴリーの、NVDAジェスチャー入力ダイアログを使用して、再割り当て出来るようになりました。
+
+## 1.0の変更点 ##
+
+* 最初のリリース
+* 新しい言語: フランス語
+
+[[!tag dev stable]]
+
+[1]: https://addons.nvda-project.org/files/get.php?file=ubi
