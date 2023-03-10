@@ -29,7 +29,7 @@ addon_info = {
 	# Author(s)
 	"addon_author" : "Mesar Hameed <mhameed@src.gnome.org>, Patrick ZAJDA <patrick@zajda.fr>, Leonard de Ruijter <alderuijter@gmail.com>",
 	# URL for the add-on documentation support
-	"addon_url" : None,
+	"addon_url" : "https://github.com/leonardder/unicodebrailleinput",
 	# URL for the add-on repository where the source code can be found
 	"addon_sourceURL": "https://github.com/leonardder/unicodebrailleinput",
 	# Documentation file name
