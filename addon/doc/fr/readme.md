@@ -12,9 +12,9 @@ Le but de cette extension spécialisée est de rendre plus simple l'aide à
 l'amélioration des tables liblouis et la création de tests automatiques pour
 votre langue.  Avec l'ajout de la table braille Unicode dans NVDA 2017.3,
 cette extension n'est plus requise, car les utilisateurs peuvent choisir la
-saisie braille avec la nouvelle table.  Cependant, ce module complémentaire
-peut toujours aider à convertir du texte normal en braille unicode en
-fonction d'une table d'entrée particulière.
+saisie braille avec la nouvelle table.  Cependant, cete extension peut
+toujours aider à convertir du texte normal en braille unicode en fonction
+d'une table d'entrée particulière.
 
 ## Utilisation
 
