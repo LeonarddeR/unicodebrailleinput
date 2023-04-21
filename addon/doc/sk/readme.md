@@ -53,4 +53,4 @@ konvertovanie znakov unicode pre ostatné existujúce jazykové tabuľky.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ubi
+[1]: https://www.nvaccess.org/addonStore/legacy?file=unicodeBrailleInput
