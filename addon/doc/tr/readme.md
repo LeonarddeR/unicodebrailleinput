@@ -1,41 +1,59 @@
 # UnicodeBrailleInput #
 
-* Geliştiriciler: Mesar Hameed, Patrick Zajda.
-* download [stable version][1]
-* download [development version][2]
+* Yazarlar: Mesar Hameed, Patrick Zajda, Leonard de Ruijter.
+* [kararlı sürümü indir][1]
 
-BU eklenti braille metinleri (örneğin 1345-1236-145-1) Unicode braille
-karakterlere dönüştürmenizi sağlar.
+Bu eklenti, metni braille'den (Örneğin: 1345-1236-145-1) Unicode braille
+karakterlerine dönüştürmenizi sağlar. Metni, seçili olan giriş braille
+tablosuna göre de dönüştürebilirsiniz.
 
-Bu özel eklentinin amacı  liblouis tablolarını geliştirmenize  ve diliniz
-için otomatik test oluşturmanıza yardımcı olmaktır.
+Bu özel eklentinin amacı, liblouis tablolarının iyileştirilmesine yardımcı
+olmayı ve diliniz için otomatik testler eklemeyi kolaylaştırmaktır. NVDA
+2017.3'te unicode braille tablosunun eklenmesiyle, kullanıcılar yeni
+tabloyla braille girmeyi seçebildikleri için bu eklenti artık bunun için
+gerekli değildir. Ancak bu eklenti, normal metni belirli bir giriş tablosuna
+göre unicode braille'e dönüştürmeye yine de yardımcı olabilir.
 
-## Kullanım ##
+## Kullanım
 
-* Bir unicode text editor açın (örneğin  Notepad plus plus)
-* Press NVDA+Ctrl+U or choose Unicode Braille Input found under NVDA tools
-  menu
-* braille metni numara formatında girin.
-* Tamam'a basınç
-* unicode karakterler panoya kopyalanacaktır.
+* Unicode uyumlu bir metin düzenleyici açın (örneğin, Notepad++).
+* NVDA+Ctrl+U tuşlarına basın veya NVDA araçlar menüsünde bulunan Unicode
+  Braille Girişi'ni seçin.
+* Girişinizin braille noktalarından mı (ör. 1345-1236-145-1) yoksa mevcut
+  braille tablosuna göre normal metinden mi (ör. Felemenkçe (Hollanda))
+  oluştuğunu seçin.
+* Braille metninizi sırasıyla sayısal biçimde veya normal metninizle yazın.
+* Tamam tuşuna basın.
+* Gerekli unicode karakterler, yapıştırmanız için hazır olarak panonuza
+  kopyalanacaktır.
 
-## Changes for 1.1 ##
+## 3.0 için değişiklikler
 
-* Improve delay to allow announcements to be heard correctly.
-* Many new translations.
-* Added documentation under NVDA help menu.
-* Added a checkbox to optionally replace the space braille (character
-  0x2800) by the regular space character.
-* Shortcuts can now be reassigned using the NVDA gesture input dialog, under
-  the Tools category.
+* Yeni bakıcı: Leonard de Ruijter.
+* Eklenti, Python 3 ve dolayısıyla NVDA 2019.3 ve üzeri ile uyumludur.
+* Seçili olan giriş braille tablosuna göre normal metinden unicode braille
+  oluşturma yeteneği eklendi.
 
-## Changes for 1.0 ##
+## 2.0 için değişiklikler
 
-* Initial release
-* New Languages: French
+* Eklenti yardımına Eklenti Yöneticisinden ulaşılabilir.
+
+## 1.1 için değişiklikler ##
+
+* Duyuruların doğru şekilde duyulmasını sağlamak için gecikme süresi
+  iyileştirildi.
+* Birçok yeni çeviri.
+* NVDA yardım menüsü altında dokümantasyon eklendi.
+* Boş braille'i (karakter 0x2800) isteğe bağlı olarak normal boşluk
+  karakteriyle değiştirmek için bir onay kutusu eklendi.
+* Kısayollar artık Tercihler kategorisi altındaki Girdi Hareketleri iletişim
+  kutusu kullanılarak yeniden atanabilir.
+
+## 1.0 için değişiklikler ##
+
+* İlk sürüm
+* Yeni Diller: Fransızca
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=ubi
-
-[2]: http://addons.nvda-project.org/files/get.php?file=ubi-dev
+[1]: https://www.nvaccess.org/addonStore/legacy?file=unicodeBrailleInput
