@@ -25,7 +25,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description": _("Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and converts it into unicode braille characters."),
 	# version
-	"addon_version": "4.0",
+	"addon_version": "3.4.1",
 	# Author(s)
 	"addon_author": "Mesar Hameed <mhameed@src.gnome.org>, Patrick ZAJDA <patrick@zajda.fr>, Leonard de Ruijter <alderuijter@gmail.com>",
 	# URL for the add-on documentation support
