@@ -19,7 +19,6 @@ addonHandler.initTranslation()
 
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
-
 	scriptCategory = SCRCAT_TOOLS
 
 	def __init__(self):
@@ -30,23 +29,17 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# Translators: name of menu item.
 			_("Un&icode Braille Input..."),
 			# Translators: menu item tool tip text.
-			_("Displays a dialog to enter braille in numeric form.")
+			_("Displays a dialog to enter braille in numeric form."),
 		)
-		gui.mainFrame.sysTrayIcon.Bind(
-			wx.EVT_MENU,
-			self.script_brailleInput2Unicode,
-			self.menuItem
-		)
+		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.script_brailleInput2Unicode, self.menuItem)
 
 	@script(
 		# Translators: Message presented when user performs input help for this shortcut.
 		description=_("Displays a dialog to enter braille in numeric form."),
-		gesture="kb:NVDA+control+U"
+		gesture="kb:NVDA+control+U",
 	)
 	def script_brailleInput2Unicode(self, gesture):
-		gui.mainFrame._popupSettingsDialog(
-			interface.BrailleInputDialog
-		)
+		gui.mainFrame._popupSettingsDialog(interface.BrailleInputDialog)
 
 	def terminate(self):
 		try:

@@ -1,4 +1,4 @@
-# -*- coding: UTF-8 -*-
+import os.path
 
 # Build customizations
 # Change this file instead of sconstruct or manifest files, whenever possible.
@@ -23,11 +23,18 @@ addon_info = {
 	"addon_summary": _("Unicode Braille Input"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-	"addon_description": _("Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and converts it into unicode braille characters."),
+	"addon_description": _(
+		"Displays a text field to type numeric braille "
+		"(e.g. 1345-1236-145-1) and converts it into unicode braille characters."
+	),
 	# version
 	"addon_version": "3.4.1",
 	# Author(s)
-	"addon_author": "Mesar Hameed <mhameed@src.gnome.org>, Patrick ZAJDA <patrick@zajda.fr>, Leonard de Ruijter <alderuijter@gmail.com>",
+	"addon_author": (
+		"Mesar Hameed <mhameed@src.gnome.org>, "
+		"Patrick ZAJDA <patrick@zajda.fr>, "
+		"Leonard de Ruijter <alderuijter@gmail.com>"
+	),
 	# URL for the add-on documentation support
 	"addon_url": "https://github.com/leonardder/unicodebrailleinput",
 	# URL for the add-on repository where the source code can be found
@@ -47,9 +54,6 @@ addon_info = {
 	# URL for the license document the ad-on is licensed under
 	"addon_licenseURL": None,
 }
-
-
-import os.path
 
 # Define the python files that are the sources of your add-on.
 # You can use glob expressions here, they will be expanded.
