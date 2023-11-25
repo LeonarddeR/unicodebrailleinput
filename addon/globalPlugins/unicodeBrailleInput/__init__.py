@@ -5,14 +5,14 @@
 # or by visiting http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 # Shortcut: NVDA+Ctrl+u
 
-import globalPluginHandler
 import addonHandler
+import globalPluginHandler
 import gui
-from . import interface
 import wx
 from globalCommands import SCRCAT_TOOLS
 from scriptHandler import script
 
+from . import interface
 
 # We initialize translations.
 addonHandler.initTranslation()
@@ -38,7 +38,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		description=_("Displays a dialog to enter braille in numeric form."),
 		gesture="kb:NVDA+control+U",
 	)
-	def script_brailleInput2Unicode(self, gesture):
+	def script_brailleInput2Unicode(self, gesture):  # noqa: ARG002
 		gui.mainFrame._popupSettingsDialog(interface.BrailleInputDialog)
 
 	def terminate(self):

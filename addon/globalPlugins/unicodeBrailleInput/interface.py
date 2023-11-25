@@ -4,17 +4,17 @@
 # You can read the licence by clicking Help->Licence in the NVDA menu
 # or by visiting http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
-import addonHandler
-import gui
-import wx
-from re import compile
-from ui import message
-from api import copyToClip
-import config
 import os
-import louis
-import brailleTables
+from re import compile
 
+import addonHandler
+import brailleTables
+import config
+import gui
+import louis
+import wx
+from api import copyToClip
+from ui import message
 
 # Initialize translations.
 addonHandler.initTranslation()
@@ -136,10 +136,10 @@ class BrailleInputDialog(gui.SettingsDialog):
 
 	def onOk(self, event):
 		value = self._brailleTextEdit.GetValue()
-		type = self._inputTypeRadioBox.GetSelection()
+		inputType = self._inputTypeRadioBox.GetSelection()
 		regularSpace = self._regularSpaceChk.GetValue()
 		try:
-			if not type:
+			if not inputType:
 				value = dotsToUnicode(value, regularSpace)
 			else:
 				value = textToUnicode(value, regularSpace)
