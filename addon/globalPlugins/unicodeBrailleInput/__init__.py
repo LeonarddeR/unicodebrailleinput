@@ -3,7 +3,7 @@
 # This file is covered by the GNU General Public License.
 # You can read the licence by clicking Help->Licence in the NVDA menu
 # or by visiting http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-# Shortcut: NVDA+Ctrl+u
+# Shortcut: NVDA+Ctrl+i
 
 import addonHandler
 import globalPluginHandler
@@ -36,7 +36,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@script(
 		# Translators: Message presented when user performs input help for this shortcut.
 		description=_("Displays a dialog to enter braille in numeric form."),
-		gesture="kb:NVDA+control+U",
+		gesture="kb:NVDA+control+i",
 	)
 	def script_brailleInput2Unicode(self, gesture):  # noqa: ARG002
 		gui.mainFrame._popupSettingsDialog(interface.BrailleInputDialog)

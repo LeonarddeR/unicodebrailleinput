@@ -19,36 +19,43 @@ However, this add-on can still aid in converting normal text to unicode braille 
 * Press OK.
 * The required unicode characters will be copied to your clipboard ready for you to  paste.
 
-## Changes for 3.4
+## Changes
+
+### Changes for 4.0
+
+* Add-on is compatible with NVDA 2024.1
+* Changed the gesture to open the Unicode Braille dialog from NVDA+control+u to NVDA+control_i
+
+### Changes for 3.4
 
 * Add-on is compatible with NVDA 2023.1
 
-## Changes for 3.3
+### Changes for 3.3
 
 * Add-on is compatible with NVDA 2022.1
 
-## Changes for 3.2
+### Changes for 3.2
 
 * Add-on is compatible with NVDA 2021.1
 * Fixed an issue that caused a traceback when wrong input was provided in dot input mode. A friendly message box is now shown instead
 * Updated translations.
 
-## Changes for 3.1
+### Changes for 3.1
 
 * The tab order for the radio buttons and the input edit control has been swapped.
 * Updated translations.
 
-## Changes for 3.0
+### Changes for 3.0
 
 * New maintainer: Leonard de Ruijter.
 * Add-on is compatible with Python 3 and therefore with NVDA 2019.3 and above.
 * Added the ability to create unicode braille from normal text according to the currently selected input braille table.
 
-## Changes for 2.0
+### Changes for 2.0
 
 * Add-on help is available from the Add-ons Manager.
 
-## Changes for 1.1 ##
+### Changes for 1.1
 
 * Improve delay to allow announcements to be heard correctly.
 * Many new translations.
@@ -56,7 +63,7 @@ However, this add-on can still aid in converting normal text to unicode braille 
 * Added a checkbox to optionally replace the space braille (character 0x2800) by the regular space character.
 * Shortcuts can now be reassigned using the NVDA gesture input dialog, under the Tools category.
 
-## Changes for 1.0 ##
+### Changes for 1.0
 
 * Initial release
 * New Languages: French
