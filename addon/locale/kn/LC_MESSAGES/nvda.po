@@ -18,42 +18,52 @@ msgstr ""
 "X-Generator: Poedit 1.7.1\n"
 
 #. Translators: name of menu item.
+#: addon/globalPlugins/unicodeBrailleInput/__init__.py:32
 msgid "Un&icode Braille Input..."
 msgstr "Un&icode ಬ್ರೈಲ್ ಯುನಿಕ್ಕೋಡ್ ಆದಾನ"
 
 #. Translators: menu item tool tip text.
 #. Translators: Message presented when user performs input help for this shortcut.
+#: addon/globalPlugins/unicodeBrailleInput/__init__.py:34
+#: addon/globalPlugins/unicodeBrailleInput/__init__.py:40
 msgid "Displays a dialog to enter braille in numeric form."
 msgstr "ಸಂಖ್ಯಾ ರೂಪದಲ್ಲಿ ಬ್ರೈಲ್ ಪ್ರವೇಶಿಸಲು ಒಂದು ಸಂವಾದವನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತದೆ."
 
 #. Translators: Error message displayed when the user enters invalid input.
+#: addon/globalPlugins/unicodeBrailleInput/interface.py:39
 #, python-format
 msgid "Unexpected input: '%s', only dots 0 to 8 and - are allowed."
 msgstr "ಅನಿರೀಕ್ಷಿತ ಇನ್ಪುಟ್: '%s', ಮಾತ್ರ ಚುಕ್ಕೆಗಳು 0 8 ಮತ್ತು - ಅನುಮತಿಸಲಾಗಿದೆ."
 
 #. Translators: The title of the dialog.
+#: addon/globalPlugins/unicodeBrailleInput/interface.py:63
 msgid "Convert Braille to Unicode"
 msgstr "ಬ್ರೈಲನ್ನು ಯೂನಿಕೋಡ್ಗೆ ಪರಿವರ್ತಿಸಿ"
 
 #. Translators: the label of the edit field.
+#: addon/globalPlugins/unicodeBrailleInput/interface.py:70
 msgid "Enter text in numeric braille:"
 msgstr "ಪಠ್ಯವನ್ನು  ಸಂಖ್ಯಾ ಬ್ರೈಲ್ನಲ್ಲಿ  ನಮೂದಿಸಿ:"
 
 #. Translators: Label for a checkbox, wether to use a regular space or the Braille unicode space.
+#: addon/globalPlugins/unicodeBrailleInput/interface.py:76
 msgid "Convert Unicode Braille space to ASCII space"
 msgstr "ASCII ಜಾಗಕ್ಕೆ ಯೂನಿಕೋಡ್ ಬ್ರೈಲ್ ಜಾಗವನ್ನು ಪರಿವರ್ತಿಸಿ"
 
 #. Translators: This is the message when unicode text has been copied to the clipboard.
+#: addon/globalPlugins/unicodeBrailleInput/interface.py:92
 msgid "Unicode text copied to clipboard ready for you to paste."
 msgstr "ಯುನಿಕೋಡ್ ಪಠ್ಯ ಕ್ಲಿಪ್ಬೋರ್ಡ್ಗೆ ನಕಲು ಮಾಡಲು ಸಿದ್ಧ ನೀವು ತಯಾರಾಗಿ ಅಂಟಿಸಲು."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
+#: buildVars.py:17
 msgid "Unicode Braille Input"
 msgstr "ಯೂನಿಕೋಡ್ ಬ್ರೈಲ್ ಆದಾನ"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:20
 msgid ""
 "Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and "
 "converts it into unicode braille characters."
