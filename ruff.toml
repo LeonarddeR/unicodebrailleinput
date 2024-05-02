@@ -4,13 +4,12 @@ builtins = [
 	"pgettext",  # translation lookup
 	"npgettext",  # translation lookup
 ]
-logger-objects = ["logHandler.log"]
 exclude = [  # don't bother looking in the following subdirectories / files.
 	".git",
 	"__pycache__",
 ]
 line-length = 110
-show-source = true
+output-format = "full"
 src = ["addon"]
 target-version = "py37"
 
@@ -18,6 +17,7 @@ target-version = "py37"
 ignore = [
 	"W191",  # indentation contains tabs
 ]
+logger-objects = ["logHandler.log"]
 select = [
 	"A",  # flake8-builtins
 	"ARG",  # flake8-unused-arguments 
