@@ -28,7 +28,7 @@ addon_info = {
 		"(e.g. 1345-1236-145-1) and converts it into unicode braille characters."
 	),
 	# version
-	"addon_version": "4.0.0",
+	"addon_version": "3.9.0",
 	# Author(s)
 	"addon_author": (
 		"Mesar Hameed <mhameed@src.gnome.org>, "
