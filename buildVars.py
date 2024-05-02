@@ -28,7 +28,7 @@ addon_info = {
 		"(e.g. 1345-1236-145-1) and converts it into unicode braille characters."
 	),
 	# version
-	"addon_version": "3.4.1",
+	"addon_version": "3.5.0",
 	# Author(s)
 	"addon_author": (
 		"Mesar Hameed <mhameed@src.gnome.org>, "
@@ -44,7 +44,7 @@ addon_info = {
 	# Minimum NVDA version supported
 	"addon_minimumNVDAVersion": "2022.1",
 	# Last NVDA version supported/tested
-	"addon_lastTestedNVDAVersion": "2024.1",
+	"addon_lastTestedNVDAVersion": "2024.2",
 	# Add-on update channel (default is None, denoting stable releases,
 	# and for development releases, use "dev".)
 	# Do not change unless you know what you are doing!
