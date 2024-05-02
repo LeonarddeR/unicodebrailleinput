@@ -18,42 +18,52 @@ msgstr ""
 "Language-Team: \n"
 
 #. Translators: name of menu item.
+#: addon/globalPlugins/unicodeBrailleInput/__init__.py:32
 msgid "Un&icode Braille Input..."
 msgstr "Un&ikod unos Brajevog pisma..."
 
 #. Translators: menu item tool tip text.
 #. Translators: Message presented when user performs input help for this shortcut.
+#: addon/globalPlugins/unicodeBrailleInput/__init__.py:34
+#: addon/globalPlugins/unicodeBrailleInput/__init__.py:40
 msgid "Displays a dialog to enter braille in numeric form."
 msgstr "Otvara dijalog za unos Brajevog pisma u numeričkom (brojčanom) obliku"
 
 #. Translators: Error message displayed when the user enters invalid input.
+#: addon/globalPlugins/unicodeBrailleInput/interface.py:39
 #, python-format
 msgid "Unexpected input: '%s', only dots 0 to 8 and - are allowed."
 msgstr "Neočekivani unos: '%s'; možete unositi samo tačke od 0 do 8 i znak -"
 
 #. Translators: The title of the dialog.
+#: addon/globalPlugins/unicodeBrailleInput/interface.py:63
 msgid "Convert Braille to Unicode"
 msgstr "Pretvori Brajicu u unikod"
 
 #. Translators: the label of the edit field.
+#: addon/globalPlugins/unicodeBrailleInput/interface.py:70
 msgid "Enter text in numeric braille:"
 msgstr "Unesite Brajev tekst pomoću brojeva tačaka:"
 
 #. Translators: Label for a checkbox, wether to use a regular space or the Braille unicode space.
+#: addon/globalPlugins/unicodeBrailleInput/interface.py:76
 msgid "Convert Unicode Braille space to ASCII space"
 msgstr "Pretvori unikod razmak na Brajevom u ASCII razmak"
 
 #. Translators: This is the message when unicode text has been copied to the clipboard.
+#: addon/globalPlugins/unicodeBrailleInput/interface.py:92
 msgid "Unicode text copied to clipboard ready for you to paste."
 msgstr "Tekst je kopiran u privremenu memoriju."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
+#: buildVars.py:17
 msgid "Unicode Braille Input"
 msgstr "Unikod unos Brajevog teksta"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:20
 msgid ""
 "Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and "
 "converts it into unicode braille characters."
