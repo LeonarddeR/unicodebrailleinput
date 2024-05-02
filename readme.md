@@ -24,7 +24,7 @@ However, this add-on can still aid in converting normal text to unicode braille 
 ### Changes for 4.0
 
 * Add-on is compatible with NVDA 2024.1
-* Changed the gesture to open the Unicode Braille dialog from NVDA+control+u to NVDA+control_i
+* Changed the gesture to open the Unicode Braille dialog from NVDA+control+u to NVDA+control+i
 
 ### Changes for 3.4
 
