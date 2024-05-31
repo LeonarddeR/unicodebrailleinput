@@ -1,4 +1,4 @@
-# UnicodeBrailleInput #
+# Unicode Braille Girişi #
 
 * Yazarlar: Mesar Hameed, Patrick Zajda, Leonard de Ruijter.
 * [kararlı sürümü indir][1]
