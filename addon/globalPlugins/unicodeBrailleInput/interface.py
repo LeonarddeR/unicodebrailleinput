@@ -4,10 +4,10 @@
 # You can read the licence by clicking Help->Licence in the NVDA menu
 # or by visiting http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
-import os
 from re import compile
 
 import addonHandler
+import brailleInput
 import brailleTables
 import config
 import gui
@@ -32,7 +32,7 @@ def textToUnicode(text: str, regularSpace: bool = False) -> str:
 	text = text.replace("\0", "")
 	text = louis.translate(
 		[
-			os.path.join(brailleTables.TABLES_DIR, config.conf["braille"]["inputTable"]),
+			brailleInput.handler.table.fileName,
 			"braille-patterns.cti",
 		],
 		text,

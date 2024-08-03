@@ -21,6 +21,11 @@ However, this add-on can still aid in converting normal text to unicode braille 
 
 ## Changes
 
+### Changes for 4.1
+
+* The add-on now requires NVDA 2023.1 or newer
+* Added support for custom braille tables as input table
+
 ### Changes for 4.0
 
 * Add-on is compatible with NVDA 2024.1
