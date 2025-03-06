@@ -44,7 +44,7 @@ addon_info = {
 	# Minimum NVDA version supported
 	"addon_minimumNVDAVersion": "2023.1",
 	# Last NVDA version supported/tested
-	"addon_lastTestedNVDAVersion": "2024.2",
+	"addon_lastTestedNVDAVersion": "2025.1",
 	# Add-on update channel (default is None, denoting stable releases,
 	# and for development releases, use "dev".)
 	# Do not change unless you know what you are doing!

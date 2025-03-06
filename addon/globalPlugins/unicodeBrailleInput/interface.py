@@ -1,10 +1,10 @@
 # unicodeBrailleInput Global Plugin for NVDA interface
-# Copyright (C) 2013-2023 Mesar Hameed, Patrick Zajda, Leonard de Ruijter
+# Copyright (C) 2013-2025 Mesar Hameed, Patrick Zajda, Leonard de Ruijter
 # This file is covered by the GNU General Public License.
 # You can read the licence by clicking Help->Licence in the NVDA menu
 # or by visiting http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
-from re import compile
+import re
 
 import addonHandler
 import brailleInput
@@ -20,7 +20,7 @@ from ui import message
 addonHandler.initTranslation()
 
 
-invalidInputRegexp = compile("[^0-8-]+")
+invalidInputRegexp = re.compile("[^0-8-]+")
 
 
 def textToUnicode(text: str, regularSpace: bool = False) -> str:

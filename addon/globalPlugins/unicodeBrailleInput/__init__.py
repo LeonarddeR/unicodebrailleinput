@@ -1,5 +1,5 @@
 # unicodeBrailleInput Global Plugin for NVDA
-# Copyright (C) 2013-2019 Mesar Hameed, Patrick Zajda, Leonard de Ruijter
+# Copyright (C) 2013-2025 Mesar Hameed, Patrick Zajda, Leonard de Ruijter
 # This file is covered by the GNU General Public License.
 # You can read the licence by clicking Help->Licence in the NVDA menu
 # or by visiting http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
