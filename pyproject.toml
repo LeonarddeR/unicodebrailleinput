@@ -1,8 +1,30 @@
-[tool.ruff]
-line-length = 110
-src = ["addon"]
-target-version = "py311"
+[project]
+name = "unicodebrailleinput"
+description = "Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and converts it into unicode braille characters."
+maintainers = [
+{name = "Mesar Hameed", email = "mhameed@src.gnome.org"},
+		{name = "Patrick Zajda", email = "patrick@zajda.fr"},
+	{name = "Leonard de Ruijter", email = "alderuijter@gmail.com"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: GNU General Public License v2",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Topic :: Accessibility",
+]
+readme = "readme.md"
+license = {file = "copying.txt"}
+requires-python = ">=3.11"
 
+[project.urls]
+Repository = "https://github.com/leonardder/unicodeBrailleInput"
+Issues = "https://github.com/leonardder/unicodeBrailleInput/issues"
+
+[tool.ruff]
+fix = true
+line-length = 110
 builtins = [
 	# translation lookup
 	"_",
@@ -13,10 +35,7 @@ builtins = [
 	# translation lookup
 	"npgettext",
 ]
-
-include = [
-	"*.py",
-]
+src = ["addon"]
 
 exclude = [
 	".git",
@@ -25,6 +44,7 @@ exclude = [
 
 [tool.ruff.format]
 indent-style = "tab"
+line-ending = "lf"
 quote-style = "double"
 
 [tool.ruff.lint.mccabe]
