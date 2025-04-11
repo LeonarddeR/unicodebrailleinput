@@ -23,10 +23,7 @@ addon_info = {
 	"addon_summary": _("Unicode Braille Input"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-	"addon_description": _(
-		"Displays a text field to type numeric braille "
-		"(e.g. 1345-1236-145-1) and converts it into unicode braille characters."
-	),
+	"addon_description": _("Utilities to convert text to Unicode braille"),
 	# version
 	"addon_version": "4.1.1",
 	# Author(s)
