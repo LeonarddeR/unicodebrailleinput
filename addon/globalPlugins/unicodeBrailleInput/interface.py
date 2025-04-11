@@ -152,7 +152,7 @@ class BrailleInputDialog(gui.SettingsDialog):
 		# Translators: the label of an input type
 		label = _("Normal text according to {table}")
 		inputTypeChoices.append(label.format(table=braille.handler.table.displayName))
-		if brailleInput.handler.table == braille.handler.table and brailleInput.handler.table.output:
+		if brailleInput.handler.table != braille.handler.table and brailleInput.handler.table.output:
 			inputTypeChoices.append(label.format(table=brailleInput.handler.table.displayName))
 		self._inputTypeComboBox = sizerHelper.addLabeledControl(
 			# Translators: the label of the combo box to choose the input type.
