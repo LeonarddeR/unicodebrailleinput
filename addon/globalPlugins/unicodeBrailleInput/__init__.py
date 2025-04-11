@@ -7,6 +7,7 @@
 
 import addonHandler
 import globalPluginHandler
+import globalVars
 import gui
 import wx
 from globalCommands import SCRCAT_TOOLS
@@ -23,6 +24,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def __init__(self):
 		super().__init__()
+		if globalVars.appArgs.secure:
+			return
 		self.tools = gui.mainFrame.sysTrayIcon.toolsMenu
 		self.menuItem = self.tools.Append(
 			wx.ID_ANY,
