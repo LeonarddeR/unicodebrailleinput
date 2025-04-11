@@ -39,7 +39,7 @@ addon_info = {
 	# Documentation file name
 	"addon_docFileName": "readme.html",
 	# Minimum NVDA version supported
-	"addon_minimumNVDAVersion": "2023.1",
+	"addon_minimumNVDAVersion": "2024.1",
 	# Last NVDA version supported/tested
 	"addon_lastTestedNVDAVersion": "2025.1",
 	# Add-on update channel (default is None, denoting stable releases,
@@ -57,7 +57,7 @@ addon_info = {
 pythonSources = [os.path.join("addon", "globalPlugins", "unicodeBrailleInput", "*.py")]
 
 # Files that contain strings for translation. Usually your python sources
-i18nSources = pythonSources + ["buildVars.py"]
+i18nSources = [*pythonSources, "buildVars.py"]
 
 # Files that will be ignored when building the nvda-addon file
 # Paths are relative to the addon directory, not to the root directory of your addon sources.

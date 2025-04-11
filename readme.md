@@ -3,23 +3,30 @@
 * Authors: Mesar Hameed, Patrick Zajda, Leonard de Ruijter.
 * Download [stable version][1]
 
-This add-on allows you to convert text from braille (E.G. 1345-1236-145-1) to Unicode braille characters.
-You can also convert text according to the currently selected input braille table.
+This add-on allows you to convert text from braille (E.G. 1345-1236-145-1) to Unicode or ASCII braille characters.
+You can also convert text according to the currently selected input or output braille table.
 
 The purpose of this specialized addon is to make it easier to help to improve liblouis tables and to add automatic tests for your language.
 With the addition of unicode braille table in NVDA 2017.3, this add-on is no longer required for this, as users can choose to input braille with the new table.
-However, this add-on can still aid in converting normal text to unicode braille according to a particular input table.
+However, this add-on can still aid in converting normal text to unicode braille according to a particular input or output table.
 
 ## Usage
 
-* Open a unicode aware text editor (for example Notepad plus plus).
-* Press NVDA+Ctrl+U or choose Unicode Braille Input found under NVDA tools menu.
-* Select whether your input consists of braille dots (e.g. 1345-1236-145-1) or normal text according to the current braille table (e.g. Dutch (Netherlands).
-* Type your braille text in numeric form or your normal text, respectively.
+* Open a text editor (for example Notepad plus plus).
+* Press NVDA+Ctrl+i or choose Unicode Braille Input found under NVDA tools menu.
+* Select whether your input consists of braille dots (e.g. 1345-1236-145-1) or normal text according to a current braille table (e.g. Dutch (Netherlands).
+* Select the output type. Leave it to Unicode braille, or change it to ASCII if desired.
+* Type your braille text in numeric form or your normal text, respectively. You can also import from a text file if desired.
 * Press OK.
-* The required unicode characters will be copied to your clipboard ready for you to  paste.
+* The result will be copied to your clipboard ready for you to  paste.
 
 ## Changes
+
+### Changes for 5.0
+
+* The add-on now requires NVDA 2024.1 or newer
+* Changed radio buttons into combo boxes
+* Added ASCII output type to easily convert to ASCII braille as well
 
 ### Changes for 4.1
 
