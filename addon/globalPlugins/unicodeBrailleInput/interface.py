@@ -37,6 +37,15 @@ class OutputType(IntEnum):
 	ASCII = 1
 
 
+class _Cache:
+	inputType: InputType = InputType.DOTS
+	outputType: OutputType = OutputType.UNICODE
+	regularSpace: bool = False
+
+	def __new__(cls):
+		raise NotImplementedError("Class can not be instantiated.")
+
+
 BRF_TABLE = "text_nabcc.dis"
 
 
@@ -160,7 +169,7 @@ class BrailleInputDialog(gui.SettingsDialog):
 			wx.Choice,
 			choices=inputTypeChoices,
 		)
-		self._inputTypeComboBox.Selection = 0
+		self._inputTypeComboBox.Selection = _Cache.inputType
 		outputTypeChoices = [
 			# Translators: the label of an output type
 			_("Unicode braille"),
@@ -174,14 +183,14 @@ class BrailleInputDialog(gui.SettingsDialog):
 			choices=outputTypeChoices,
 		)
 		self._outputTypeComboBox.Bind(wx.EVT_CHOICE, self._onOutputTypeChange)
-		self._outputTypeComboBox.Selection = 0
+		self._outputTypeComboBox.Selection = _Cache.outputType
 
 		self._regularSpaceChk = wx.CheckBox(
 			self,
 			# Translators: Label for a checkbox, wether to use a regular space or the Braille unicode space.
 			label=_("Convert Unicode Braille &space to ASCII space"),
 		)
-		self._regularSpaceChk.SetValue(False)
+		self._regularSpaceChk.SetValue(_Cache.regularSpace)
 		sizerHelper.addItem(self._regularSpaceChk)
 
 	def _onOutputTypeChange(self, evt: wx.CommandEvent):
@@ -250,4 +259,7 @@ class BrailleInputDialog(gui.SettingsDialog):
 		except ValueError as e:
 			gui.messageBox(e.args[0], _("Error"), style=wx.OK | wx.ICON_ERROR, parent=self)
 			return
+		_Cache.inputType = inputType
+		_Cache.outputType = outputType
+		_Cache.regularSpace = regularSpace
 		super().onOk(evt)
