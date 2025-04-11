@@ -191,8 +191,8 @@ class BrailleInputDialog(gui.SettingsDialog):
 		filename = wx.FileSelector(
 			# Translators: Label of a dialog to import a file.
 			_("Import File"),
-			default_extension="txt",
-			flags=wx.FD_OPEN,
+			wildcard="Text files (*.txt)|*.txt",  # Limit to .txt files
+			flags=wx.FD_OPEN | wx.FD_FILE_MUST_EXIST,
 			parent=self,
 		)
 		if not filename:
