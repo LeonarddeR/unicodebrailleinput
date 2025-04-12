@@ -46,7 +46,7 @@ class _Cache:
 		raise NotImplementedError("Class can not be instantiated.")
 
 
-BRF_TABLE = "text_nabcc.dis"
+BRF_TABLE = "en-us-brf.dis"
 
 
 def getTranslationTables(inputType: InputType, outputType: OutputType) -> Generator[str, None, None]:
@@ -191,6 +191,7 @@ class BrailleInputDialog(gui.SettingsDialog):
 			label=_("Convert Unicode Braille &space to ASCII space"),
 		)
 		self._regularSpaceChk.SetValue(_Cache.regularSpace)
+		self._regularSpaceChk.Enable(not self._outputTypeComboBox.Selection)
 		sizerHelper.addItem(self._regularSpaceChk)
 
 	def _onOutputTypeChange(self, evt: wx.CommandEvent):
