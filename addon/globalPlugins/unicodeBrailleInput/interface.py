@@ -46,7 +46,7 @@ class _Cache:
 		raise NotImplementedError("Class can not be instantiated.")
 
 
-BRF_TABLE = "en-us-brf.dis"
+BRF_TABLE = "text_nabcc.dis"
 
 
 def getTranslationTables(inputType: InputType, outputType: OutputType) -> Generator[str, None, None]:
