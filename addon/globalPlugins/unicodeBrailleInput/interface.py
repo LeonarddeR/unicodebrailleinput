@@ -37,13 +37,16 @@ class OutputType(IntEnum):
 	ASCII = 1
 
 
+class ExportType(IntEnum):
+	CLIPBOARD = 0
+	FILE = 1
+
+
 class _Cache:
 	inputType: InputType = InputType.DOTS
 	outputType: OutputType = OutputType.UNICODE
 	regularSpace: bool = False
-
-	def __new__(cls):
-		raise NotImplementedError("Class can not be instantiated.")
+	exportType: ExportType = ExportType.FILE
 
 
 BRF_TABLE = "text_nabcc.dis"
@@ -194,6 +197,21 @@ class BrailleInputDialog(gui.SettingsDialog):
 		self._regularSpaceChk.Enable(not self._outputTypeComboBox.Selection)
 		sizerHelper.addItem(self._regularSpaceChk)
 
+		exportTypeChoices = [
+			# Translators: the label of an export type
+			_("Clipboard"),
+			# Translators: the label of an export type
+			"File",
+		]
+
+		self._exportTypeComboBox = sizerHelper.addLabeledControl(
+			# Translators: the label of the combo box to choose the export type.
+			_("Export to:"),
+			wx.Choice,
+			choices=exportTypeChoices,
+		)
+		self._exportTypeComboBox.Selection = _Cache.exportType
+
 	def _onOutputTypeChange(self, evt: wx.CommandEvent):
 		self._regularSpaceChk.Enable(not evt.Selection)
 
@@ -224,6 +242,35 @@ class BrailleInputDialog(gui.SettingsDialog):
 			self._brailleTextEdit.SetValue(val)
 			self._inputTypeComboBox.Selection = 1
 
+	def _exportToFile(self, contents: str, outputType: OutputType):
+		wildcard = (
+			"braille files (*.brf)|*.brf" if outputType == OutputType.ASCII else "Text files (*.txt)|*.txt"
+		)
+		filename = wx.FileSelector(
+			# Translators: Label of a dialog to export a file.
+			_("Export File"),
+			wildcard=wildcard,
+			flags=wx.FD_SAVE | wx.FD_OVERWRITE_PROMPT,
+			parent=self,
+		)
+		if not filename:
+			return None
+		encoding = "LATIN-1" if outputType == OutputType.ASCII else "UTF-8"
+		try:
+			with open(filename, "wb") as f:
+				f.write(contents.encode(encoding))
+		except OSError as e:
+			gui.messageBox(
+				# Translators: Dialog text presented when NVDA can't export a file.
+				_("Error exporting file: {e}").format(e.strerror),
+				# Translators: the title of an error message dialog
+				_("Error"),
+				style=wx.OK | wx.ICON_ERROR,
+				parent=self,
+			)
+			return None
+		return filename
+
 	def _enterActivatesOk_ctrlSActivatesApply(self, evt):
 		if self._inputTypeComboBox.Selection > 0 and evt.KeyCode in (wx.WXK_RETURN, wx.WXK_NUMPAD_ENTER):
 			evt.Skip()
@@ -237,6 +284,7 @@ class BrailleInputDialog(gui.SettingsDialog):
 		value = self._brailleTextEdit.GetValue()
 		inputType = InputType(self._inputTypeComboBox.GetSelection())
 		outputType = OutputType(self._outputTypeComboBox.GetSelection())
+		exportType = ExportType(self._exportTypeComboBox.GetSelection())
 		regularSpace = self._regularSpaceChk.GetValue()
 		try:
 			match inputType:
@@ -254,13 +302,17 @@ class BrailleInputDialog(gui.SettingsDialog):
 					value = os.linesep.join(translateText(line, tables, mode, regularSpace) for line in lines)
 				case _:
 					raise NotImplementedError
-			copyToClip(value)
-			# Translators: This is the message when unicode text has been copied to the clipboard.
-			wx.CallLater(100, message, _("Result copied to clipboard ready for you to paste."))
+			if exportType == ExportType.FILE:
+				_filename = self._exportToFile(value, outputType)
+			else:
+				copyToClip(value)
+				# Translators: This is the message when unicode text has been copied to the clipboard.
+				wx.CallLater(100, message, _("Result copied to clipboard ready for you to paste."))
 		except ValueError as e:
 			gui.messageBox(e.args[0], _("Error"), style=wx.OK | wx.ICON_ERROR, parent=self)
 			return
 		_Cache.inputType = inputType
 		_Cache.outputType = outputType
 		_Cache.regularSpace = regularSpace
+		_Cache.exportType = exportType
 		super().onOk(evt)
