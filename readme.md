@@ -3,22 +3,30 @@
 * Authors: Mesar Hameed, Patrick Zajda, Leonard de Ruijter.
 * Download [stable version][1]
 
-This add-on allows you to convert text from braille (E.G. 1345-1236-145-1) to Unicode or ASCII braille characters.
-You can also convert text according to the currently selected input or output braille table.
+This add-on allows you to perform several Braille conversion tasks.
+For example, you can convert text from braille dot notation (E.G. 1345-1236-145-1) to Unicode or ASCII braille characters.
+You can also convert text according to the currently selected input or output braille table, either by typing or pasting it into an input field, or by importing a text file.
+The result can either be copied to the clipboard or exported into a text or BRF file.
 
-The purpose of this specialized addon is to make it easier to help to improve liblouis tables and to add automatic tests for your language.
-With the addition of unicode braille table in NVDA 2017.3, this add-on is no longer required for this, as users can choose to input braille with the new table.
-However, this add-on can still aid in converting normal text to unicode braille according to a particular input or output table.
+The initial purpose of this specialized addon was to make it easier to help to improve liblouis tables and to add automatic tests for your language.
+However, with the addition of the unicode braille table in NVDA 2017.3, this add-on is no longer required for that.
+Users can now choose to input braille with that table, either via a Braille keyboard or the [PC Keyboard Braille Input add-on][2].
 
-## Usage
+## Usage example
 
 * Open a text editor (for example Notepad plus plus).
+
 * Press NVDA+Ctrl+i or choose Unicode Braille Input found under NVDA tools menu.
-* Select whether your input consists of braille dots (e.g. 1345-1236-145-1) or normal text according to a current braille table (e.g. Dutch (Netherlands).
-* Select the output type. Leave it to Unicode braille, or change it to ASCII if desired.
+
 * Type your braille text in numeric form or your normal text, respectively. You can also import from a text file if desired.
-* Press OK.
-* The result will be copied to your clipboard ready for you to  paste.
+
+* Select whether your input consists of braille dots (e.g. 1345-1236-145-1) or normal text according to a current braille table (e.g. Dutch (Netherlands).
+
+* Select the output type. Leave it to Unicode braille, or change it to BRF or NABC if desired.
+
+* Select the export type:
+  * When set to `Clipboard`, The result will be copied to your clipboard ready for you to  paste after pressing OK.
+  * When set to `File`, after pressing OK, a save window will appear.
 
 ## Changes
 
@@ -26,7 +34,7 @@ However, this add-on can still aid in converting normal text to unicode braille 
 
 * The add-on now requires NVDA 2024.1 or newer
 * Changed radio buttons into combo boxes
-* Added ASCII output type to easily convert to ASCII braille as well
+* Added output types for ASCII braille (BRF) and NABC (North American Braille Computer Code with full Latin1 character set)
 
 ### Changes for 4.1
 
@@ -81,3 +89,5 @@ However, this add-on can still aid in converting normal text to unicode braille 
 * New Languages: French
 
 [1]: http://addons.nvda-project.org/files/get.php?file=ubi
+
+[2]: https://github.com/nvdaes/pcKbBrl

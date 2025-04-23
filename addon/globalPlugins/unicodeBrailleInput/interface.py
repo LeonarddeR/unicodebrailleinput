@@ -6,18 +6,18 @@
 
 import os
 import re
-from collections.abc import Generator
-from enum import IntEnum
 
 import addonHandler
 import braille
 import brailleInput
+import brailleTables
 import gui
 import gui.guiHelper
 import louis
 import wx
 from api import copyToClip
 from ui import message
+from utils.displayString import DisplayStringIntEnum
 
 # Initialize translations.
 addonHandler.initTranslation()
@@ -26,40 +26,99 @@ addonHandler.initTranslation()
 invalidInputRegexp = re.compile(r"[^0-8-]+")
 
 
-class InputType(IntEnum):
+class InputType(DisplayStringIntEnum):
 	DOTS = 0
 	TEXT_OUTPUT_TABLE = 1
 	TEXT_INPUT_TABLE = 2
 
+	@property
+	def _displayStringLabels(self) -> dict:
+		return {
+			# Translators: the label of an input type
+			self.DOTS: _("Braille dots (e.g. 1345-1236-145-1)"),
+			# Translators: the label of an input type
+			self.TEXT_OUTPUT_TABLE: _("Normal text according to {table}").format(
+				table=braille.handler.table.displayName
+			),
+			# Translators: the label of an input type
+			self.TEXT_INPUT_TABLE: _("Normal text according to {table}").format(
+				table=brailleInput.handler.table.displayName
+			),
+		}
 
-class OutputType(IntEnum):
+
+class OutputType(DisplayStringIntEnum):
 	UNICODE = 0
-	ASCII = 1
+	BRF = 1
+	NABC = 2
+
+	@property
+	def _displayStringLabels(self) -> dict:
+		return {
+			# Translators: the label of an output type
+			self.UNICODE: _("Unicode braille"),
+			# Translators: the label of an output type
+			self.BRF: _("ASCII braille (BRF)"),
+			# Translators: the label of an output type
+			self.NABC: _("NABCC"),
+		}
 
 
-class ExportType(IntEnum):
+class ExportType(DisplayStringIntEnum):
 	CLIPBOARD = 0
 	FILE = 1
+
+	@property
+	def _displayStringLabels(self) -> dict:
+		return {
+			# Translators: the label of an export type
+			self.CLIPBOARD: _("Clipboard"),
+			# Translators: the label of an export type
+			self.FILE: _("File"),
+		}
 
 
 class _Cache:
 	inputType: InputType = InputType.DOTS
 	outputType: OutputType = OutputType.UNICODE
 	regularSpace: bool = False
-	exportType: ExportType = ExportType.FILE
+	exportType: ExportType = ExportType.CLIPBOARD
 
 
-BRF_TABLE = "text_nabcc.dis"
+BRF_TABLE = "en-us-brf.dis"
+NABC_TABLE = "text_nabcc.dis"
+UNICODE_TABLE = "braille-patterns.cti"
 
 
-def getTranslationTables(inputType: InputType, outputType: OutputType) -> Generator[str, None, None]:
-	if outputType == OutputType.ASCII:
-		yield BRF_TABLE
-	yield "braille-patterns.cti"
-	if inputType == InputType.TEXT_INPUT_TABLE:
-		yield brailleInput.handler.table.fileName
-	elif inputType == InputType.TEXT_OUTPUT_TABLE:
-		yield braille.handler.table.fileName
+def getTranslationTable(inputType: InputType) -> brailleTables.BrailleTable:
+	match inputType:
+		case InputType.TEXT_INPUT_TABLE:
+			return brailleInput.handler.table
+		case InputType.TEXT_OUTPUT_TABLE:
+			return braille.handler.table
+		case _:
+			raise NotImplementedError
+
+
+def postProcessUnicode(text: str, outputType: OutputType) -> str:
+	match outputType:
+		case OutputType.UNICODE:
+			return text
+		case OutputType.BRF:
+			text = "".join(chr(ord(c) & 0x283F) for c in text)
+			table = BRF_TABLE
+		case OutputType.NABC:
+			table = NABC_TABLE
+		case _:
+			raise NotImplementedError
+	return translateText(
+		text,
+		[
+			table,
+			UNICODE_TABLE,
+		],
+		0,
+	)
 
 
 def translateText(
@@ -68,12 +127,19 @@ def translateText(
 	mode: int,
 	regularSpace: bool = False,
 ) -> str:
-	"""Convert text to Unicode braille
-	@param text: the text to convert
-	@param regularSpace: if True, space will be replaced by a regular one instead of the braille space
-	@return: the result in Unicode
 	"""
-	text = text.replace("\0", "")
+	Translates the given text using the specified Liblouis translation tables and mode.
+
+	Args:
+		text: The input text to be translated.
+		tables: A list of Liblouis translation table names to use for translation.
+		mode: The translation mode to be used by Liblouis.
+		regularSpace: If True, replaces Braille space characters (U+2800)
+			with regular space characters (U+0020). Defaults to False.
+
+	Returns:
+		The translated text, optionally with Braille spaces replaced by regular spaces.
+	"""
 	text = louis.translate(
 		tables,
 		text,
@@ -157,31 +223,20 @@ class BrailleInputDialog(gui.SettingsDialog):
 		)
 		self.importButton.Bind(wx.EVT_BUTTON, self._onImport)
 
-		inputTypeChoices = [
-			# Translators: the label of an input type
-			_("Braille dots (e.g. 1345-1236-145-1)"),
-		]
-		# Translators: the label of an input type
-		label = _("Normal text according to {table}")
-		inputTypeChoices.append(label.format(table=braille.handler.table.displayName))
-		if brailleInput.handler.table != braille.handler.table and brailleInput.handler.table.output:
-			inputTypeChoices.append(label.format(table=brailleInput.handler.table.displayName))
+		inputTypeChoices = [t.displayString for t in InputType]
+		if brailleInput.handler.table == braille.handler.table or brailleInput.handler.table.output:
+			inputTypeChoices.pop()
 		self._inputTypeComboBox = sizerHelper.addLabeledControl(
 			# Translators: the label of the combo box to choose the input type.
-			_("Input &type"),
+			_("Input &type:"),
 			wx.Choice,
 			choices=inputTypeChoices,
 		)
 		self._inputTypeComboBox.Selection = _Cache.inputType
-		outputTypeChoices = [
-			# Translators: the label of an output type
-			_("Unicode braille"),
-			# Translators: the label of an output type
-			_("ASCII braille (BRF)"),
-		]
+		outputTypeChoices = [t.displayString for t in OutputType]
 		self._outputTypeComboBox = sizerHelper.addLabeledControl(
 			# Translators: the label of the radio box to choose the output type.
-			_("output type"),
+			_("&Output type:"),
 			wx.Choice,
 			choices=outputTypeChoices,
 		)
@@ -197,16 +252,10 @@ class BrailleInputDialog(gui.SettingsDialog):
 		self._regularSpaceChk.Enable(not self._outputTypeComboBox.Selection)
 		sizerHelper.addItem(self._regularSpaceChk)
 
-		exportTypeChoices = [
-			# Translators: the label of an export type
-			_("Clipboard"),
-			# Translators: the label of an export type
-			"File",
-		]
-
+		exportTypeChoices = [t.displayString for t in ExportType]
 		self._exportTypeComboBox = sizerHelper.addLabeledControl(
 			# Translators: the label of the combo box to choose the export type.
-			_("Export to:"),
+			_("&Export to:"),
 			wx.Choice,
 			choices=exportTypeChoices,
 		)
@@ -244,7 +293,7 @@ class BrailleInputDialog(gui.SettingsDialog):
 
 	def _exportToFile(self, contents: str, outputType: OutputType):
 		wildcard = (
-			"braille files (*.brf)|*.brf" if outputType == OutputType.ASCII else "Text files (*.txt)|*.txt"
+			"braille files (*.brf)|*.brf" if outputType == OutputType.BRF else "Text files (*.txt)|*.txt"
 		)
 		filename = wx.FileSelector(
 			# Translators: Label of a dialog to export a file.
@@ -255,7 +304,7 @@ class BrailleInputDialog(gui.SettingsDialog):
 		)
 		if not filename:
 			return None
-		encoding = "LATIN-1" if outputType == OutputType.ASCII else "UTF-8"
+		encoding = "LATIN-1" if outputType != OutputType.UNICODE else "UTF-8"
 		try:
 			with open(filename, "wb") as f:
 				f.write(contents.encode(encoding))
@@ -290,16 +339,15 @@ class BrailleInputDialog(gui.SettingsDialog):
 			match inputType:
 				case InputType.DOTS:
 					value = dotsToUnicode(value, regularSpace)
-					if outputType == OutputType.ASCII:
-						value = louis.translate(
-							[BRF_TABLE, "unicode-braille.utb"],
-							value,
-						)[0]
+					value = postProcessUnicode(value, outputType)
 				case InputType.TEXT_INPUT_TABLE | InputType.TEXT_OUTPUT_TABLE:
 					lines = value.splitlines()
-					tables = list(getTranslationTables(inputType, outputType))
-					mode = louis.dotsIO | louis.ucBrl if outputType == OutputType.UNICODE else 0
-					value = os.linesep.join(translateText(line, tables, mode, regularSpace) for line in lines)
+					table = getTranslationTable(inputType).fileName
+					mode = louis.dotsIO | louis.ucBrl
+					value = os.linesep.join(
+						postProcessUnicode(translateText(line, [table], mode, regularSpace), outputType)
+						for line in lines
+					)
 				case _:
 					raise NotImplementedError
 			if exportType == ExportType.FILE:
