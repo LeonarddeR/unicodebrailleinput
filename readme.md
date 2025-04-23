@@ -32,7 +32,7 @@ Users can now choose to input braille with that table, either via a Braille keyb
 
 ### Changes for 5.0
 
-* The add-on now requires NVDA 2024.1 or newer
+* The add-on now requires NVDA 2024.3 or newer
 * Changed radio buttons into combo boxes
 * Added output types for ASCII braille (BRF) and NABC (North American Braille Computer Code with full Latin1 character set)
 
