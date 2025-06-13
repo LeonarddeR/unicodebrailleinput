@@ -1,0 +1,133 @@
+[project]
+name = "unicodebrailleinput"
+description = "Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and converts it into unicode braille characters."
+maintainers = [
+{name = "Mesar Hameed", email = "mhameed@src.gnome.org"},
+		{name = "Patrick Zajda", email = "patrick@zajda.fr"},
+	{name = "Leonard de Ruijter", email = "alderuijter@gmail.com"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: GNU General Public License v2",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Topic :: Accessibility",
+]
+readme = "readme.md"
+license = {file = "copying.txt"}
+requires-python = ">=3.11"
+
+[project.urls]
+Repository = "https://github.com/leonardder/unicodeBrailleInput"
+Issues = "https://github.com/leonardder/unicodeBrailleInput/issues"
+
+[tool.ruff]
+fix = true
+preview=true
+line-length = 110
+builtins = [
+	# translation lookup
+	"_",
+	# translation lookup
+	"ngettext",
+	# translation lookup
+	"pgettext",
+	# translation lookup
+	"npgettext",
+]
+src = ["addon"]
+
+exclude = [
+	".git",
+	"__pycache__",
+]
+
+[tool.ruff.format]
+indent-style = "tab"
+line-ending = "lf"
+quote-style = "double"
+
+[tool.ruff.lint.mccabe]
+max-complexity = 15
+
+[tool.ruff.lint]
+ignore = [
+	# indentation contains tabs
+	"W191",
+]
+logger-objects = ["logHandler.log"]
+select = [
+	"A",  # flake8-builtins
+	"ARG",  # flake8-unused-arguments
+	"B",  # flake8-bugbear
+	"C90", # mccabe
+	"E",  # pycodestyle Error
+	"F",  # Pyflakes
+	"FIX",  # flake8-fixme
+	"I",  # isort
+	"INT",  # flake8-gettext
+	"PERF",  # Perflint
+	"RUF",  # RUFF
+	"UP",  # pyupgrade
+	"W",  # pycodestyle Warning
+]
+
+[tool.pyright]
+venvPath = "../nvda/.venv"
+venv = "."
+pythonPlatform = "Windows"
+typeCheckingMode = "strict"
+
+include = [
+	"**/*.py",
+	"**/*.pyw",
+]
+
+exclude = [
+	"sconstruct",
+	".git",
+	"__pycache__",
+]
+
+extraPaths = [
+	"../nvda/source",
+	"../nvda/miscDeps/python",
+]
+
+deprecateTypingAliases = true
+strictListInference = true
+strictDictionaryInference = true
+strictSetInference = true
+
+reportDuplicateImport = true
+reportIncompleteStub = true
+reportInconsistentConstructor = true
+reportInvalidStringEscapeSequence = true
+reportInvalidStubStatement = true
+reportMatchNotExhaustive = true
+reportPropertyTypeMismatch = true
+reportShadowedImports = true
+reportTypeCommentUsage = true
+reportUnnecessaryCast = true
+reportUnnecessaryContains = true
+reportUnnecessaryTypeIgnoreComment = true
+reportUntypedClassDecorator = true
+reportUntypedFunctionDecorator = true
+reportUnusedClass = true
+reportMissingTypeStubs = false
+
+reportMissingTypeArgument = false
+reportIncompatibleMethodOverride = false
+reportPrivateUsage = false
+reportOptionalSubscript = false
+reportCallIssue = false
+reportOptionalMemberAccess = false
+reportIndexIssue = false
+reportAttributeAccessIssue = false
+reportArgumentType = false
+reportUnknownParameterType = false
+reportMissingParameterType = false
+reportUnknownVariableType = false
+reportUnknownArgumentType = false
+reportUnknownMemberType = false

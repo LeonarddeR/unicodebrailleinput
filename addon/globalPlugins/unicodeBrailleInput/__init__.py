@@ -1,49 +1,52 @@
-# -*- coding: utf-8 -*-
 # unicodeBrailleInput Global Plugin for NVDA
-# Copyright (C) 2013 Mesar Hameed <mesar.hameed@gmail.com>, Patrick ZAJDA <patrick@zajda.fr>
+# Copyright (C) 2013-2025 Mesar Hameed, Patrick Zajda, Leonard de Ruijter
 # This file is covered by the GNU General Public License.
 # You can read the licence by clicking Help->Licence in the NVDA menu
 # or by visiting http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-# Shortcut: NVDA+Ctrl+u
+# Shortcut: NVDA+Ctrl+i
 
-import globalPluginHandler
 import addonHandler
+import globalPluginHandler
+import globalVars
 import gui
-import interface
 import wx
 from globalCommands import SCRCAT_TOOLS
+from scriptHandler import script
+
+from . import interface
 
 # We initialize translations.
 addonHandler.initTranslation()
 
-class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
+class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	scriptCategory = SCRCAT_TOOLS
 
 	def __init__(self):
-		super(globalPluginHandler.GlobalPlugin, self).__init__()
+		super().__init__()
+		if globalVars.appArgs.secure:
+			return
 		self.tools = gui.mainFrame.sysTrayIcon.toolsMenu
-		self.menuItem = self.tools.Append(wx.ID_ANY,
+		self.menuItem = self.tools.Append(
+			wx.ID_ANY,
 			# Translators: name of menu item.
 			_("Un&icode Braille Input..."),
 			# Translators: menu item tool tip text.
-			_("Displays a dialog to enter braille in numeric form."))
+			_("Displays a dialog to enter braille in numeric form."),
+		)
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.script_brailleInput2Unicode, self.menuItem)
 
-	def script_brailleInput2Unicode(self, gesture):
-		gui.mainFrame._popupSettingsDialog(interface.B2UDialog)
-	# Translators: Message presented when user performs input help for this shortcut.
-	script_brailleInput2Unicode.__doc__ = _("Displays a dialog to enter braille in numeric form.")
+	@script(
+		# Translators: Message presented when user performs input help for this shortcut.
+		description=_("Displays a dialog to enter braille in numeric form."),
+		gesture="kb:NVDA+control+i",
+	)
+	def script_brailleInput2Unicode(self, gesture):  # noqa: ARG002
+		gui.mainFrame._popupSettingsDialog(interface.BrailleInputDialog)
 
 	def terminate(self):
 		try:
-			if wx.version().startswith("4"):
-				self.tools.Remove(self.menuItem)
-			else:
-				self.tools.RemoveItem(self.menuItem)
-		except:
+			self.tools.Remove(self.menuItem)
+		except Exception:
 			pass
-
-	__gestures={
-		"kb:NVDA+control+U": "brailleInput2Unicode",
-	}
+		super().terminate()
