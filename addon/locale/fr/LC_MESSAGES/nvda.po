@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: unicodeBrailleInput 2.7\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2017-11-24 21:00+1000\n"
-"PO-Revision-Date: 2018-03-16 16:35+0100\n"
+"PO-Revision-Date: 2025-06-14 22:42+0200\n"
+"Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
+"Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
-"Language-Team: \n"
-"X-Generator: Poedit 1.8.12\n"
+"X-Generator: Poedit 3.6\n"
 
 #. Translators: name of menu item.
 msgid "Un&icode Braille Input..."
@@ -24,43 +24,109 @@ msgstr "Saisie Braille Un&icode..."
 #. Translators: menu item tool tip text.
 #. Translators: Message presented when user performs input help for this shortcut.
 msgid "Displays a dialog to enter braille in numeric form."
-msgstr ""
-"Affiche une boîte de dialogue pour entrer du braille sous forme "
-"numérique."
+msgstr "Affiche une boîte de dialogue pour entrer du braille sous forme numérique."
+
+#. Translators: the label of an input type
+msgid "Braille dots (e.g. 1345-1236-145-1)"
+msgstr "Points Braille (Par exemple 1345-1236-145-1)"
+
+#. Translators: the label of an input type
+#, python-brace-format
+msgid "Normal text according to {table}"
+msgstr "Texte normal selon {table}"
+
+#. Translators: the label of an output type
+msgid "Unicode braille"
+msgstr "Braille Unicode"
+
+#. Translators: the label of an output type
+msgid "ASCII braille (BRF)"
+msgstr "Braille ASCII (BRF)"
+
+#. Translators: the label of an output type
+msgid "NABCC"
+msgstr "NABCC"
+
+#. Translators: the label of an export type
+msgid "Clipboard"
+msgstr "Presse-papiers"
+
+#. Translators: the label of an export type
+msgid "File"
+msgstr "Fichier"
 
 #. Translators: Error message displayed when the user enters invalid input.
 #, python-format
 msgid "Unexpected input: '%s', only dots 0 to 8 and - are allowed."
-msgstr ""
-"Entrée inattendue : '%s', seul les points 1 à 8 et les tirets sont admis."
+msgstr "Entrée inattendue : '%s', seul les points 1 à 8 et les tirets sont admis."
 
 #. Translators: The title of the dialog.
-msgid "Convert Braille to Unicode"
-msgstr "Convertir du Braille vers Unicode"
+msgid "Convert Braille"
+msgstr "Convertir du Braille"
 
 #. Translators: the label of the edit field.
-msgid "Enter text in numeric braille:"
-msgstr "Entrez le texte en braille numérique :"
+msgid "&Input:"
+msgstr "Sais&ir:"
+
+#. Translators: The label for a button to import text.
+msgid "I&mport..."
+msgstr "I&mporter..."
+
+#. Translators: the label of the combo box to choose the input type.
+msgid "Input &type:"
+msgstr "&Type d'entrée:"
+
+#. Translators: the label of the radio box to choose the output type.
+msgid "&Output type:"
+msgstr "Type de &sortie:"
 
 #. Translators: Label for a checkbox, wether to use a regular space or the Braille unicode space.
-msgid "Convert Unicode Braille space to ASCII space"
-msgstr "Convertir espace Braille Unicode vers espace ASCII"
+msgid "Convert Unicode Braille &space to ASCII space"
+msgstr "Convertir e&space Braille Unicode vers espace ASCII"
+
+#. Translators: the label of the combo box to choose the export type.
+msgid "&Export to:"
+msgstr "&Exporter vers:"
+
+#. Translators: Label of a dialog to import a file.
+msgid "Import File"
+msgstr "Importer fichier"
+
+#. Translators: Dialog text presented when NVDA can't import a file.
+#, python-brace-format
+msgid "Error importing file: {e}"
+msgstr "Erreur lors de l'importation du fichier: {e}"
+
+#. Translators: the title of an error message dialog
+msgid "Error"
+msgstr "Erreur"
+
+#. Translators: Label of a dialog to export a file.
+msgid "Export File"
+msgstr "Exporter fichier"
+
+#. Translators: Dialog text presented when NVDA can't export a file.
+#, python-brace-format
+msgid "Error exporting file: {e}"
+msgstr "Erreur lors de l'exportation du fichier: {e}"
 
 #. Translators: This is the message when unicode text has been copied to the clipboard.
-msgid "Unicode text copied to clipboard ready for you to paste."
-msgstr "Texte unicode copié dans le presse-papier prêt à être collé."
+msgid "Result copied to clipboard ready for you to paste."
+msgstr "Résultat copié dans le presse-papier prêt à être collé."
 
 #. Add-on summary, usually the user visible name of the addon.
-#. Translators: Summary for this add-on to be shown on installation and add-on information.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
 msgid "Unicode Braille Input"
 msgstr "Saisie Braille Unicode"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid ""
-"Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and "
-"converts it into unicode braille characters."
-msgstr ""
-"Affiche une boîte de dialogue où saisir les codes brailles numériques "
-"(ex : 1345-1236-145-1) séparré par des tirets pour les convertir en "
-"caractères brailles Unicode."
+msgid "Utilities to convert text to Unicode braille"
+msgstr "Utilitaires pour convertir du texte en Braille Unicode"
+
+#~ msgid "Enter text in numeric braille:"
+#~ msgstr "Entrez le texte en braille numérique :"
+
+#~ msgid "Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and converts it into unicode braille characters."
+#~ msgstr "Affiche une boîte de dialogue où saisir les codes brailles numériques (ex : 1345-1236-145-1) séparré par des tirets pour les convertir en caractères brailles Unicode."
