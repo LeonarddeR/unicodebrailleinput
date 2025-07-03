@@ -25,7 +25,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description": _("Utilities to convert text to Unicode braille"),
 	# version
-	"addon_version": "5.0.0",
+	"addon_version": "5.0.1",
 	# Author(s)
 	"addon_author": (
 		"Mesar Hameed <mhameed@src.gnome.org>, "
