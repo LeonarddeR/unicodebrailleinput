@@ -9,3 +9,6 @@ addon/doc/en/
 *.nvda-addon
 .sconsign.dblite
 *.json
+.venv/
+.pytest_cache/
+uv.lock
