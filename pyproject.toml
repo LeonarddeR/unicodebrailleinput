@@ -74,8 +74,6 @@ ignore = [
 ]
 logger-objects = ["logHandler.log"]
 select = [
-	"A",
-	"ARG",
 	"B",
 	"C90",
 	"E",

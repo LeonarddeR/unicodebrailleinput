@@ -41,7 +41,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		description=_("Displays a dialog to enter braille in numeric form."),
 		gesture="kb:NVDA+control+i",
 	)
-	def script_brailleInput2Unicode(self, gesture):  # noqa: ARG002
+	def script_brailleInput2Unicode(self, gesture):
 		gui.mainFrame._popupSettingsDialog(interface.BrailleInputDialog)
 
 	def terminate(self):

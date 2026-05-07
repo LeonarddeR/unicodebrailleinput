@@ -67,7 +67,7 @@ def generate(env: Environment):
 	env["BUILDERS"]["NVDAManifest"] = Builder(
 		action=manifestAction,
 		suffix=".ini",
-		src_suffix=".ini.tpl",
+		src_siffix=".ini.tpl",
 	)
 
 	translatedManifestAction = env.Action(
@@ -87,10 +87,10 @@ def generate(env: Environment):
 	env["BUILDERS"]["NVDATranslatedManifest"] = Builder(
 		action=translatedManifestAction,
 		suffix=".ini",
-		src_suffix=".ini.tpl",
+		src_siffix=".ini.tpl",
 	)
 
-	env.SetDefault(mdExtensions=[])
+	env.SetDefault(mdExtensions={})
 
 	mdAction = env.Action(
 		lambda target, source, env: md2html(

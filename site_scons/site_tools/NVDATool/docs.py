@@ -21,11 +21,12 @@ def md2html(
 	if isinstance(moFile, str):
 		moFile = Path(moFile)
 
-	if moFile is None:
-		summary = addon_info["addon_summary"]
-	else:
+	try:
 		with moFile.open("rb") as f:
 			_ = gettext.GNUTranslations(f).gettext
+	except Exception:
+		summary = addon_info["addon_summary"]
+	else:
 		summary = _(addon_info["addon_summary"])
 	version = addon_info["addon_version"]
 	title = f"{summary} {version}"
