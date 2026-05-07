@@ -1,5 +1,5 @@
 # unicodeBrailleInput Global Plugin for NVDA interface
-# Copyright (C) 2013-2025 Mesar Hameed, Patrick Zajda, Leonard de Ruijter
+# Copyright (C) 2013-2026 Mesar Hameed, Patrick Zajda, Leonard de Ruijter
 # This file is covered by the GNU General Public License.
 # You can read the licence by clicking Help->Licence in the NVDA menu
 # or by visiting http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -38,11 +38,11 @@ class InputType(DisplayStringIntEnum):
 			self.DOTS: _("Braille dots (e.g. 1345-1236-145-1)"),
 			# Translators: the label of an input type
 			self.TEXT_OUTPUT_TABLE: _("Normal text according to {table}").format(
-				table=braille.handler.table.displayName
+				table=braille.handler.table.displayName,
 			),
 			# Translators: the label of an input type
 			self.TEXT_INPUT_TABLE: _("Normal text according to {table}").format(
-				table=brailleInput.handler.table.displayName
+				table=brailleInput.handler.table.displayName,
 			),
 		}
 
@@ -160,16 +160,18 @@ def dotsToUnicode(
 	@param regularSpace: if True, space will be replaced by a regular one instead of the braille space
 	@return: the result in Unicode (NVDA in our example)
 	"""
-	cells = cells.translate({
-		ord("f"): "1",
-		ord("d"): "2",
-		ord("s"): "3",
-		ord("j"): "4",
-		ord("k"): "5",
-		ord("l"): "6",
-		ord("a"): "7",
-		ord(";"): "8",
-	}).strip()
+	cells = cells.translate(
+		{
+			ord("f"): "1",
+			ord("d"): "2",
+			ord("s"): "3",
+			ord("j"): "4",
+			ord("k"): "5",
+			ord("l"): "6",
+			ord("a"): "7",
+			ord(";"): "8",
+		},
+	).strip()
 	invalidStrings = invalidInputRegexp.findall(cells)
 	# Translators: Error message displayed when the user enters invalid input.
 	msg = _("Unexpected input: '%s', only dots 0 to 8 and - are allowed.") % "', '".join(invalidStrings)
