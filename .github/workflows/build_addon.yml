@@ -21,6 +21,12 @@ jobs:
     steps:
     - name: Checkout repo
       uses: actions/checkout@v7
+    - name: Prepare NVDA source for ty
+      uses: LeonarddeR/prepare-nvda-source@4f9e3b5321987e9db1cbb7c778bfff951629fa28
+      with:
+        nvda-ref: master
+        path: ../nvda
+        github-token: ${{ github.token }}
     - name: Install uv
       uses: astral-sh/setup-uv@v10.0.1
       with:
@@ -36,8 +42,6 @@ jobs:
           mingw-w64-ucrt-x86_64-gettext-tools
     - name: Add Gettext to PATH
       run: Add-Content $env:GITHUB_PATH "${{ steps.msys2.outputs.msys2-location }}\ucrt64\bin"
-    - name: Checkout NVDA source for ty
-      run: git clone --depth 1 --no-recurse-submodules https://github.com/nvaccess/nvda.git ../nvda
     - name: Install dependencies
       run: uv sync
 

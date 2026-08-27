@@ -8,7 +8,7 @@ Unicode Braille Input: NVDA add-on that converts typed braille into Unicode brai
 
 Sibling source repos (paths relative to this repo):
 
-* `..\nvda` — NVDA source. Required, not optional: `ty` resolves every NVDA import (`braille`, `brailleInput`, `brailleTables`, `louis`, `gui`, `scriptHandler`, …) against `..\nvda\source`, and picks up the `_()` / `pgettext()` translation builtins from `..\nvda\source\__builtins__.pyi`. Look there for any NVDA API signature before guessing.
+* `..\nvda` — NVDA source, and it must be **built** (`scons source`), not merely cloned. `ty` resolves every NVDA import (`braille`, `brailleInput`, `brailleTables`, `louis`, `gui`, `scriptHandler`, …) against `..\nvda\source`, and picks up the `_()` / `pgettext()` translation builtins from `..\nvda\source\__builtins__.pyi`. `source\louis` in particular is a build product: NVDA generates it from the `include/liblouis` submodule and gitignores it, so `import louis` does not resolve against a plain clone. CI gets a built tree from the `prepare-nvda-source` action. Look in the NVDA source for any API signature before guessing.
 
 ## Build / Lint
 
