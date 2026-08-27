@@ -1,0 +1,614 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en">
+<file id="readme.md" original="https://raw.githubusercontent.com/LeonarddeR/unicodebrailleinput/217b93b131003d805adca383e7e0cea44bf3127a/readme.md">
+<skeleton>
+# $(ID:750f8f7b-3ac5-4435-a9fc-798e679da307)
+
+* $(ID:03d49eb1-5351-44e0-ad5a-fab7c4d8f0b0)
+* $(ID:e70599ec-02e2-4fbd-8892-d9ccc247d451)
+
+$(ID:6e6c672d-048d-47a1-a7a9-84ccccf6c35e)
+$(ID:3a2c396e-e35d-4e0e-b151-bceb92f734f2)
+$(ID:1aa00025-d71a-4566-80e8-a9de7c65fd2f)
+$(ID:e759419d-7506-478b-a169-c413963afb6e)
+
+$(ID:854b5044-70ef-4138-bd6e-adc94fcbd2ef)
+$(ID:804dd98b-a42f-4f2e-a2bb-522252d66890)
+$(ID:fcdccc76-1ba2-49f6-acab-58ad30138241)
+
+## $(ID:d18d9e4e-3e5d-4f4d-bda8-d1d9715f3d51)
+
+* $(ID:ef130d36-8f81-4885-b422-5a056c74daae)
+
+* $(ID:7e25ca91-c536-401f-bd0f-aeca9a305974)
+
+* $(ID:253407e5-7947-4c5a-b7c9-7711c0d8d3b6)
+
+* $(ID:0912d723-b682-44a0-97f8-42935e9dc028)
+
+* $(ID:fcf2d510-fd8c-40f1-8309-49c78bca82d9)
+
+* $(ID:01df20ae-77a1-4377-ab6e-8099cf836846)
+  * $(ID:ec795471-3c7e-447c-93da-43658a8cb5de)
+  * $(ID:6efa1e65-f39c-4934-8255-f15f507f5df9)
+
+## $(ID:a631fe4a-1dac-48f4-a442-4909d1e23ebb)
+
+### $(ID:858e5be5-7408-453a-8d80-3c775c5dec41)
+
+* $(ID:33b73961-1051-46ed-aaf7-9152d382e607)
+* $(ID:ecf5815a-da6b-4ae0-a7d9-4d49023a6058)
+* $(ID:37ebbff7-863f-4da5-89f5-aa9eec1e7abc)
+
+### $(ID:dd34f2b7-ccf7-4c64-9e2b-4ba80beb49b1)
+
+* $(ID:4ed2ee70-4161-4d27-8cb6-ba64cd88c961)
+* $(ID:0b7694d3-635e-4aa1-bf13-393bca891abb)
+
+### $(ID:41b07ef2-5dbb-467f-8e80-813302145c69)
+
+* $(ID:674052ea-a2d8-45df-bffc-a885de42fce5)
+* $(ID:96449d91-6883-4c27-a431-c30c15dc5de8)
+
+### $(ID:32b2ff7a-6903-406e-b3c4-3e345a47f6f1)
+
+* $(ID:fcc7d6e1-1fa0-452c-af51-62efcc36ca39)
+
+### $(ID:e19ba691-93e5-4327-aa8d-0d9b8249cfb4)
+
+* $(ID:5c8d572a-b6be-4d5f-a6f2-90d0c6f0ba5b)
+
+### $(ID:d9fd6964-fd97-4d19-8910-0ad3c5bfeec8)
+
+* $(ID:7a21c7b3-185d-4b5c-8ae5-d42c11e23e60)
+* $(ID:adb8f6b7-7e21-42eb-ae46-8bf9866f120c)
+* $(ID:c3c7e24d-f80f-46cb-a5b9-7e8442ae3d7f)
+
+### $(ID:3f813703-4fa2-435a-a592-638419101fdd)
+
+* $(ID:e7b20b5a-8df5-40c9-ba2d-a80dbc0d5937)
+* $(ID:e54739a3-b634-4b44-9def-73f518952105)
+
+### $(ID:1461d39a-1f4b-4dd9-8e4f-c03a3226ae80)
+
+* $(ID:76cebb03-ae51-4353-83c4-f31cecfe4fc4)
+* $(ID:490457ba-1199-46a4-932c-e9c5fa9a438a)
+* $(ID:49979e90-2394-4805-8b5c-f592f6e1669b)
+
+### $(ID:a01c8d66-db9c-42c0-811f-92d9f1d7ab1e)
+
+* $(ID:1b9b5bb2-87ed-46b5-921f-aad5fd443e1c)
+
+### $(ID:8d8d07e8-fa26-4e64-9c00-9a9d5f3539de)
+
+* $(ID:2b8ff52a-a288-4f5e-8bb6-41e1bb70ac7c)
+* $(ID:1d7d2e11-51cf-4159-8ed6-2cf3b0db3cf4)
+* $(ID:cebf0733-63b6-4b70-b6cd-cdca39963150)
+* $(ID:08c2ddfd-7af8-4d66-8e32-a364f49cc8b7)
+* $(ID:1d787abf-21d2-45e0-b855-3b1b91fdd331)
+
+### $(ID:7c86c701-b8c6-427d-bc19-ac0e27c62cd0)
+
+* $(ID:e045eaa1-bbaf-496e-ae61-a0ef45f5c1ff)
+* $(ID:235fdf92-c1da-422e-af97-67a3aa4965a2)
+
+$(ID:c7b00508-bc93-4996-a321-9de9e7efc0e4)
+
+$(ID:7647e77f-9dfa-49fa-832e-ec9e2627a846)
+
+</skeleton>
+<unit id="750f8f7b-3ac5-4435-a9fc-798e679da307">
+<notes>
+<note appliesTo="source">line: 2</note>
+<note appliesTo="source">prefix: # </note>
+</notes>
+<segment>
+<source>UnicodeBrailleInput</source>
+</segment>
+</unit>
+<unit id="03d49eb1-5351-44e0-ad5a-fab7c4d8f0b0">
+<notes>
+<note appliesTo="source">line: 4</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Authors: Mesar Hameed, Patrick Zajda, Leonard de Ruijter.</source>
+</segment>
+</unit>
+<unit id="e70599ec-02e2-4fbd-8892-d9ccc247d451">
+<notes>
+<note appliesTo="source">line: 5</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Download [stable version][1]</source>
+</segment>
+</unit>
+<unit id="6e6c672d-048d-47a1-a7a9-84ccccf6c35e">
+<notes>
+<note appliesTo="source">line: 7</note>
+</notes>
+<segment>
+<source>This add-on allows you to perform several Braille conversion tasks.</source>
+</segment>
+</unit>
+<unit id="3a2c396e-e35d-4e0e-b151-bceb92f734f2">
+<notes>
+<note appliesTo="source">line: 8</note>
+</notes>
+<segment>
+<source>For example, you can convert text from braille dot notation (E.G. 1345-1236-145-1) to Unicode or ASCII braille characters.</source>
+</segment>
+</unit>
+<unit id="1aa00025-d71a-4566-80e8-a9de7c65fd2f">
+<notes>
+<note appliesTo="source">line: 9</note>
+</notes>
+<segment>
+<source>You can also convert text according to the currently selected input or output braille table, either by typing or pasting it into an input field, or by importing a text file.</source>
+</segment>
+</unit>
+<unit id="e759419d-7506-478b-a169-c413963afb6e">
+<notes>
+<note appliesTo="source">line: 10</note>
+</notes>
+<segment>
+<source>The result can either be copied to the clipboard or exported into a text or BRF file.</source>
+</segment>
+</unit>
+<unit id="854b5044-70ef-4138-bd6e-adc94fcbd2ef">
+<notes>
+<note appliesTo="source">line: 12</note>
+</notes>
+<segment>
+<source>The initial purpose of this specialized addon was to make it easier to help to improve liblouis tables and to add automatic tests for your language.</source>
+</segment>
+</unit>
+<unit id="804dd98b-a42f-4f2e-a2bb-522252d66890">
+<notes>
+<note appliesTo="source">line: 13</note>
+</notes>
+<segment>
+<source>However, with the addition of the unicode braille table in NVDA 2017.3, this add-on is no longer required for that.</source>
+</segment>
+</unit>
+<unit id="fcdccc76-1ba2-49f6-acab-58ad30138241">
+<notes>
+<note appliesTo="source">line: 14</note>
+</notes>
+<segment>
+<source>Users can now choose to input braille with that table, either via a Braille keyboard or the [PC Keyboard Braille Input add-on][2].</source>
+</segment>
+</unit>
+<unit id="d18d9e4e-3e5d-4f4d-bda8-d1d9715f3d51">
+<notes>
+<note appliesTo="source">line: 16</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Usage example</source>
+</segment>
+</unit>
+<unit id="ef130d36-8f81-4885-b422-5a056c74daae">
+<notes>
+<note appliesTo="source">line: 18</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Open a text editor (for example Notepad plus plus).</source>
+</segment>
+</unit>
+<unit id="7e25ca91-c536-401f-bd0f-aeca9a305974">
+<notes>
+<note appliesTo="source">line: 20</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Press NVDA+Ctrl+i or choose Unicode Braille Input found under NVDA tools menu.</source>
+</segment>
+</unit>
+<unit id="253407e5-7947-4c5a-b7c9-7711c0d8d3b6">
+<notes>
+<note appliesTo="source">line: 22</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Type your braille text in numeric form or your normal text, respectively. You can also import from a text file if desired.</source>
+</segment>
+</unit>
+<unit id="0912d723-b682-44a0-97f8-42935e9dc028">
+<notes>
+<note appliesTo="source">line: 24</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Select whether your input consists of braille dots (e.g. 1345-1236-145-1) or normal text according to a current braille table (e.g. Dutch (Netherlands).</source>
+</segment>
+</unit>
+<unit id="fcf2d510-fd8c-40f1-8309-49c78bca82d9">
+<notes>
+<note appliesTo="source">line: 26</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Select the output type. Leave it to Unicode braille, or change it to BRF or NABC if desired.</source>
+</segment>
+</unit>
+<unit id="01df20ae-77a1-4377-ab6e-8099cf836846">
+<notes>
+<note appliesTo="source">line: 28</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Select the export type:</source>
+</segment>
+</unit>
+<unit id="ec795471-3c7e-447c-93da-43658a8cb5de">
+<notes>
+<note appliesTo="source">line: 29</note>
+<note appliesTo="source">prefix:   * </note>
+</notes>
+<segment>
+<source>When set to `Clipboard`, The result will be copied to your clipboard ready for you to  paste after pressing OK.</source>
+</segment>
+</unit>
+<unit id="6efa1e65-f39c-4934-8255-f15f507f5df9">
+<notes>
+<note appliesTo="source">line: 30</note>
+<note appliesTo="source">prefix:   * </note>
+</notes>
+<segment>
+<source>When set to `File`, after pressing OK, a save window will appear.</source>
+</segment>
+</unit>
+<unit id="a631fe4a-1dac-48f4-a442-4909d1e23ebb">
+<notes>
+<note appliesTo="source">line: 32</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes</source>
+</segment>
+</unit>
+<unit id="858e5be5-7408-453a-8d80-3c775c5dec41">
+<notes>
+<note appliesTo="source">line: 34</note>
+<note appliesTo="source">prefix: ### </note>
+</notes>
+<segment>
+<source>Changes for 5.0</source>
+</segment>
+</unit>
+<unit id="33b73961-1051-46ed-aaf7-9152d382e607">
+<notes>
+<note appliesTo="source">line: 36</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>The add-on now requires NVDA 2024.3 or newer</source>
+</segment>
+</unit>
+<unit id="ecf5815a-da6b-4ae0-a7d9-4d49023a6058">
+<notes>
+<note appliesTo="source">line: 37</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Changed radio buttons into combo boxes</source>
+</segment>
+</unit>
+<unit id="37ebbff7-863f-4da5-89f5-aa9eec1e7abc">
+<notes>
+<note appliesTo="source">line: 38</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Added output types for ASCII braille (BRF) and NABC (North American Braille Computer Code with full Latin1 character set)</source>
+</segment>
+</unit>
+<unit id="dd34f2b7-ccf7-4c64-9e2b-4ba80beb49b1">
+<notes>
+<note appliesTo="source">line: 40</note>
+<note appliesTo="source">prefix: ### </note>
+</notes>
+<segment>
+<source>Changes for 4.1</source>
+</segment>
+</unit>
+<unit id="4ed2ee70-4161-4d27-8cb6-ba64cd88c961">
+<notes>
+<note appliesTo="source">line: 42</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>The add-on now requires NVDA 2023.1 or newer</source>
+</segment>
+</unit>
+<unit id="0b7694d3-635e-4aa1-bf13-393bca891abb">
+<notes>
+<note appliesTo="source">line: 43</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Added support for custom braille tables as input table</source>
+</segment>
+</unit>
+<unit id="41b07ef2-5dbb-467f-8e80-813302145c69">
+<notes>
+<note appliesTo="source">line: 45</note>
+<note appliesTo="source">prefix: ### </note>
+</notes>
+<segment>
+<source>Changes for 4.0</source>
+</segment>
+</unit>
+<unit id="674052ea-a2d8-45df-bffc-a885de42fce5">
+<notes>
+<note appliesTo="source">line: 47</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Add-on is compatible with NVDA 2024.1</source>
+</segment>
+</unit>
+<unit id="96449d91-6883-4c27-a431-c30c15dc5de8">
+<notes>
+<note appliesTo="source">line: 48</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Changed the gesture to open the Unicode Braille dialog from NVDA+control+u to NVDA+control+i</source>
+</segment>
+</unit>
+<unit id="32b2ff7a-6903-406e-b3c4-3e345a47f6f1">
+<notes>
+<note appliesTo="source">line: 50</note>
+<note appliesTo="source">prefix: ### </note>
+</notes>
+<segment>
+<source>Changes for 3.4</source>
+</segment>
+</unit>
+<unit id="fcc7d6e1-1fa0-452c-af51-62efcc36ca39">
+<notes>
+<note appliesTo="source">line: 52</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Add-on is compatible with NVDA 2023.1</source>
+</segment>
+</unit>
+<unit id="e19ba691-93e5-4327-aa8d-0d9b8249cfb4">
+<notes>
+<note appliesTo="source">line: 54</note>
+<note appliesTo="source">prefix: ### </note>
+</notes>
+<segment>
+<source>Changes for 3.3</source>
+</segment>
+</unit>
+<unit id="5c8d572a-b6be-4d5f-a6f2-90d0c6f0ba5b">
+<notes>
+<note appliesTo="source">line: 56</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Add-on is compatible with NVDA 2022.1</source>
+</segment>
+</unit>
+<unit id="d9fd6964-fd97-4d19-8910-0ad3c5bfeec8">
+<notes>
+<note appliesTo="source">line: 58</note>
+<note appliesTo="source">prefix: ### </note>
+</notes>
+<segment>
+<source>Changes for 3.2</source>
+</segment>
+</unit>
+<unit id="7a21c7b3-185d-4b5c-8ae5-d42c11e23e60">
+<notes>
+<note appliesTo="source">line: 60</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Add-on is compatible with NVDA 2021.1</source>
+</segment>
+</unit>
+<unit id="adb8f6b7-7e21-42eb-ae46-8bf9866f120c">
+<notes>
+<note appliesTo="source">line: 61</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Fixed an issue that caused a traceback when wrong input was provided in dot input mode. A friendly message box is now shown instead</source>
+</segment>
+</unit>
+<unit id="c3c7e24d-f80f-46cb-a5b9-7e8442ae3d7f">
+<notes>
+<note appliesTo="source">line: 62</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Updated translations.</source>
+</segment>
+</unit>
+<unit id="3f813703-4fa2-435a-a592-638419101fdd">
+<notes>
+<note appliesTo="source">line: 64</note>
+<note appliesTo="source">prefix: ### </note>
+</notes>
+<segment>
+<source>Changes for 3.1</source>
+</segment>
+</unit>
+<unit id="e7b20b5a-8df5-40c9-ba2d-a80dbc0d5937">
+<notes>
+<note appliesTo="source">line: 66</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>The tab order for the radio buttons and the input edit control has been swapped.</source>
+</segment>
+</unit>
+<unit id="e54739a3-b634-4b44-9def-73f518952105">
+<notes>
+<note appliesTo="source">line: 67</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Updated translations.</source>
+</segment>
+</unit>
+<unit id="1461d39a-1f4b-4dd9-8e4f-c03a3226ae80">
+<notes>
+<note appliesTo="source">line: 69</note>
+<note appliesTo="source">prefix: ### </note>
+</notes>
+<segment>
+<source>Changes for 3.0</source>
+</segment>
+</unit>
+<unit id="76cebb03-ae51-4353-83c4-f31cecfe4fc4">
+<notes>
+<note appliesTo="source">line: 71</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>New maintainer: Leonard de Ruijter.</source>
+</segment>
+</unit>
+<unit id="490457ba-1199-46a4-932c-e9c5fa9a438a">
+<notes>
+<note appliesTo="source">line: 72</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Add-on is compatible with Python 3 and therefore with NVDA 2019.3 and above.</source>
+</segment>
+</unit>
+<unit id="49979e90-2394-4805-8b5c-f592f6e1669b">
+<notes>
+<note appliesTo="source">line: 73</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Added the ability to create unicode braille from normal text according to the currently selected input braille table.</source>
+</segment>
+</unit>
+<unit id="a01c8d66-db9c-42c0-811f-92d9f1d7ab1e">
+<notes>
+<note appliesTo="source">line: 75</note>
+<note appliesTo="source">prefix: ### </note>
+</notes>
+<segment>
+<source>Changes for 2.0</source>
+</segment>
+</unit>
+<unit id="1b9b5bb2-87ed-46b5-921f-aad5fd443e1c">
+<notes>
+<note appliesTo="source">line: 77</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Add-on help is available from the Add-ons Manager.</source>
+</segment>
+</unit>
+<unit id="8d8d07e8-fa26-4e64-9c00-9a9d5f3539de">
+<notes>
+<note appliesTo="source">line: 79</note>
+<note appliesTo="source">prefix: ### </note>
+</notes>
+<segment>
+<source>Changes for 1.1</source>
+</segment>
+</unit>
+<unit id="2b8ff52a-a288-4f5e-8bb6-41e1bb70ac7c">
+<notes>
+<note appliesTo="source">line: 81</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Improve delay to allow announcements to be heard correctly.</source>
+</segment>
+</unit>
+<unit id="1d7d2e11-51cf-4159-8ed6-2cf3b0db3cf4">
+<notes>
+<note appliesTo="source">line: 82</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Many new translations.</source>
+</segment>
+</unit>
+<unit id="cebf0733-63b6-4b70-b6cd-cdca39963150">
+<notes>
+<note appliesTo="source">line: 83</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Added documentation under NVDA help menu.</source>
+</segment>
+</unit>
+<unit id="08c2ddfd-7af8-4d66-8e32-a364f49cc8b7">
+<notes>
+<note appliesTo="source">line: 84</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Added a checkbox to optionally replace the space braille (character 0x2800) by the regular space character.</source>
+</segment>
+</unit>
+<unit id="1d787abf-21d2-45e0-b855-3b1b91fdd331">
+<notes>
+<note appliesTo="source">line: 85</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Shortcuts can now be reassigned using the NVDA gesture input dialog, under the Tools category.</source>
+</segment>
+</unit>
+<unit id="7c86c701-b8c6-427d-bc19-ac0e27c62cd0">
+<notes>
+<note appliesTo="source">line: 87</note>
+<note appliesTo="source">prefix: ### </note>
+</notes>
+<segment>
+<source>Changes for 1.0</source>
+</segment>
+</unit>
+<unit id="e045eaa1-bbaf-496e-ae61-a0ef45f5c1ff">
+<notes>
+<note appliesTo="source">line: 89</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Initial release</source>
+</segment>
+</unit>
+<unit id="235fdf92-c1da-422e-af97-67a3aa4965a2">
+<notes>
+<note appliesTo="source">line: 90</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>New Languages: French</source>
+</segment>
+</unit>
+<unit id="c7b00508-bc93-4996-a321-9de9e7efc0e4">
+<notes>
+<note appliesTo="source">line: 92</note>
+</notes>
+<segment>
+<source>[1]: http://addons.nvda-project.org/files/get.php?file=ubi</source>
+</segment>
+</unit>
+<unit id="7647e77f-9dfa-49fa-832e-ec9e2627a846">
+<notes>
+<note appliesTo="source">line: 94</note>
+</notes>
+<segment>
+<source>[2]: https://github.com/nvdaes/pcKbBrl</source>
+</segment>
+</unit>
+</file>
+</xliff>
