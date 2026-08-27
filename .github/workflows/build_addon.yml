@@ -22,6 +22,7 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v7
     - name: Prepare NVDA source for ty
+      id: nvda
       uses: LeonarddeR/prepare-nvda-source@4f9e3b5321987e9db1cbb7c778bfff951629fa28
       with:
         nvda-ref: master
@@ -31,17 +32,8 @@ jobs:
       uses: astral-sh/setup-uv@v10.0.1
       with:
         enable-cache: true
-    - name: Install Gettext via MSYS2
-      id: msys2
-      uses: msys2/setup-msys2@v2
-      with:
-        msystem: UCRT64
-        update: true
-        install: >-
-          gettext
-          mingw-w64-ucrt-x86_64-gettext-tools
-    - name: Add Gettext to PATH
-      run: Add-Content $env:GITHUB_PATH "${{ steps.msys2.outputs.msys2-location }}\ucrt64\bin"
+    - name: Add NVDA's gettext tools to PATH
+      run: Add-Content $env:GITHUB_PATH "${{ steps.nvda.outputs.nvda-path }}/miscDeps/tools"
     - name: Install dependencies
       run: uv sync
 
