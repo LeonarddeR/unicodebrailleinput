@@ -27,8 +27,8 @@ license = {file = "COPYING.txt"}
 dependencies = []
 
 [project.urls]
-Repository = "https://github.com/leonardder/unicodeBrailleInput"
-Issues = "https://github.com/leonardder/unicodeBrailleInput/issues"
+Repository = "https://github.com/LeonarddeR/unicodebrailleinput"
+Issues = "https://github.com/LeonarddeR/unicodebrailleinput/issues"
 
 # PEP 735 dependency groups. `uv sync` installs the `dev` group by default, which
 # pulls in every tool needed to build, translate, lint and type check the add-on.

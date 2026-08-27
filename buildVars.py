@@ -20,8 +20,8 @@ addon_info = AddonInfo(
 		"Mesar Hameed <mhameed@src.gnome.org>, "
 		"Patrick ZAJDA <patrick@zajda.fr>"
 	),
-	addon_url="https://github.com/leonardder/unicodebrailleinput",
-	addon_sourceURL="https://github.com/leonardder/unicodebrailleinput",
+	addon_url="https://github.com/LeonarddeR/unicodebrailleinput",
+	addon_sourceURL="https://github.com/LeonarddeR/unicodebrailleinput",
 	addon_docFileName="readme.html",
 	addon_minimumNVDAVersion="2024.3",
 	addon_lastTestedNVDAVersion="2026.1",
