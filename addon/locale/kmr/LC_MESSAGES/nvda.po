@@ -6,144 +6,144 @@ msgstr ""
 "POT-Creation-Date: 2026-08-27 16:40+0000\n"
 "PO-Revision-Date: 2026-08-27 16:42\n"
 "Last-Translator: \n"
-"Language-Team: Turkish\n"
-"Language: tr_TR\n"
+"Language-Team: Kurmanji (Kurdish)\n"
+"Language: kmr_TR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: nvdaaddons\n"
 "X-Crowdin-Project-ID: 780748\n"
-"X-Crowdin-Language: tr\n"
+"X-Crowdin-Language: kmr\n"
 "X-Crowdin-File: unicodeBrailleInput.pot\n"
 "X-Crowdin-File-ID: 328\n"
 
 #. Translators: the label of an input type
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:39
 msgid "Braille dots (e.g. 1345-1236-145-1)"
-msgstr "Braille noktaları (Örneğin: 1345-1236-145-1)"
+msgstr "Xalên Braille (mînak 1345-1236-145-1)"
 
 #. Translators: the label of an input type
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:41
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:45
 msgid "Normal text according to {table}"
-msgstr "{table} Göre Normal metin"
+msgstr "Nivîsa normal li gorî {table}"
 
 #. Translators: the label of an output type
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:60
 msgid "Unicode braille"
-msgstr "Unicode braille"
+msgstr "Braille ya Unicode"
 
 #. Translators: the label of an output type
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:62
 msgid "ASCII braille (BRF)"
-msgstr "ASCII braille (BRF)"
+msgstr "Brailleya ASCII (BRF)"
 
 #. Translators: the label of an output type
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:64
 msgid "NABCC"
-msgstr "NABCC"
+msgstr ""
 
 #. Translators: the label of an export type
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:76
 msgid "Clipboard"
-msgstr "Pano"
+msgstr "Klîpboard"
 
 #. Translators: the label of an export type
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:78
 msgid "File"
-msgstr "Dosya"
+msgstr "Pel"
 
 #. Translators: Error message displayed when the user enters invalid input.
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:179
 #, python-format
 msgid "Unexpected input: '%s', only dots 0 to 8 and - are allowed."
-msgstr "Beklenmeyen girdi: '%s', yalnızca 0 ila 8 arası noktalara ve - işaretine izin verilir."
+msgstr "Têketina neçaverêkirî: '%s', tenê xalên ji 0 heta 8 û - destûr in."
 
 #. Translators: The title of the dialog.
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:212
 msgid "Convert Braille"
-msgstr "Braille'i dönüştür"
+msgstr "Braille veguherîne"
 
 #. Translators: the label of the edit field.
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:218
 msgid "&Input:"
-msgstr "&Girdi:"
+msgstr "&Beyan:"
 
 #. Translators: The label for a button to import text.
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:226
 msgid "I&mport..."
-msgstr "&Dışa Aktar..."
+msgstr "Anîn..."
 
 #. Translators: the label of the combo box to choose the input type.
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:236
 msgid "Input &type:"
-msgstr "Girdi &Türü:"
+msgstr "&Cureyê binivîse:"
 
 #. Translators: the label of the radio box to choose the output type.
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:244
 msgid "&Output type:"
-msgstr "&Çıktı türü:"
+msgstr "&Cureyê Derketinê:"
 
 #. Translators: Label for a checkbox, wether to use a regular space or the Braille unicode space.
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:254
 msgid "Convert Unicode Braille &space to ASCII space"
-msgstr "Unicode braille boşluğu A&SCİİ boşluğa dönüştür"
+msgstr "&valahiya Unicode Braille veguherîne valahiya ASCII"
 
 #. Translators: the label of the combo box to choose the export type.
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:263
 msgid "&Export to:"
-msgstr "&Dışa Aktar:"
+msgstr "&Hinarde bike bo:"
 
 #. Translators: Label of a dialog to import a file.
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:275
 msgid "Import File"
-msgstr "Dosyayı İçe Aktar"
+msgstr "Pelê Import bike"
 
 #. Translators: Dialog text presented when NVDA can't import a file.
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:288
 msgid "Error importing file: {e}"
-msgstr "Dosya içe aktarılırken hata oluştu: {e}"
+msgstr "Çewtiya hinartina pelê: {e}"
 
 #. Translators: the title of an error message dialog
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:290
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:321
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:365
 msgid "Error"
-msgstr "Hata"
+msgstr "Çewtî"
 
 #. Translators: Label of a dialog to export a file.
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:305
 msgid "Export File"
-msgstr "Dosyayı dışa aktar"
+msgstr "Pelê Hinarde Bike"
 
 #. Translators: Dialog text presented when NVDA can't export a file.
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:319
 msgid "Error exporting file: {e}"
-msgstr "Dosya dışa aktarılırken hata oluştu: {e}"
+msgstr "Çewtiya hinardekirina pelê: {e}"
 
 #. Translators: This is the message when unicode text has been copied to the clipboard.
 #: addon\globalPlugins\unicodeBrailleInput\interface.py:363
 msgid "Result copied to clipboard ready for you to paste."
-msgstr "Sonuç, yapıştırmanız için panoya kopyalanır."
+msgstr "Encam li clipboardê hat kopîkirin, ji bo pêvekirinê amade ye."
 
 #. Translators: name of menu item.
 #: addon\globalPlugins\unicodeBrailleInput\__init__.py:36
 msgid "Un&icode Braille Input..."
-msgstr "Un&icode braille girişi..."
+msgstr "Têketina Braille ya Un&icode..."
 
 #. Translators: menu item tool tip text.
 #. Translators: Message presented when user performs input help for this shortcut.
 #: addon\globalPlugins\unicodeBrailleInput\__init__.py:38
 #: addon\globalPlugins\unicodeBrailleInput\__init__.py:44
 msgid "Displays a dialog to enter braille in numeric form."
-msgstr "Sayılarla braille girişi yapmanıza yarayan iletişim kutusunu gösterir."
+msgstr "Ji bo nivîsandina Braille bi şêweya hejmarî diyalogek nîşan dide."
 
 #: buildVars.py:14
 msgid "Unicode Braille Input"
-msgstr "Unicode braille girişi"
+msgstr "Têketina Braille ya Unicode"
 
 #: buildVars.py:15
 msgid "Utilities to convert text to Unicode braille"
-msgstr "Metni Unicode Braille'e dönüştürmek için yardımcı araçlar"
+msgstr "Amûrên ji bo veguherandina nivîsê bo Braille ya Unicode"
 
