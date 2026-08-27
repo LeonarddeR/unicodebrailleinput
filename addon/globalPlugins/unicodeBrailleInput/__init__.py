@@ -5,6 +5,8 @@
 # or by visiting http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 # Shortcut: NVDA+Ctrl+i
 
+import contextlib
+
 import addonHandler
 import globalPluginHandler
 import globalVars
@@ -26,6 +28,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		super().__init__()
 		if globalVars.appArgs.secure:
 			return
+		assert gui.mainFrame is not None
 		self.tools = gui.mainFrame.sysTrayIcon.toolsMenu
 		self.menuItem = self.tools.Append(
 			wx.ID_ANY,
@@ -41,12 +44,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		description=_("Displays a dialog to enter braille in numeric form."),
 		gesture="kb:NVDA+control+i",
 	)
-	def script_brailleInput2Unicode(self, gesture):
+	def script_brailleInput2Unicode(self, _gesture):
+		assert gui.mainFrame is not None
 		gui.mainFrame._popupSettingsDialog(interface.BrailleInputDialog)
 
 	def terminate(self):
-		try:
+		with contextlib.suppress(Exception):
 			self.tools.Remove(self.menuItem)
-		except Exception:
-			pass
 		super().terminate()

@@ -30,12 +30,12 @@ def validateVersionNumber(key: str, val: str, _):
 	versionNumber = val.split(".")
 	if len(versionNumber) < 3:
 		raise ValueError(f"{key} must have three parts (major.minor.patch)")
-	if not all([part.isnumeric() for part in versionNumber]):
+	if not all(part.isnumeric() for part in versionNumber):
 		raise ValueError(f"{key} (major.minor.patch) must be integers")
 
 
 def expandGlobs(patterns: Iterable[str], rootdir: Path = Path(".")) -> list[FS.Entry]:
-	return [env.Entry(e) for pattern in patterns for e in rootdir.glob(pattern.lstrip('/'))]
+	return [env.Entry(e) for pattern in patterns for e in rootdir.glob(pattern.lstrip("/"))]
 
 
 addonDir: Final = Path("addon/")
@@ -60,7 +60,7 @@ env.Append(
 if env["dev"]:
 	from datetime import date
 
-	versionTimestamp = date.today().strftime('%Y%m%d')
+	versionTimestamp = date.today().strftime("%Y%m%d")
 	version = f"{versionTimestamp}.0.0"
 	env["addon_info"]["addon_version"] = version
 	env["versionNumber"] = version

@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools~=80.9", "wheel"]
+requires = ["setuptools~=84.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -22,70 +22,127 @@ classifiers = [
 ]
 readme = "readme.md"
 license = {file = "COPYING.txt"}
-dependencies = [
-	"scons==4.10.1",
-	"Markdown==3.10",
-	"requests==2.33.0",
-	"nh3==0.3.2",
-	"crowdin-api-client==1.24.1",
-	"lxml==6.1.0",
-	"mdx_truly_sane_lists==1.3",
-	"markdown-link-attr-modifier==0.2.1",
-	"mdx-gh-links==0.4",
-	"uv==0.11.6",
-	"ruff==0.14.5",
-	"pre-commit==4.2.0",
-]
+# This package is not installed as a library; every dependency is tooling used to
+# build, translate, lint or type check the add-on. They are declared as PEP 735 dependency groups.
+dependencies = []
 
 [project.urls]
 Repository = "https://github.com/leonardder/unicodeBrailleInput"
 Issues = "https://github.com/leonardder/unicodeBrailleInput/issues"
 
+# PEP 735 dependency groups. `uv sync` installs the `dev` group by default, which
+# pulls in every tool needed to build, translate, lint and type check the add-on.
+[dependency-groups]
+# Build add-on
+build = [
+	"scons==4.11.1",
+	"Markdown==3.10.3",
+]
+# Translations management
+l10n = [
+	"nh3==0.3.7",
+	"crowdin-api-client==1.28.0",
+	"lxml==6.1.2",
+	"mdx_truly_sane_lists==1.3",
+	"markdown-link-attr-modifier==0.2.1",
+	"mdx-gh-links==0.4",
+]
+# Lint
+lint = [
+	"uv==0.12.6",
+	"ruff==0.16.4",
+	"prek==0.5.0",
+]
+# Type checking. ty resolves NVDA imports against a sibling ..\nvda\source checkout;
+# wxPython supplies the wx module NVDA bundles at runtime and tracks the version NVDA pins.
+typecheck = [
+	"ty==0.0.75",
+	"wxpython==4.2.5",
+]
+dev = [
+	{ include-group = "build" },
+	{ include-group = "l10n" },
+	{ include-group = "lint" },
+	{ include-group = "typecheck" },
+]
+
 [tool.ruff]
+fix = true
+preview = true
 line-length = 110
+
 builtins = [
+	# translation lookup
 	"_",
+	# translation lookup
 	"ngettext",
+	# translation lookup
 	"pgettext",
+	# translation lookup
 	"npgettext",
 ]
+
 include = [
 	"*.py",
 	"sconstruct",
 ]
+
 exclude = [
 	".git",
 	"__pycache__",
 	".venv",
-	"buildVars.py",
+	"site_scons",
+	".github/scripts",
 ]
 
 [tool.ruff.format]
 indent-style = "tab"
 line-ending = "lf"
+preview = true
 quote-style = "double"
 
 [tool.ruff.lint.mccabe]
 max-complexity = 15
 
 [tool.ruff.lint]
+future-annotations = true
 ignore = [
+	# indentation contains tabs
 	"W191",
 ]
 logger-objects = ["logHandler.log"]
 select = [
-	"B",
-	"C90",
-	"E",
-	"F",
-	"FIX",
-	"I",
-	"INT",
-	"PERF",
-	"RUF",
-	"UP",
-	"W",
+	"ARG",  # flake8-unused-arguments
+	"B",  # flake8-bugbear
+	"C4",  # flake8-comprehensions
+	"C90", # mccabe
+	"E",  # pycodestyle Error
+	"F",  # Pyflakes
+	"FIX",  # flake8-fixme
+	"I",  # isort
+	"ICN",  # flake8-import-conventions
+	"INT",  # flake8-gettext
+	"PERF",  # Perflint
+	"PIE",  # flake8-pie
+	"SIM",  # flake8-simplify
+	"UP",  # pyupgrade
+	"W",  # pycodestyle Warning
 ]
 
 [tool.ruff.lint.per-file-ignores]
+# sconscripts contains many inbuilt functions not recognised by the lint,
+# so ignore F821.
 "sconstruct" = ["F821"]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+
+[tool.ty.environment]
+python-version = "3.13"
+# The add-on only runs on Windows; analyse the win32 code paths even on a Linux/macOS checkout.
+python-platform = "win32"
+# NVDA internals are not installable; resolve them against a sibling NVDA source checkout.
+extra-paths = ["../nvda/source"]
+
+[tool.ty.src]
+include = ["addon", "buildVars.py"]

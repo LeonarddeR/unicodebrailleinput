@@ -33,6 +33,7 @@ class InputType(DisplayStringIntEnum):
 
 	@property
 	def _displayStringLabels(self) -> dict:
+		assert braille.handler is not None
 		return {
 			# Translators: the label of an input type
 			self.DOTS: _("Braille dots (e.g. 1345-1236-145-1)"),
@@ -95,6 +96,7 @@ def getTranslationTable(inputType: InputType) -> brailleTables.BrailleTable:
 		case InputType.TEXT_INPUT_TABLE:
 			return brailleInput.handler.table
 		case InputType.TEXT_OUTPUT_TABLE:
+			assert braille.handler is not None
 			return braille.handler.table
 		case _:
 			raise NotImplementedError
@@ -123,7 +125,7 @@ def postProcessUnicode(text: str, outputType: OutputType) -> str:
 
 def translateText(
 	text: str,
-	tables: list[str],
+	tables: list[str | bytes],
 	mode: int,
 	regularSpace: bool = False,
 ) -> str:
@@ -225,6 +227,7 @@ class BrailleInputDialog(gui.SettingsDialog):
 		)
 		self.importButton.Bind(wx.EVT_BUTTON, self._onImport)
 
+		assert braille.handler is not None
 		inputTypeChoices = [t.displayString for t in InputType]
 		if brailleInput.handler.table == braille.handler.table or brailleInput.handler.table.output:
 			inputTypeChoices.pop()
